@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+
+Always use the tailwind base classes for size/spacing which is equivanlent px value in figma. If there is no tailwind base class then use rem but don't use px into the styles.
+Store the colors in @global.css as css/tailwind variables and then use those on the frontend
+Divide everything in components don't just put so many sections in one page.
+Copy the exact styles from figma.
+Don't the images from figma which is missing and store that in public/images and then use it. Rename the images to meaningful names. Also keep a proper structure in public/images
+Store the icons in app/helpers/icons.tsx in the same way I have same one there.
