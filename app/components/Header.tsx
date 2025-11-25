@@ -4,8 +4,13 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { allIcons } from "../helpers/icons";
 import ServicesDropdown from "./ServicesDropdown";
+import classNames from "classnames";
+import Link from "next/link";
 
-export default function Header() {
+interface HeaderProps {
+  activeRoute?: "home" | "about" | "services" | "career" | "blogs";
+}
+export default function Header({ activeRoute = "home" }: HeaderProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
 
@@ -34,7 +39,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
+    <header className="w-full z-20  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
       <div className="w-full max-w-desktop mx-auto flex items-center justify-between  gap-5">
         {/* Logo */}
         <div className="w-[8.625rem] h-[3.1875rem] relative flex-shrink-0">
@@ -48,20 +53,32 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="flex items-center justify-end gap-3 flex-1 h-6">
-          <a
-            href="#"
-            className="text-base leading-6 text-primary-blue font-normal font-poppins"
+          <Link
+            href="/home"
+            className={classNames(
+              "text-base leading-6 font-normal font-poppins",
+              {
+                "text-primary-blue": activeRoute === "home",
+                "text-text-gray": activeRoute !== "home",
+              }
+            )}
           >
             Home
-          </a>
+          </Link>
 
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
-            <a
-              href="#"
-              className="text-base leading-6 text-text-gray font-normal font-poppins"
+            <Link
+              href="/about"
+              className={classNames(
+                "text-base leading-6 font-normal font-poppins",
+                {
+                  "text-primary-blue": activeRoute === "about",
+                  "text-text-gray": activeRoute !== "about",
+                }
+              )}
             >
               About Us
-            </a>
+            </Link>
           </div>
 
           <div
@@ -70,7 +87,13 @@ export default function Header() {
           >
             <button
               onClick={toggleServices}
-              className="flex items-center gap-0.5 text-base leading-6 text-text-gray font-normal font-poppins cursor-pointer"
+              className={classNames(
+                "flex items-center gap-0.5 text-base leading-6 font-normal font-poppins cursor-pointer",
+                {
+                  "text-primary-blue": activeRoute === "services",
+                  "text-text-gray": activeRoute !== "services",
+                }
+              )}
             >
               Services
             </button>
@@ -83,7 +106,13 @@ export default function Header() {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-text-gray font-normal font-poppins"
+              className={classNames(
+                "text-base leading-6 font-normal font-poppins",
+                {
+                  "text-primary-blue": activeRoute === "career",
+                  "text-text-gray": activeRoute !== "career",
+                }
+              )}
             >
               Career
             </a>
@@ -92,7 +121,13 @@ export default function Header() {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-text-gray font-normal font-poppins"
+              className={classNames(
+                "text-base leading-6 font-normal font-poppins",
+                {
+                  "text-primary-blue": activeRoute === "blogs",
+                  "text-text-gray": activeRoute !== "blogs",
+                }
+              )}
             >
               Blogs
             </a>

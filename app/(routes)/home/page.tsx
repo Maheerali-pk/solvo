@@ -14,6 +14,7 @@ import OurServicesSection from "@/app/components/ServicesMainTabs";
 import ServicesSection from "@/app/components/ServicesSection";
 import HeroSection from "./components/HeroSection";
 import ClientReviewsSection from "@/app/components/ClientReviewsSection";
+import CustomerSimulationSection from "@/app/components/CustomerSimulationSection";
 
 interface HomePageProps {}
 
@@ -30,6 +31,7 @@ const HomePage: React.FC<HomePageProps> = () => {
       <ServicesSection />
       <ProductDetailsSection></ProductDetailsSection>
       <ClientReviewsSection></ClientReviewsSection>
+      <CustomerSimulationSection></CustomerSimulationSection>
       <GetInTouch></GetInTouch>
 
       <Footer />

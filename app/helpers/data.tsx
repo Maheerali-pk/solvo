@@ -384,3 +384,151 @@ export const allClientReviews: IClientReview[] = [
     image: "/images/client-reviews/review3.png",
   },
 ];
+
+export interface IIndustryItem {
+  name: string;
+  icon: string;
+}
+
+export const allIndustries: IIndustryItem[] = [
+  {
+    name: "Aerospace & Defense",
+    icon: "/images/about/industries/aerospace-defense.png",
+  },
+  {
+    name: "Automotive & Transportation",
+    icon: "/images/about/industries/automotive-transportation.png",
+  },
+  {
+    name: "Energy",
+    icon: "/images/about/industries/energy.png",
+  },
+  {
+    name: "Consumer Products",
+    icon: "/images/about/industries/consumer-products.png",
+  },
+  {
+    name: "Machinery & Robotics",
+    icon: "/images/about/industries/machinery-robotics.png",
+  },
+  {
+    name: "Manufacturing",
+    icon: "/images/about/industries/manufacturing.png",
+  },
+  {
+    name: "Marine",
+    icon: "/images/about/industries/marine.png",
+  },
+  {
+    name: "Medical",
+    icon: "/images/about/industries/medical.png",
+  },
+];
+
+export interface ICoreValue {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export const allCoreValues: ICoreValue[] = [
+  {
+    title: "Innovation",
+    description: "Innovating with technology and creativity.",
+    icon: "/images/about/core-values/innovation.png",
+  },
+  {
+    title: "Integrity",
+    description: "We build trust through honesty and transparency.",
+    icon: "/images/about/core-values/integrity.png",
+  },
+  {
+    title: "Collabration",
+    description: "We collaborate closely to achieve shared success.",
+    icon: "/images/about/core-values/collaboration.png",
+  },
+  {
+    title: "Quality",
+    description: "Precision and performance define our engineering.",
+    icon: "/images/about/core-values/quality.png",
+  },
+  {
+    title: "Client-Centricity",
+    description: "We focus on client needs to provide tailored solutions.",
+    icon: "/images/about/core-values/client-centricity.png",
+  },
+  {
+    title: "Constant Growth",
+    description: "We grow through learning and development.",
+    icon: "/images/about/core-values/integrity.png",
+  },
+];
+
+export interface ICustomerSimulationPhase {
+  phaseTitle: string;
+  subItems: string[];
+  stepNumber: number;
+  stepImage: string;
+}
+
+export interface ICustomerSimulationItem {
+  badgeText: string;
+  badgeIcon: string;
+  title: string;
+  leftPhase: ICustomerSimulationPhase;
+  rightPhase: ICustomerSimulationPhase;
+}
+
+export const allCustomerSimulationItems: ICustomerSimulationItem[] = [
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Our Customer Simulation",
+    leftPhase: {
+      phaseTitle: "Information Gathering & Requirement",
+      subItems: ["Team Assembly", "Responsibility"],
+      stepNumber: 1,
+      stepImage: "/images/customer-simulation/step1.png",
+    },
+    rightPhase: {
+      phaseTitle: "Assigning Roles & Responsibilities",
+      subItems: ["Consultation", "Requirements Specification"],
+      stepNumber: 3,
+      stepImage: "/images/customer-simulation/step2.png",
+    },
+  },
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Our Customer Simulation",
+    leftPhase: {
+      phaseTitle: "Project Planning & Strategy Development",
+      subItems: ["Resource Allocation", "Simulation Roadmap"],
+      stepNumber: 7,
+      stepImage: "/images/customer-simulation/step3.png",
+    },
+    rightPhase: {
+      phaseTitle: "Simulation Process Execution",
+      subItems: ["CAD & Mesh", "Pre & Post Processing"],
+      stepNumber: 8,
+      stepImage: "/images/customer-simulation/step4.png",
+    },
+  },
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Our Customer Simulation",
+    leftPhase: {
+      phaseTitle: "Quality Assurance & Validation",
+      subItems: ["Verification Protocals", "Validation Testing"],
+      stepNumber: 5,
+      stepImage: "/images/customer-simulation/step5.png",
+    },
+    rightPhase: {
+      phaseTitle: "Reporting & Delivery",
+      subItems: ["Comprehensive Reporting", "Final Delivery"],
+      stepNumber: 6,
+      stepImage: "/images/customer-simulation/step6.png",
+    },
+  },
+];
