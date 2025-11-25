@@ -182,9 +182,12 @@ export default function Footer() {
             <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
               All right reserved
             </span>
-            <div className="w-5 h-5 text-footer-dark">
-              {allIcons.copyright(20, 20)}
-            </div>
+            <Image
+              src="/images/copyright.png"
+              alt="Copyright"
+              width={20}
+              height={20}
+            ></Image>
             <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
               Solvo Engineering 2025
             </span>

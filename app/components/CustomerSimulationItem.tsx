@@ -10,7 +10,14 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
   data,
 }) => {
   return (
-    <div className="flex flex-col gap-[0.625rem] w-full">
+    <div className="relative flex flex-col gap-[0.625rem] w-full">
+      <img
+        src="/images/customer-simulation/circle.png"
+        alt="Background"
+        className="absolute top-0 w-40 h-48 right-0 -translate-y-0"
+        loading="lazy"
+      />
+
       {/* Main Card */}
       <div className="w-full bg-white rounded-[0px_0px_1.875rem_1.875rem] overflow-hidden">
         {/* Content */}
@@ -40,18 +47,18 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
           <div className="flex flex-row items-stretch gap-[14.875rem]">
             {/* Left Phase */}
             <div className="flex flex-col gap-9 flex-1">
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 justify-start">
                 {/* Phase Title */}
                 <h3 className="text-xl leading-[1.8em] text-footer-heading font-semibold font-poppins ">
                   {data.leftPhase.phaseTitle}
                 </h3>
 
                 {/* Sub Items */}
-                <div className="flex flex-row items-center gap-6">
+                <div className="flex flex-row items-center gap-6 justify-between w-full">
                   {data.leftPhase.subItems.map((item, index) => (
                     <div
                       key={index}
-                      className="flex flex-row items-center gap-[0.625rem] flex-1"
+                      className="flex flex-row items-center gap-[0.625rem] "
                     >
                       <div className="w-6 h-6 flex items-center justify-center">
                         {allIcons.checkCircle(24, 24)}
@@ -66,11 +73,28 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
 
               {/* Step Image */}
               <div className="relative w-full h-[15.875rem]">
-                <Image
+                <img
+                  src="/images/customer-simulation/line.png"
+                  alt="Background"
+                  className="absolute h-44 min-w-[67rem] top-4"
+                  loading="lazy"
+                />
+                <img
+                  src={"/images/customer-simulation/dots.png"}
+                  alt="Step 1"
+                  className="object-contain ml-[7.25rem] bottom-0 absolute"
+                  loading="lazy"
+                />
+                <img
+                  src={"/images/customer-simulation/cloud.png"}
+                  alt="Step 1"
+                  className="object-contain ml-[2.5rem] w-96 bottom-16 absolute"
+                  loading="lazy"
+                />
+                <img
                   src={data.leftPhase.stepImage}
                   alt={`Step ${data.leftPhase.stepNumber}`}
-                  fill
-                  className="object-contain"
+                  className="object-contain h-full w-auto"
                   loading="lazy"
                 />
               </div>
@@ -85,11 +109,11 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
                 </h3>
 
                 {/* Sub Items */}
-                <div className="flex flex-row items-center gap-6">
+                <div className="flex flex-row items-center gap-6 w-full justify-between">
                   {data.rightPhase.subItems.map((item, index) => (
                     <div
                       key={index}
-                      className="flex flex-row items-center gap-[0.625rem] flex-1"
+                      className="flex flex-row items-center gap-[0.625rem] "
                     >
                       <div className="w-6 h-6 flex items-center justify-center">
                         {allIcons.checkCircle(24, 24)}
@@ -104,6 +128,12 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
 
               {/* Step Image */}
               <div className="relative w-full h-[16.401875rem]">
+                <img
+                  src={"/images/customer-simulation/cloud-right.png"}
+                  alt="Step 1"
+                  className="object-contain w-[18.625rem] h-[19.375rem] ml-[2.5rem] w-96 bottom-14 right-16 absolute"
+                  loading="lazy"
+                />
                 <Image
                   src={data.rightPhase.stepImage}
                   alt={`Step ${data.rightPhase.stepNumber}`}
