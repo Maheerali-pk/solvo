@@ -17,10 +17,12 @@
   --orange: #f98502;
   --border-select-item: #bdbcc733;
   --disable: #8a8a8a;
+  --primary-light-blue: #88d8e833;
 }
 
 @theme {
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-primary-light-blue: var(--primary-light-blue);
   --color-badge-bg: var(--badge-bg);
   --color-disable: var(--disable);
   --color-badge-text: var(--badge-text);

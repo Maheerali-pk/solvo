@@ -6,6 +6,7 @@ export default function OurBestClients() {
     <section className="w-full flex flex-col items-center gap-6 py-[3.125rem] relative">
       {/* Gradient Border Top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-[#fafafa] via-[#8a8a8a] to-[#fafafa]"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#fafafa] via-[#8a8a8a] to-[#fafafa]"></div>
 
       <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6">
         {/* Badge */}

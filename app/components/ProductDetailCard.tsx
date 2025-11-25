@@ -23,19 +23,28 @@ export default function ProductDetailCard({
       className={`flex  border border-primary-blue items-center rounded-4xl overflow-hidden p-8 gap-6  ${className}`}
     >
       {/* Header Section with Logo and Title */}
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col justify-between h-full gap-4 p-6">
         {/* Logo */}
-        <Image height={63} width={133} src={logo} alt={title} loading="lazy" />
 
-        {/* Title */}
-        <h3 className="text-xl leading-[1.5em] text-secondary-foreground  font-semibold font-poppins">
-          {title}
-        </h3>
+        <div className="flex flex-col gap-4">
+          <Image
+            height={63}
+            width={133}
+            src={logo}
+            alt={title}
+            loading="lazy"
+          />
 
-        {/* Description */}
-        <p className="text-base leading-6 text-secondary-foreground font-normal font-poppins">
-          {description}
-        </p>
+          {/* Title */}
+          <h3 className="text-xl leading-[1.5em] text-secondary-foreground  font-semibold font-poppins">
+            {title}
+          </h3>
+
+          {/* Description */}
+          <p className="text-base leading-6 text-secondary-foreground font-normal font-poppins">
+            {description}
+          </p>
+        </div>
 
         {/* Case Study Link */}
         <a
@@ -48,7 +57,7 @@ export default function ProductDetailCard({
       </div>
 
       {/* Image Section */}
-      <div className="relative w-[400px] aspect-[4/3]">
+      <div className="relative min-w-[400px] aspect-[4/3]">
         <Image
           src={image}
           alt={title}

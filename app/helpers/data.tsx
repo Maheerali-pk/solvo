@@ -333,3 +333,54 @@ export const allHeroSectionItems: IHeroSectionItem[] = [
     image: "/images/hero-section/item3.png",
   },
 ];
+
+export interface IClientReview {
+  badgeText: string;
+  badgeIcon: string;
+  title: string;
+  reviewText: string;
+  clientName: string;
+  clientRole: string;
+  verifyLinkText: string;
+  verifyLink: string;
+  image: string;
+}
+
+export const allClientReviews: IClientReview[] = [
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "What Our Clients Says",
+    reviewText:
+      "I worked with Muhammad on a classic acoustic topic, trying to develop one project related to my bussiness. He rewied my work, that we shared, improved it, fixed bugs and errors and clearly explained his work. I apreciated the clarity of the workflow proposed and its implementation. He was available and present in spite of our time offset. Also, it was my first time",
+    clientName: "Serrena Allen",
+    clientRole: "Founder & Co-Founder of Airvitalize",
+    verifyLinkText: "Verify our reviews",
+    verifyLink: "/verify-reviews",
+    image: "/images/client-reviews/review1.png",
+  },
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "What Our Clients Says",
+    reviewText:
+      "It was an absolute pleasure to work with Muhammad! He had excellent communication throughout the process, ensuring everything was clear and addressing any questions quickly. His understanding and flexibility made working together very easy. The work was delivered earlier than expected and of high quality. Would definitely recommend.",
+    clientName: "Elliot Tucker",
+    clientRole: "Managing Member at Megachip Solutions LLC",
+    verifyLinkText: "Verify our reviews",
+    verifyLink: "/verify-reviews",
+    image: "/images/client-reviews/review2.png",
+  },
+  {
+    badgeText: "Solvo's Premium",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "What Our Clients Says",
+    reviewText:
+      "Solvo Engineers did an excellent job on our CFD project for airflow optimization in a dust catcher device. They carefully analyzed the design, improved efficiency by addressing critical flow issues, and clearly explained every step of their process. Their expertise and responsiveness made collaboration very smooth and effective.",
+    clientName: "Patrick M.",
+    clientRole: "Co-Founder & CEO of MLT Solutions",
+    verifyLinkText: "Verify our reviews",
+    verifyLink: "/verify-reviews",
+    image: "/images/client-reviews/review3.png",
+  },
+];

@@ -40,7 +40,9 @@ export default function ProductDetailsSection() {
         {/* Slider Container */}
         <div className="w-full overflow-hidden">
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className={`grid grid-cols-[${Array(allProducts.length)
+              .fill("100%")
+              .join("_")}]  transition-transform duration-500 ease-in-out`}
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
@@ -48,7 +50,7 @@ export default function ProductDetailsSection() {
             {allProducts.map((product, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0"
+                className="w-full flex-shrink-0 h-full"
                 style={{ minWidth: "100%" }}
               >
                 <ProductDetailCard
@@ -57,7 +59,7 @@ export default function ProductDetailsSection() {
                   description={product.description}
                   caseStudyLink={product.caseStudyLink}
                   image={product.image}
-                  className="w-full"
+                  className="w-full h-full"
                 />
               </div>
             ))}
