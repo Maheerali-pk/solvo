@@ -1,7 +1,38 @@
+"use client";
+
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { allIcons } from "../helpers/icons";
+import ServicesDropdown from "./ServicesDropdown";
 
 export default function Header() {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const servicesRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(event.target as Node)
+      ) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    if (isServicesOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isServicesOpen]);
+
+  const toggleServices = () => {
+    setIsServicesOpen(!isServicesOpen);
+  };
+
   return (
     <header className="w-full  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
       <div className="w-full max-w-desktop mx-auto flex items-center justify-between  gap-5">
@@ -33,16 +64,20 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="flex items-center gap-0.5 px-2 py-2">
-            <a
-              href="#"
-              className="text-base leading-6 text-text-gray font-normal font-poppins"
+          <div
+            ref={servicesRef}
+            className="relative flex items-center gap-0.5 px-2 py-2"
+          >
+            <button
+              onClick={toggleServices}
+              className="flex items-center gap-0.5 text-base leading-6 text-text-gray font-normal font-poppins cursor-pointer"
             >
               Services
-            </a>
+            </button>
             <div className="w-5 h-5 text-text-gray">
               {allIcons.chevronDown(20, 20)}
             </div>
+            <ServicesDropdown isVisible={isServicesOpen} />
           </div>
 
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">

@@ -40,11 +40,10 @@ export default function ProductDetailsSection() {
         {/* Slider Container */}
         <div className="w-full overflow-hidden">
           <div
-            className={`grid grid-cols-[${Array(allProducts.length)
-              .fill("100%")
-              .join("_")}]  transition-transform duration-500 ease-in-out`}
+            className={`grid transition-transform duration-500 ease-in-out`}
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
+              gridTemplateColumns: `repeat(${allProducts.length}, 100%)`,
             }}
           >
             {allProducts.map((product, index) => (
