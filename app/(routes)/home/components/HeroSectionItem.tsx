@@ -9,7 +9,7 @@ interface HeroSectionItemProps {
 const HeroSectionItem: React.FC<HeroSectionItemProps> = ({ data }) => {
   return (
     <div className="flex flex-col gap-6 w-full">
-      <div className="flex flex-row items-stretch gap-11 w-full">
+      <div className="grid grid-cols-[1fr_1fr] items-stretch gap-11 w-full">
         {/* Left Content */}
         <div className="flex flex-col gap-[3.375rem] flex-1">
           {/* Badge and Title */}
@@ -32,7 +32,11 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({ data }) => {
               className="text-[3rem] leading-[1.104em] text-footer-heading font-semibold"
               style={{ fontFamily: "Obviously, sans-serif" }}
             >
-              {data.title}
+              {data.title.split("-")[0]}
+              {"-"}
+              <span className="text-primary-blue">
+                {data.title.split("-")[1]}
+              </span>
             </h1>
           </div>
 
@@ -48,7 +52,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({ data }) => {
                   <div className="w-6 h-6 flex items-center justify-center">
                     {allIcons.checkCircle(24, 24)}
                   </div>
-                  <span className="text-base leading-[2.25em] text-footer-text font-semibold font-poppins">
+                  <span className="text-base leading-[2.25em] text-footer-text font-semibold font-poppins whitespace-nowrap">
                     {feature}
                   </span>
                 </div>
@@ -95,7 +99,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({ data }) => {
               src={data.image}
               alt={data.title}
               fill
-              className="object-cover rounded-[1.25rem]"
+              className="object-contain rounded-[1.25rem]"
               loading="lazy"
             />
           </div>

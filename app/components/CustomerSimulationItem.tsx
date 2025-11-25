@@ -14,7 +14,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
       {/* Main Card */}
       <div className="w-full bg-white rounded-[0px_0px_1.875rem_1.875rem] overflow-hidden">
         {/* Content */}
-        <div className="flex flex-col gap-6 p-[3.125rem]">
+        <div className="flex flex-col gap-6 ">
           {/* Badge and Title */}
           <div className="flex flex-col gap-3 w-[28.5625rem]">
             {/* Badge */}

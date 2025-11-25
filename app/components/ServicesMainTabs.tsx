@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import GreenBadge from "./GreenBadge";
+import classNames from "classnames";
 
 interface Service {
   title: string;
@@ -43,8 +44,10 @@ export default function OurServicesSection({
         <GreenBadge icon="/images/zap-icon.svg" text="Our Services" />
 
         {/* Title */}
-        <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
-          Run entire engineering AI & Simulation workflows in your browser
+        <h2 className="text-[1.875rem] mb-7 w-[60%] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+          Run entire engineering{" "}
+          <span className="text-primary-blue">AI & Simulation workflows</span>{" "}
+          in your browser
         </h2>
 
         {/* Services Grid */}
@@ -75,7 +78,9 @@ export default function OurServicesSection({
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover"
+                    className={classNames("object-contain", {
+                      grayscale: !isSelected,
+                    })}
                     loading="lazy"
                   />
                 </div>
@@ -85,7 +90,10 @@ export default function OurServicesSection({
                   {/* Title with border */}
                   <div className="w-full flex flex-row justify-center items-center gap-4 py-4 border-b border-[rgba(138,138,138,0.6)]">
                     <h3
-                      className={`text-2xl leading-[1.5em] font-semibold font-poppins text-center ${titleColor} transition-colors`}
+                      className={classNames(
+                        `text-2xl leading-[1.5em] font-semibold font-poppins text-center ${titleColor} transition-colors`,
+                        { "text-disable": !isSelected }
+                      )}
                     >
                       {service.title}
                     </h3>
@@ -94,7 +102,10 @@ export default function OurServicesSection({
                   {/* Description */}
                   <div className="w-full flex flex-row justify-center items-center gap-[0.625rem] py-4">
                     <p
-                      className={`text-base leading-[1.5em] font-normal font-poppins text-center ${descriptionColor} transition-colors`}
+                      className={classNames(
+                        `text-base leading-[1.5em] font-normal font-poppins text-center ${descriptionColor} transition-colors`,
+                        { "text-disable": !isSelected }
+                      )}
                     >
                       {service.description}
                     </p>

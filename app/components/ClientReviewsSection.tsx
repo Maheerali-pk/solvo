@@ -24,12 +24,12 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
 
   return (
     <section className="w-full overflow-hidden flex flex-col items-center gap-6 py-[3.125rem] relative bg-primary-light-blue">
-      <img
-        src="/images/client-reviews/bg-item.png"
-        alt="Client Reviews Background"
-        className="absolute top-1/2 -translate-y-1/2 left-0 w-auto h-full object-contain"
-      />
-      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
+      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 relative">
+        <img
+          src="/images/client-reviews/bg-item.png"
+          alt="Client Reviews Background"
+          className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
+        />
         {/* Slider Container */}
         <div className="w-full overflow-hidden">
           <div

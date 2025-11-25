@@ -23,20 +23,72 @@ export const allIcons = {
       <svg
         width={width}
         height={height}
-        viewBox="0 0 20 20"
+        viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M7.5 5L12.5 10L7.5 15"
+          d="M9.83984 16.3202L14.1598 12.0002L9.83984 7.68018"
           stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          stroke-width="1.57912"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
       </svg>
     );
   },
+  arrowRight: (height: number, width: number) => (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.0254 4.94189L17.0837 10.0002L12.0254 15.0586"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M2.91699 10H16.942"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+  arrowLeft: (height: number, width: number) => (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.97656 15.0583L2.91823 10L7.97656 4.94168"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17.082 10L3.05703 10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
   chevronLeft: (height: number, width: number) => {
     return (
       <svg

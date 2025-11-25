@@ -148,7 +148,7 @@ export default function Slider({
             }`}
             aria-label="Previous slide"
           >
-            <div className="w-5 h-5">{allIcons.chevronLeft(20, 20)}</div>
+            <div className="w-5 h-5">{allIcons.arrowLeft(20, 20)}</div>
           </button>
         )}
 
@@ -165,7 +165,7 @@ export default function Slider({
             }`}
             aria-label="Next slide"
           >
-            <div className="w-5 h-5">{allIcons.chevronRight(20, 20)}</div>
+            <div className="w-5 h-5">{allIcons.arrowRight(20, 20)}</div>
           </button>
         )}
       </div>
