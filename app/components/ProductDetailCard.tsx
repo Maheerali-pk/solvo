@@ -25,7 +25,7 @@ export default function ProductDetailCard({
       {/* Header Section with Logo and Title */}
       <div className="flex flex-col gap-4 p-6">
         {/* Logo */}
-        <Image height={63} width={133} src={logo} alt={title} />
+        <Image height={63} width={133} src={logo} alt={title} loading="lazy" />
 
         {/* Title */}
         <h3 className="text-xl leading-[1.5em] text-secondary-foreground  font-semibold font-poppins">
@@ -48,7 +48,15 @@ export default function ProductDetailCard({
       </div>
 
       {/* Image Section */}
-      <img src={image} alt={title} className="w-[400px] h-auto" />
+      <div className="relative w-[400px] aspect-[4/3]">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-contain"
+          loading="lazy"
+        />
+      </div>
     </div>
   );
 }

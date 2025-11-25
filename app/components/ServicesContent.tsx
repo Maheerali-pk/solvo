@@ -57,17 +57,23 @@ export default function ServicesContent({
             >
               {/* Icon */}
               {subItem.tabIcon && !isSelected && (
-                <img
+                <Image
                   src={subItem.tabIcon}
                   alt={subItem.tabText}
-                  className=" object-cover"
+                  width={24}
+                  height={24}
+                  className="object-cover"
+                  loading="lazy"
                 />
               )}
               {subItem.tabIconSelected && isSelected && (
-                <img
+                <Image
                   src={subItem.tabIconSelected}
                   alt={subItem.tabText}
+                  width={24}
+                  height={24}
                   className="object-cover"
+                  loading="lazy"
                 />
               )}
 
@@ -80,24 +86,27 @@ export default function ServicesContent({
         })}
       </div>
       <div className="flex-1 flex flex-col border border-[#BDBCC7] rounded-xl p-8 gap-[1.125rem] h-full">
-        <div className="flex flex-row items-center gap-[1.125rem]">
+        <div className="flex flex-row items-center gap-[1.125rem] h-full">
           {/* Text Content */}
-          <div className="flex-1 flex flex-col justify-between gap-4">
+          <div className="flex-1 flex h-full flex-col justify-between gap-4">
             {/* Title */}
-            <h3 className="text-[1.625rem] leading-[1.3846153846153846em] text-footer-heading font-semibold font-poppins">
-              {currentSubItem?.contentTitle || currentService.title}
-            </h3>
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[1.625rem] leading-[1.3846153846153846em] text-footer-heading font-semibold font-poppins">
+                {currentSubItem?.contentTitle || currentService.title}
+              </h3>
 
-            {/* Description */}
-            <p className="text-base leading-6 text-footer-text font-normal font-poppins">
-              {currentSubItem?.contentDescription || currentService.description}
-            </p>
+              {/* Description */}
+              <p className="text-base leading-6 text-footer-text font-normal font-poppins">
+                {currentSubItem?.contentDescription ||
+                  currentService.description}
+              </p>
+            </div>
 
             {/* Button */}
             {currentSubItem?.contentLink && (
               <a
                 href={currentSubItem.contentLink}
-                className="flex items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-fit hover:opacity-90 transition-opacity"
+                className="flex  items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-fit hover:opacity-90 transition-opacity"
               >
                 <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
                   Our More Services
@@ -111,11 +120,14 @@ export default function ServicesContent({
 
           {/* Image */}
           {currentSubItem?.contentImage && (
-            <div className=" relative flex-shrink-0">
+            <div className="relative flex-shrink-0">
               <img
                 src={currentSubItem.contentImage}
                 alt={currentSubItem.contentTitle}
-                className="object-cover rounded-xl"
+                width={400}
+                height={300}
+                className="object-contain rounded-xl max-h-[300px] w-auto"
+                loading="lazy"
               />
             </div>
           )}

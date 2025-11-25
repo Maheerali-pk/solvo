@@ -76,6 +76,7 @@ export default function OurServicesSection({
                     alt={service.title}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
