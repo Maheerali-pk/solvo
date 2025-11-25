@@ -6,6 +6,16 @@ export interface ProductDetail {
   image: string;
 }
 
+export interface IHeroSectionItem {
+  badgeText: string;
+  badgeIcon: string;
+  title: string;
+  features: string[];
+  placeOrderLink: string;
+  ourServicesLink: string;
+  image: string;
+}
+
 export const allProducts: ProductDetail[] = [
   {
     logo: "/images/products/suds-enviro-logo.png",
@@ -276,5 +286,50 @@ export const allHomePageServiceItems: IHomePageServiceItem[] = [
         contentLink: "/services/thermal-analysis",
       },
     ],
+  },
+];
+
+export const allHeroSectionItems: IHeroSectionItem[] = [
+  {
+    badgeText: "Our Most In-Demand CFD Services",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Computation Fluid Dynamics - CFD",
+    features: [
+      "Aerodynamic Analysis",
+      "Airflow Optimization",
+      "VOF-MultiPhase Analysis",
+      "Thermal Managment",
+    ],
+    placeOrderLink: "/place-order",
+    ourServicesLink: "/services",
+    image: "/images/hero-section/item1.png",
+  },
+  {
+    badgeText: "Our Most In-Demand CFD Services",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Finite Element Analysis - FEA",
+    features: [
+      "Fatigue & Durability Testing",
+      "Fluid-Structure Interational",
+      "Structural Stress Analysis",
+      "VOF-Multiphase Analysis",
+    ],
+    placeOrderLink: "/place-order",
+    ourServicesLink: "/services",
+    image: "/images/hero-section/item2.png",
+  },
+  {
+    badgeText: "Our Most In-Demand CFD Services",
+    badgeIcon: "/images/zap-icon.svg",
+    title: "Computation Fluid Dynamics-CAD",
+    features: [
+      "3D Product Design",
+      "Reverse Engineering",
+      "Mechanical Part Design",
+      "Sheet Metal Design",
+    ],
+    placeOrderLink: "/place-order",
+    ourServicesLink: "/services",
+    image: "/images/hero-section/item3.png",
   },
 ];

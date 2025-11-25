@@ -1,6 +1,6 @@
 import { useState } from "react";
-import OurServicesSection from "./OurServicesSection";
-import ServicesContent from "./ServicesContent";
+import OurServicesSection from "./ServicesMainTabs";
+import ServicesContent from "./ServicesMainTabContent";
 import { allHomePageServiceItems } from "../helpers/data";
 
 interface ServicesSectionProps {}

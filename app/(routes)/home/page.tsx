@@ -10,8 +10,9 @@ import Slider from "@/app/components/Slider";
 import ProductDetailCard from "@/app/components/ProductDetailCard";
 import { allProducts } from "@/app/helpers/data";
 import ProductDetailsSection from "@/app/components/ProductDetailsSection";
-import OurServicesSection from "@/app/components/OurServicesSection";
+import OurServicesSection from "@/app/components/ServicesMainTabs";
 import ServicesSection from "@/app/components/ServicesSection";
+import HeroSection from "./components/HeroSection";
 
 interface HomePageProps {}
 
@@ -23,6 +24,7 @@ const HomePage: React.FC<HomePageProps> = () => {
     <div className="flex flex-col w-full h-full bg-white">
       <Header />
 
+      <HeroSection></HeroSection>
       <OurBestClients />
       <ServicesSection />
       <ProductDetailsSection></ProductDetailsSection>
