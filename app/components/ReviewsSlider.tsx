@@ -26,6 +26,7 @@ export default function ReviewsSlider({
   const isLastSlide = currentIndex === thumbnails.length - 1;
 
   const handlePrevious = () => {
+    console.log("Handle previous called");
     if (!isFirstSlide && !disabled) {
       onPrevious();
     }
@@ -76,13 +77,9 @@ export default function ReviewsSlider({
             ? "border-footer-border text-footer-border cursor-not-allowed opacity-50 bg-white"
             : "border-footer-border hover:border-primary-blue cursor-pointer bg-transparent text-primary-blue"
         }`}
-        style={{
-          pointerEvents: isFirstSlide || disabled ? "none" : "auto",
-          touchAction: "manipulation",
-        }}
         aria-label="Previous slide"
       >
-        <div className="w-6 h-6 pointer-events-none">
+        <div onClick={handlePrevious} className="w-6 h-6 ">
           {allIcons.arrowLeft(24, 24)}
         </div>
       </button>
