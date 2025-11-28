@@ -34,7 +34,7 @@ function LeftSection() {
 // Social Media Icons Component
 function SocialMediaIcons() {
   return (
-    <div className="flex flex-row items-center justify-end gap-3 w-full sm:mb-section-spacing">
+    <div className="flex flex-row items-center justify-end gap-3 w-full">
       <Image
         src="/images/social-icons.svg"
         alt="Social Media Icons"
@@ -50,7 +50,7 @@ function SocialMediaIcons() {
 function RightSection() {
   return (
     <div className="flex flex-col items-end  gap-[1.5625rem] sm:items-start">
-      <div className="flex flex-row gap-11 sm:w-full sm:justify-between ">
+      <div className="flex flex-row gap-11 sm:gap-4 sm:w-full sm:justify-between ">
         {/* Quick Links */}
         <div className="flex flex-col gap-5 ">
           <h3 className="text-base leading-6 text-footer-heading font-semibold font-poppins">
@@ -196,16 +196,15 @@ function BottomSection() {
       >
         Privacy Policy
       </a>
-      <div className="flex flex-row items-center gap-1">
+      <div className="flex flex-row items-center gap-1 justify-center sm:flex-wrap">
         <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
           All right reserved
         </span>
-        <Image
+        <img
           src="/images/copyright.png"
           alt="Copyright"
-          width={20}
-          height={20}
-        ></Image>
+          className="w-5 h-5 object-contain"
+        ></img>
         <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
           Solvo Engineering 2025
         </span>
@@ -228,7 +227,7 @@ export default function Footer() {
     <footer className="w-full bg-white bg-gradient-to-b from-[rgba(136,216,232,0.4)] via-[rgba(136,216,232,0.1)] to-transparent py-[3.125rem] px-[10.75rem] sm:px-side-space flex flex-col gap-6">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 sm:px-side-space">
         {/* Main Content */}
-        <div className="flex flex-row sm:flex-col gap-[3.75rem] sm:gap-section-spacing w-full sm:mb-section-spacing">
+        <div className="flex flex-row sm:flex-col gap-[3.75rem] sm:gap-section-spacing w-full ">
           <LeftSection />
           <RightSection />
         </div>

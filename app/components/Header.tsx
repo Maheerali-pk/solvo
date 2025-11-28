@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { allIcons } from "../helpers/icons";
 import ServicesDropdown from "./ServicesDropdown";
+import Sidebar from "./Sidebar";
 import classNames from "classnames";
 import Link from "next/link";
 
@@ -12,7 +13,9 @@ interface HeaderProps {
 }
 export default function Header({ activeRoute = "home" }: HeaderProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -34,8 +37,41 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
     };
   }, [isServicesOpen]);
 
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    if (isSidebarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      // Prevent body scroll when sidebar is open
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "";
+    };
+  }, [isSidebarOpen]);
+
   const toggleServices = () => {
     setIsServicesOpen(!isServicesOpen);
+  };
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
   };
 
   return (
@@ -144,12 +180,46 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             {allIcons.chevronRight(20, 20)}
           </div>
         </button>
-        <img
-          src="/images/shared/header/menu.png"
-          className="cursor-pointer hover:scale-110 transition-all duration-300 hidden sm:block w-10 h-10"
-          alt="Menu"
-        />
+        <button
+          onClick={toggleSidebar}
+          className="hidden sm:block cursor-pointer hover:scale-110 transition-all duration-300 w-10 h-10 p-0 border-0 bg-transparent"
+          aria-label="Toggle menu"
+        >
+          <img
+            src="/images/shared/header/menu.png"
+            className="w-full h-full"
+            alt="Menu"
+          />
+        </button>
       </div>
+
+      {/* Sidebar Overlay and Sidebar */}
+      <>
+        {/* Overlay */}
+        <div
+          className={classNames(
+            "fixed inset-0 bg-black/50 z-40 sm:block hidden transition-opacity duration-300",
+            {
+              "opacity-100 pointer-events-auto": isSidebarOpen,
+              "opacity-0 pointer-events-none": !isSidebarOpen,
+            }
+          )}
+          onClick={closeSidebar}
+        />
+        {/* Sidebar */}
+        <div
+          ref={sidebarRef}
+          className={classNames(
+            "fixed top-0 left-0 h-full w-[24rem] z-50 sm:block hidden transition-transform duration-300 ease-in-out",
+            {
+              "translate-x-0": isSidebarOpen,
+              "-translate-x-full": !isSidebarOpen,
+            }
+          )}
+        >
+          <Sidebar activeRoute={activeRoute} onClose={closeSidebar} />
+        </div>
+      </>
     </header>
   );
 }
