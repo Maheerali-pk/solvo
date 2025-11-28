@@ -9,7 +9,7 @@ export default function GetInTouchBanner() {
         {/* Title */}
         <div className="relative z-10 p-10.5">
           <h3 className="text-2xl leading-[1.5em] text-text-gray font-semibold font-poppins">
-            Get in touch with us
+            <span className="text-primary-blue">Get in touch</span> with us
           </h3>
 
           {/* Checkmark Items */}

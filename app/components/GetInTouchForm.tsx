@@ -43,10 +43,43 @@ export default function GetInTouchForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[1.375rem] p-8 border border-primary-blue rounded-[1.25rem] sm:w-full w-[47rem]"
+      className="flex flex-col gap-[1.375rem] p-8 border border-primary-blue rounded-[1.25rem] sm:w-full w-[47rem] sm:p-5"
     >
       {/* Title */}
-      <h2 className="text-text-gray font-semibold font-poppins">
+      <div className="relative z-10  sm:block hidden">
+        <h3 className="text-2xl leading-[1.5em] text-text-gray font-semibold font-poppins">
+          <span className="text-primary-blue">Get in touch</span> with us
+        </h3>
+
+        {/* Checkmark Items */}
+        <div className="flex flex-col gap-[0.625rem]  mt-6">
+          {/* First Item */}
+          <div className="flex flex-row text-primary-blue items-center gap-2.5 w-full">
+            <div className="text-primary-blue flex-shrink-0">
+              {allIcons.checkCircle(12, 12)}
+            </div>
+            <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+              We will respond to you within 24 hours
+            </span>
+          </div>
+
+          {/* Second Item */}
+          <div className="flex flex-row text-primary-blue items-center gap-2.5 w-full">
+            <div className="text-primary-blue flex-shrink-0">
+              {allIcons.checkCircle(12, 12)}
+            </div>
+            <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+              You'll be talking to CAE Engineers account mangers
+            </span>
+          </div>
+        </div>
+      </div>
+      {/* <div className="flex flex-col gap-3">
+        <h2 className="font-semibold font-obviously text-footer-text">
+          <span className="text-primary-blue">Get in touch</span> with us
+        </h2>
+      </div> */}
+      <h2 className="text-text-gray font-semibold font-poppins sm:hidden block">
         How Can We Help You?
       </h2>
 
