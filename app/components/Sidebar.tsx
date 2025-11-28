@@ -84,12 +84,13 @@ export default function Sidebar({
                   >
                     <span
                       className={classNames(
-                        "flex-1 text-xs leading-[2em] font-semibold font-poppins text-left",
+                        "flex-1 leading-[2em] font-semibold font-poppins text-left",
                         {
                           "text-primary-blue": isActive,
                           "text-footer-border": !isActive,
                         }
                       )}
+                      style={{ fontSize: "1rem" }}
                     >
                       {item.label}
                     </span>
@@ -123,7 +124,10 @@ export default function Sidebar({
                               className="w-5 h-5 object-contain"
                             />
                           </div>
-                          <span className="text-xs leading-[2em] text-primary-blue font-normal font-poppins">
+                          <span
+                            className="leading-[2em] text-primary-blue font-normal font-poppins"
+                            style={{ fontSize: "1rem" }}
+                          >
                             {service.name}
                           </span>
                         </Link>
@@ -147,12 +151,13 @@ export default function Sidebar({
                 >
                   <span
                     className={classNames(
-                      "text-xs leading-[2em] font-semibold font-poppins",
+                      "leading-[2em] font-semibold font-poppins",
                       {
                         "text-primary-blue": isActive,
                         "text-footer-border": !isActive,
                       }
                     )}
+                    style={{ fontSize: "1rem" }}
                   >
                     {item.label}
                   </span>

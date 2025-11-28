@@ -2,6 +2,7 @@ import Image from "next/image";
 import { IHeroSectionItem } from "@/app/helpers/data";
 import { allIcons } from "@/app/helpers/icons";
 import Slider from "@/app/components/Slider";
+import GreenBadge from "@/app/components/GreenBadge";
 
 interface HeroSectionItemProps {
   data: IHeroSectionItem;
@@ -28,17 +29,10 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
           {/* Badge and Title */}
           <div className="flex flex-col gap-4">
             {/* Badge */}
-            <div className="flex flex-row items-center justify-center gap-2 bg-badge-bg px-[0.875rem] w-fit py-1 rounded-full">
-              <Image
-                src={data.badgeIcon}
-                alt={data.badgeText}
-                width={18}
-                height={18}
-              />
-              <span className="text-sm leading-[1.714em] text-badge-text font-normal font-poppins text-center">
-                {data.badgeText}
-              </span>
-            </div>
+            <GreenBadge
+              icon="/images/zap-icon.svg"
+              text={data.badgeText}
+            ></GreenBadge>
 
             {/* Title */}
             <h1
@@ -100,10 +94,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
           {/* Buttons */}
           <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
             {/* Place Your Order Button */}
-            <a
-              href={data.placeOrderLink}
-              className="flex flex-row items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-fit h-10 hover:opacity-90 sm:w-full transition-opacity"
-            >
+            <a href={data.placeOrderLink} className="btn btn-primary">
               <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
                 Place Your Order
               </span>
@@ -113,10 +104,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
             </a>
 
             {/* Our Services Button */}
-            <a
-              href={data.ourServicesLink}
-              className="flex flex-row items-center justify-center gap-2 bg-white border border-primary-blue rounded-xl px-4 py-4 w-[10.75rem] sm:w-full h-10 hover:opacity-90 transition-opacity"
-            >
+            <a href={data.ourServicesLink} className="btn btn-secondary">
               <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
                 Our Services
               </span>

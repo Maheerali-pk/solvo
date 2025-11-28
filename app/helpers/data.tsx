@@ -485,7 +485,7 @@ export const allCustomerSimulationItems: ICustomerSimulationItem[] = [
   {
     badgeText: "Solvo's Premium",
     badgeIcon: "/images/zap-icon.svg",
-    title: "Our Customer Simulation",
+    title: "Our Customer Simulation Process",
     leftPhase: {
       phaseTitle: "Information Gathering & Requirement",
       subItems: ["Team Assembly", "Responsibility"],

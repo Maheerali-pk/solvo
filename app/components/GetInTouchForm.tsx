@@ -237,11 +237,8 @@ export default function GetInTouchForm() {
         </div>
 
         {/* Submit Button */}
-        <button
-          type="submit"
-          className="w-full bg-primary-blue rounded-xl flex items-center justify-center gap-2 py-4 hover:opacity-90 transition-opacity"
-        >
-          <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+        <button type="submit" className="btn btn-primary w-fit">
+          <span className="text-base text-white font-normal font-poppins">
             Send as a message!
           </span>
           <div className="w-6 h-6 text-white">

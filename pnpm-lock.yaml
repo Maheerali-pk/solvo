@@ -11,6 +11,9 @@ importers:
       '@types/classnames':
         specifier: ^2.3.4
         version: 2.3.4
+      '@types/swiper':
+        specifier: ^6.0.0
+        version: 6.0.0
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -26,6 +29,9 @@ importers:
       react-dom:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
+      swiper:
+        specifier: ^12.0.3
+        version: 12.0.3
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -554,6 +560,10 @@ packages:
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
+
+  '@types/swiper@6.0.0':
+    resolution: {integrity: sha512-QPZRgxZ+ivXXtzV43B3LxpXUIC7FE/EoKM+rtxngmgt2M7eeUYypZhyqZD8UxJtlBcUDw/ATGoVeSNpvBBrz2w==}
+    deprecated: This is a stub types definition. swiper provides its own type definitions, so you do not need this installed.
 
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
@@ -1929,6 +1939,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  swiper@12.0.3:
+    resolution: {integrity: sha512-BHd6U1VPEIksrXlyXjMmRWO0onmdNPaTAFduzqR3pgjvi7KfmUCAm/0cj49u2D7B0zNjMw02TSeXfinC1hDCXg==}
+    engines: {node: '>= 4.7.0'}
+
   tailwindcss@4.1.17:
     resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
 
@@ -2531,6 +2545,10 @@ snapshots:
   '@types/responselike@1.0.3':
     dependencies:
       '@types/node': 20.19.25
+
+  '@types/swiper@6.0.0':
+    dependencies:
+      swiper: 12.0.3
 
   '@types/yauzl@2.10.3':
     dependencies:
@@ -4147,6 +4165,8 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  swiper@12.0.3: {}
 
   tailwindcss@4.1.17: {}
 

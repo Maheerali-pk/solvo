@@ -15,6 +15,7 @@ import ServicesSection from "@/app/components/ServicesSection";
 import HeroSection from "./components/HeroSection";
 import ClientReviewsSection from "@/app/components/ClientReviewsSection";
 import CustomerSimulationSection from "@/app/components/CustomerSimulationSection";
+import CustomerSimulationItem from "@/app/components/CustomerSimulationItem";
 
 interface HomePageProps {}
 

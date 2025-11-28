@@ -2,6 +2,7 @@
 
 import GreenBadge from "@/app/components/GreenBadge";
 import Image from "next/image";
+import classNames from "classnames";
 
 const clientLogos = [
   "/images/our-best-clients/logo1.png",
@@ -32,60 +33,58 @@ export default function OurBestClients() {
             </span>
           </h2>
 
-          {/* Client Logos - Infinite Scroll */}
+          {/* Client Logos - Continuous Linear Scroll */}
           <div className="w-full max-w-[68.5rem] h-12 overflow-hidden relative">
-            <div className="flex animate-scroll-infinite items-center gap-[4.375rem]">
-              {/* First set of logos */}
-              <div className="flex-shrink-0 flex items-center gap-[4.375rem]">
-                {clientLogos.map((logo, index) => (
+            <div className="flex items-center gap-[4.375rem] animate-scroll-infinite-smooth">
+              {/* First set */}
+              {clientLogos.map((logo, index) => {
+                const isLogo2Or4 =
+                  index === 0 || index === 1 || index === 2 || index === 3;
+                return (
                   <div
                     key={`set1-${index}`}
-                    className="flex-shrink-0 h-12 flex items-center"
+                    className={classNames(
+                      "shrink-0 flex items-center",
+                      isLogo2Or4 ? "h-8" : "h-12"
+                    )}
                   >
                     <Image
                       src={logo}
                       alt={`Client Logo ${index + 1}`}
                       width={340}
                       height={78}
-                      className="h-12 w-auto object-contain"
+                      className={classNames(
+                        "w-auto object-contain",
+                        isLogo2Or4 ? "h-8" : "h-12"
+                      )}
                     />
                   </div>
-                ))}
-              </div>
+                );
+              })}
               {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 flex items-center gap-[4.375rem]">
-                {clientLogos.map((logo, index) => (
+              {clientLogos.map((logo, index) => {
+                const isLogo2Or4 = index === 1 || index === 3;
+                return (
                   <div
                     key={`set2-${index}`}
-                    className="flex-shrink-0 h-12 flex items-center"
+                    className={classNames(
+                      "shrink-0 flex items-center",
+                      isLogo2Or4 ? "h-8" : "h-12"
+                    )}
                   >
                     <Image
                       src={logo}
                       alt={`Client Logo ${index + 1}`}
                       width={340}
                       height={78}
-                      className="h-12 w-auto object-contain"
+                      className={classNames(
+                        "w-auto object-contain",
+                        isLogo2Or4 ? "h-8" : "h-12"
+                      )}
                     />
                   </div>
-                ))}
-              </div>
-              {/* Third set for smoother transition */}
-              <div className="flex-shrink-0 flex items-center gap-[4.375rem]">
-                {clientLogos.map((logo, index) => (
-                  <div
-                    key={`set3-${index}`}
-                    className="flex-shrink-0 h-12 flex items-center"
-                  >
-                    <Image
-                      src={logo}
-                      alt={`Client Logo ${index + 1}`}
-                      width={340}
-                      height={78}
-                      className="h-12 w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>

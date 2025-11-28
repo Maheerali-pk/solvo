@@ -43,7 +43,7 @@ export default function ServicesContent({
   return (
     <div className="w-full grid grid-cols-[13.75rem_auto] items-center gap-[2.1875rem] sm:grid-cols-1">
       {/* Content Area - Left */}
-      <div className="flex flex-col gap-4 w-[13.75rem] sm:w-full sm:flex-row">
+      <div className="flex flex-col gap-4 w-[13.75rem] sm:w-full sm:flex-row sm:flex-wrap">
         {subItems.map((subItem, index) => {
           const isSelected = index === internalSelectedSubItemIndex;
 
@@ -93,7 +93,7 @@ export default function ServicesContent({
           );
         })}
       </div>
-      <div className="flex-1 flex flex-col border border-[#BDBCC7] rounded-xl p-8 gap-[1.125rem] h-full">
+      <div className="flex-1 flex flex-col border border-[#BDBCC7] rounded-xl p-8 sm:p-4 gap-[1.125rem] h-full">
         <div className="flex flex-row items-center gap-[1.125rem] h-full">
           {/* Text Content */}
           <div className="flex-1 flex h-full flex-col justify-between gap-4">
@@ -114,9 +114,9 @@ export default function ServicesContent({
             {currentSubItem?.contentLink && (
               <a
                 href={currentSubItem.contentLink}
-                className="flex  items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-fit hover:opacity-90 transition-opacity"
+                className="btn btn-primary w-fit"
               >
-                <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                <span className="text-base  text-white font-normal font-poppins">
                   Our More Services
                 </span>
                 <div className="w-5 h-5 text-white">
@@ -128,7 +128,7 @@ export default function ServicesContent({
 
           {/* Image */}
           {currentSubItem?.contentImage && (
-            <div className="relative max-w-[40%]">
+            <div className="relative max-w-[40%] sm:w-1/4">
               <img
                 src={currentSubItem.contentImage}
                 alt={currentSubItem.contentTitle}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ICustomerSimulationItem } from "../helpers/data";
 import { allIcons } from "../helpers/icons";
+import GreenBadge from "./GreenBadge";
 
 interface CustomerSimulationItemProps {
   data: ICustomerSimulationItem;
@@ -25,17 +26,10 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
           {/* Badge and Title */}
           <div className="flex flex-col gap-3 w-[28.5625rem]">
             {/* Badge */}
-            <div className="flex flex-row items-center justify-center gap-2 bg-badge-bg px-[0.875rem] w-fit py-1 rounded-full">
-              <Image
-                src={data.badgeIcon}
-                alt={data.badgeText}
-                width={18}
-                height={18}
-              />
-              <span className="text-sm leading-[1.714em] text-badge-text font-normal font-poppins text-center">
-                {data.badgeText}
-              </span>
-            </div>
+            <GreenBadge
+              icon={data.badgeIcon}
+              text={data.badgeText}
+            ></GreenBadge>
 
             {/* Title */}
             <h2 className="text-[1.875rem]  leading-[1.2em] text-text-gray font-semibold font-poppins">

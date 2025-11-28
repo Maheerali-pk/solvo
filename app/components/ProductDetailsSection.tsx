@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
+import "swiper/css";
 import { allProducts } from "../helpers/data";
 import ProductDetailCard from "./ProductDetailCard";
 import Slider from "./Slider";
@@ -8,22 +11,27 @@ import GreenBadge from "./GreenBadge";
 
 export default function ProductDetailsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   const handlePrevious = () => {
-    setCurrentIndex((prev) => Math.max(0, prev - 1));
+    swiperInstance?.slidePrev();
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(allProducts.length - 1, prev + 1));
+    swiperInstance?.slideNext();
   };
 
   const handleDotClick = (index: number) => {
-    setCurrentIndex(index);
+    swiperInstance?.slideTo(index);
+  };
+
+  const handleSlideChange = (swiper: SwiperType) => {
+    setCurrentIndex(swiper.activeIndex);
   };
 
   return (
-    <section className="w-full flex flex-col items-center gap-6  relative">
-      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 items-center">
+    <section className="w-full flex flex-col items-center gap-6  relative ">
+      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 items-center sm:px-side-space">
         {/* Badge */}
 
         <GreenBadge icon="/images/zap-icon.svg" text="Case Studies" />
@@ -37,22 +45,32 @@ export default function ProductDetailsSection() {
           See how Solvo Products has helped its clients achieve their vision of
           digital innovation.
         </p>
-        {/* Slider Container */}
-        <div className="w-full overflow-hidden">
-          <div
-            className={`grid transition-transform duration-500 ease-in-out`}
-            style={{
-              transform: `translateX(-${currentIndex * 100}%)`,
-              gridTemplateColumns: `repeat(${allProducts.length}, 100%)`,
+        {/* Swiper Container */}
+        <div className="w-full">
+          <Swiper
+            spaceBetween={16}
+            slidesPerView={1.5}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
             }}
+            onSwiper={setSwiperInstance}
+            onSlideChange={handleSlideChange}
+            className="w-full [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:!items-stretch"
+            allowTouchMove={true}
+            touchEventsTarget="container"
+            speed={500}
+            grabCursor={true}
+            resistance={true}
+            resistanceRatio={0.85}
+            autoHeight={false}
           >
             {allProducts.map((product, index) => (
-              <div
-                key={index}
-                className="w-full flex-shrink-0 h-full"
-                style={{ minWidth: "100%" }}
-              >
+              <SwiperSlide key={index} className="!h-auto">
                 <ProductDetailCard
+                  index={index}
                   logo={product.logo}
                   title={product.title}
                   description={product.description}
@@ -60,19 +78,32 @@ export default function ProductDetailsSection() {
                   image={product.image}
                   className="w-full h-full"
                 />
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
 
         {/* Slider Controls */}
-        <Slider
-          currentIndex={currentIndex}
-          totalItems={allProducts.length}
-          onPrevious={handlePrevious}
-          onNext={handleNext}
-          onDotClick={handleDotClick}
-        />
+        <div className="sm:hidden w-full">
+          <Slider
+            currentIndex={currentIndex}
+            totalItems={allProducts.length}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onDotClick={handleDotClick}
+          />
+        </div>
+
+        <div className="hidden sm:flex">
+          <Slider
+            currentIndex={currentIndex}
+            totalItems={allProducts.length}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onDotClick={handleDotClick}
+            mode="mobile"
+          />
+        </div>
       </div>
     </section>
   );

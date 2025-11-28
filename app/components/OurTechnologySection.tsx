@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const OurTechnologySection = () => {
   const technologyLogos = [
@@ -41,19 +44,30 @@ const OurTechnologySection = () => {
           Our <span className="text-primary-blue">Technology</span>
         </h2>
 
-        {/* Technology Logos - Infinite Scroll */}
+        {/* Technology Logos - Swiper Autoplay */}
         <div className="w-full overflow-hidden relative">
-          <div className="flex animate-scroll-infinite items-center gap-16">
-            {/* First set of logos */}
-            <div className="flex-shrink-0 flex items-center gap-16">
-              {technologyLogos.map((logo, index) => (
-                <div
-                  key={`set1-${index}`}
-                  className="relative flex-shrink-0 h-[2.609375rem]"
-                  style={{
-                    width: getLogoWidth(index),
-                  }}
-                >
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={64}
+            slidesPerView="auto"
+            loop={true}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+            }}
+            speed={3000}
+            allowTouchMove={false}
+            className="w-full"
+          >
+            {technologyLogos.map((logo, index) => (
+              <SwiperSlide
+                key={index}
+                className="!w-auto"
+                style={{
+                  width: getLogoWidth(index),
+                }}
+              >
+                <div className="relative flex-shrink-0 h-[2.609375rem] w-full">
                   <Image
                     src={logo}
                     alt={`Technology ${index + 1}`}
@@ -62,49 +76,9 @@ const OurTechnologySection = () => {
                     loading="lazy"
                   />
                 </div>
-              ))}
-            </div>
-            {/* Duplicate set for seamless loop */}
-            <div className="flex-shrink-0 flex items-center gap-16">
-              {technologyLogos.map((logo, index) => (
-                <div
-                  key={`set2-${index}`}
-                  className="relative flex-shrink-0 h-[2.609375rem]"
-                  style={{
-                    width: getLogoWidth(index),
-                  }}
-                >
-                  <Image
-                    src={logo}
-                    alt={`Technology ${index + 1}`}
-                    fill
-                    className="object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-            {/* Third set for smoother transition */}
-            <div className="flex-shrink-0 flex items-center gap-16">
-              {technologyLogos.map((logo, index) => (
-                <div
-                  key={`set3-${index}`}
-                  className="relative flex-shrink-0 h-[2.609375rem]"
-                  style={{
-                    width: getLogoWidth(index),
-                  }}
-                >
-                  <Image
-                    src={logo}
-                    alt={`Technology ${index + 1}`}
-                    fill
-                    className="object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
