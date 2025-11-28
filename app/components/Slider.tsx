@@ -12,7 +12,7 @@ interface SliderProps {
   showDots?: boolean;
   showArrows?: boolean;
   disabled?: boolean;
-  mode?: "default" | "figma";
+  mode?: "default" | "figma" | "mobile";
 }
 
 export default function Slider({
@@ -47,6 +47,34 @@ export default function Slider({
       onDotClick(index);
     }
   };
+
+  // Mobile mode layout - only dots, no arrows
+  if (mode === "mobile") {
+    return (
+      <div className={`flex flex-col items-center gap-3 ${className} w-full`}>
+        {/* Dots/Indicators */}
+        {showDots && (
+          <div className="flex items-center gap-2">
+            {Array.from({ length: totalItems }).map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => handleDotClick(index)}
+                disabled={disabled}
+                className={`transition-all ${
+                  index === currentIndex
+                    ? "w-8 h-2 bg-primary-blue rounded-full"
+                    : "w-2 h-2 bg-footer-border rounded-full hover:bg-primary-blue/50"
+                } ${disabled ? "cursor-not-allowed" : "cursor-pointer"}`}
+                aria-label={`Go to slide ${index + 1}`}
+                aria-current={index === currentIndex ? "true" : "false"}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   // Figma mode layout
   if (mode === "figma") {
