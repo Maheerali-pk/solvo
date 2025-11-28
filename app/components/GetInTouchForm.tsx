@@ -80,7 +80,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Full Name *"
             required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-xs leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
           />
 
           {/* Services I need * */}
@@ -106,7 +106,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Email *"
             required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-xs leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
           />
 
           {/* Preferable Software * */}
@@ -157,7 +157,7 @@ export default function GetInTouchForm() {
             placeholder="Type here...."
             required
             rows={8}
-            className="px-3 py-3 border border-footer-border rounded-lg w-full min-h-[12.5rem] text-sm leading-[1.714em] text-footer-text font-normal font-poppins outline-none resize-none focus:border-primary-blue"
+            className="px-3 py-3 border border-footer-border rounded-lg w-full min-h-[12.5rem] text-base leading-[1.714em] text-footer-text font-normal font-poppins outline-none resize-none focus:border-primary-blue"
           />
         </div>
 

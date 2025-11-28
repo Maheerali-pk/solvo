@@ -33,7 +33,7 @@ export default function ProductDetailsSection() {
           Detailing of <span className="text-primary-blue">our products</span>
         </h2>
 
-        <p className="text-footer-text max-w-md text-center">
+        <p className="text-footer-text max-w-md text-center text-base ">
           See how Solvo Products has helped its clients achieve their vision of
           digital innovation.
         </p>

@@ -43,7 +43,7 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
           <div className="flex flex-row items-center justify-between">
             {/* Client Info */}
             <div className="flex flex-col">
-              <h3 className="text-[1.375rem] leading-[1.636em] text-text-gray font-semibold font-poppins">
+              <h3 className="text-[1.25rem] leading-[1.636em] text-text-gray font-semibold font-poppins">
                 {data.clientName}
               </h3>
               <p className="text-base leading-6 text-footer-text font-normal font-poppins">
