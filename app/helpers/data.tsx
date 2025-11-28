@@ -54,6 +54,7 @@ export interface IHomePageServiceSubItem {
   tabIconSelected: string;
   contentTitle: string;
   contentDescription: string;
+  contetImageCustomClass?: string;
   contentImage: string;
   contentLink: string;
 }
@@ -107,6 +108,7 @@ export const allHomePageServiceItems: IHomePageServiceItem[] = [
       {
         tabText: "Heat Transfer",
         tabIcon: "/images/services/subitems/item1/tabs/normal/img4.png",
+
         tabIconSelected:
           "/images/services/subitems/item1/tabs/selected/img4.png",
         contentTitle: "Heat Transfer Analysis and Thermal Management",

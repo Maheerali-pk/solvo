@@ -11,7 +11,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
     setSelectedIndex(index);
   };
   return (
-    <div className="flex flex-col max-w-desktop mx-auto">
+    <div className="flex flex-col max-w-desktop mx-auto gap-6">
       <OurServicesSection
         selectedIndex={selectedIndex}
         onServiceClick={handleServiceClick}

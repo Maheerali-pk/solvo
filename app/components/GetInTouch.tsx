@@ -6,7 +6,7 @@ interface GetInTouchProps {}
 
 const GetInTouch: React.FC<GetInTouchProps> = () => {
   return (
-    <section className="w-full flex flex-col max-w-desktop mx-auto  gap-6 py-[3.125rem] relative">
+    <section className="w-full flex flex-col max-w-desktop mx-auto  gap-6  relative">
       <GreenBadge icon="/images/zap-icon.svg" text="Solvo’s Premium" />
       <div className="grid grid-cols-[auto_min-content]  gap-6">
         <GetInTouchForm />

@@ -21,6 +21,7 @@ export default function ServicesContent({
     useState(0);
 
   const currentService = services[selectedServiceIndex];
+  console.log("currentService", currentService);
   const subItems = currentService?.subItems || [];
   const currentSubItem =
     subItems[internalSelectedSubItemIndex] || subItems[0] || null;
@@ -39,15 +40,15 @@ export default function ServicesContent({
   }
 
   return (
-    <div className="w-full grid grid-cols-[220px_auto] items-center gap-[2.1875rem]">
+    <div className="w-full grid grid-cols-[13.75rem_auto] items-center gap-[2.1875rem]">
       {/* Content Area - Left */}
-      <div className="flex flex-col gap-4 w-[220px]">
+      <div className="flex flex-col gap-4 w-[13.75rem]">
         {subItems.map((subItem, index) => {
           const isSelected = index === internalSelectedSubItemIndex;
 
           return (
             <button
-              key={index}
+              key={`${selectedServiceIndex}-${index}-${subItem.tabText}`}
               onClick={() => handleSubItemClick(index)}
               className={`flex flex-row items-center  w-full cursor-pointer gap-[0.625rem] px-3 py-2 rounded-[0.625rem] border border-[#BDBCC7] transition-all ${
                 isSelected
@@ -62,7 +63,7 @@ export default function ServicesContent({
                   alt={subItem.tabText}
                   width={24}
                   height={24}
-                  className="object-cover"
+                  className=" w-6 h-6 object-cotanin"
                   loading="lazy"
                 />
               )}
@@ -72,7 +73,7 @@ export default function ServicesContent({
                   alt={subItem.tabText}
                   width={24}
                   height={24}
-                  className="object-cover"
+                  className=" w-6 h-6 object-contain"
                   loading="lazy"
                 />
               )}
@@ -91,7 +92,7 @@ export default function ServicesContent({
           <div className="flex-1 flex h-full flex-col justify-between gap-4">
             {/* Title */}
             <div className="flex flex-col gap-4">
-              <h3 className="text-[1.625rem] leading-[1.3846153846153846em] text-footer-heading font-semibold font-poppins">
+              <h3 className="text-[1.25rem] leading-[1.3846153846153846em] text-footer-heading font-semibold font-poppins">
                 {currentSubItem?.contentTitle || currentService.title}
               </h3>
 
@@ -120,13 +121,11 @@ export default function ServicesContent({
 
           {/* Image */}
           {currentSubItem?.contentImage && (
-            <div className="relative flex-shrink-0">
+            <div className="relative max-w-[40%]">
               <img
                 src={currentSubItem.contentImage}
                 alt={currentSubItem.contentTitle}
-                width={400}
-                height={300}
-                className="object-contain rounded-xl max-h-[300px] w-auto"
+                className="object-contain rounded-xl w-full max-h-[15rem] "
                 loading="lazy"
               />
             </div>

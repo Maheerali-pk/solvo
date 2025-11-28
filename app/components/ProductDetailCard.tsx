@@ -57,12 +57,11 @@ export default function ProductDetailCard({
       </div>
 
       {/* Image Section */}
-      <div className="relative min-w-[400px] aspect-[4/3]">
-        <Image
+      <div className="relative min-w-[25rem] w-full h-full">
+        <img
           src={image}
           alt={title}
-          fill
-          className="object-contain"
+          className="object-contain w-full h-full"
           loading="lazy"
         />
       </div>

@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center gap-6 py-[3.125rem] relative">
+    <section className="w-full flex flex-col items-center gap-6 relative">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
         {/* Slider Container */}
         <div className="w-full overflow-hidden">

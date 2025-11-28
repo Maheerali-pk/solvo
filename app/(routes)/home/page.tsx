@@ -23,7 +23,7 @@ const HomePage: React.FC<HomePageProps> = () => {
   const [selectedServiceIndex, setSelectedServiceIndex] = useState(0);
   const totalSlides = 3;
   return (
-    <div className="flex flex-col w-full h-full bg-white">
+    <div className="flex flex-col w-full h-full bg-white gap-section-spacing">
       <Header />
 
       <HeroSection></HeroSection>

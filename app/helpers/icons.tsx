@@ -2,6 +2,7 @@ export const allIcons = {
   chevronDown: (height: number, width: number) => {
     return (
       <svg
+        style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
         width={width}
         height={height}
         viewBox="0 0 20 20"
@@ -21,6 +22,7 @@ export const allIcons = {
   chevronRight: (height: number, width: number) => {
     return (
       <svg
+        style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
         width={width}
         height={height}
         viewBox="0 0 24 24"
@@ -41,6 +43,7 @@ export const allIcons = {
     <svg
       width={width}
       height={height}
+      style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +68,7 @@ export const allIcons = {
   ),
   arrowLeft: (height: number, width: number) => (
     <svg
+      style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
       width={width}
       height={height}
       viewBox="0 0 20 20"
@@ -94,6 +98,7 @@ export const allIcons = {
       <svg
         width={width}
         height={height}
+        style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +116,7 @@ export const allIcons = {
   phone: (height: number, width: number) => {
     return (
       <svg
+        style={{ height: `${height / 16}rem`, width: `${width / 16}rem` }}
         width={width}
         height={height}
         viewBox="0 0 20 20"

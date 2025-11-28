@@ -122,7 +122,10 @@ export default function Footer() {
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-row items-center gap-2.5 w-full">
                     <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                      {allIcons.phone(20, 20)}
+                      <img
+                        className="w-5 h-5 object-contain"
+                        src="/images/shared/footer/icon1.png"
+                      ></img>
                     </div>
                     <a
                       href="#"
@@ -133,7 +136,10 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row items-center gap-2.5">
                     <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                      {allIcons.mail(20, 20)}
+                      <img
+                        className="w-5 h-5 object-contain"
+                        src="/images/shared/footer/icon2.png"
+                      ></img>
                     </div>
                     <a
                       href="#"
@@ -144,7 +150,10 @@ export default function Footer() {
                   </div>
                   <div className="flex flex-row items-center gap-2.5 w-full">
                     <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                      {allIcons.location(20, 20)}
+                      <img
+                        className="w-5 h-5 object-contain"
+                        src="/images/shared/footer/icon3.png"
+                      ></img>
                     </div>
                     <a
                       href="#"

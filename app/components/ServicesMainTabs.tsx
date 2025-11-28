@@ -38,7 +38,7 @@ export default function OurServicesSection({
   onServiceClick,
 }: OurServicesSectionProps) {
   return (
-    <section className="w-full flex flex-col items-center gap-6 py-[3.125rem] relative">
+    <section className="w-full flex flex-col items-center gap-6 relative">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 items-center">
         {/* Badge */}
         <GreenBadge icon="/images/zap-icon.svg" text="Our Services" />
@@ -72,19 +72,17 @@ export default function OurServicesSection({
               >
                 {/* Image */}
                 <div
-                  className={`w-full h-[13.75rem] relative transition-opacity ${imageOpacity}`}
+                  className={`w-full h-[13.75rem] relative transition-opacity flex w-full justify-ccenter ${imageOpacity}`}
                 >
-                  <Image
+                  <img
                     src={service.image}
                     alt={service.title}
-                    fill
-                    className={classNames("object-contain", {
+                    className={classNames("object-contain w-[17.5rem] h-auto", {
                       grayscale: !isSelected,
                     })}
                     loading="lazy"
                   />
                 </div>
-
                 {/* Content */}
                 <div className="flex flex-col items-center gap-[0.375rem] w-full">
                   {/* Title with border */}

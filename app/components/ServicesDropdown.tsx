@@ -5,7 +5,7 @@ import Link from "next/link";
 interface ServiceItem {
   name: string;
   link: string;
-  icon: React.ReactNode;
+  icon: string;
 }
 
 interface ServicesDropdownProps {
@@ -17,88 +17,17 @@ const ServicesDropdown: React.FC<ServicesDropdownProps> = ({ isVisible }) => {
     {
       name: "Computational Fluid Dynamics (CFD)",
       link: "/services/cfd",
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2 10C2 5.58 5.58 2 10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18C5.58 18 2 14.42 2 10Z"
-            stroke="#F98502"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M6 10L10 6L14 10L10 14L6 10Z"
-            stroke="#F98502"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
+      icon: "/images/shared/services-dropdown/img1.png",
     },
     {
       name: "2D/3D Modeling & Rendering (CAD)",
       link: "/services/cad",
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="3"
-            y="3"
-            width="14"
-            height="14"
-            rx="2"
-            stroke="#F98502"
-            strokeWidth="1.5"
-            fill="none"
-          />
-          <path
-            d="M3 7H17M7 3V17"
-            stroke="#F98502"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
+      icon: "/images/shared/services-dropdown/img2.png",
     },
     {
       name: "Finite Element Analysis (FEA)",
       link: "/services/fea",
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 2L2 7L10 12L18 7L10 2Z"
-            stroke="#F98502"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M2 13L10 18L18 13M10 12V18"
-            stroke="#F98502"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
+      icon: "/images/shared/services-dropdown/img3.png",
     },
   ];
 
@@ -125,7 +54,11 @@ const ServicesDropdown: React.FC<ServicesDropdownProps> = ({ isVisible }) => {
         >
           {/* Icon */}
           <div className="w-5 h-5 flex-shrink-0 flex items-center justify-center">
-            {service.icon}
+            <img
+              src={service.icon}
+              alt={service.name}
+              className="w-5 h-5 object-contain"
+            ></img>
           </div>
           <span className="text-base leading-6 text-primary-blue font-normal font-poppins">
             {service.name}

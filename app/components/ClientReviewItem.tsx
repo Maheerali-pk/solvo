@@ -62,7 +62,7 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
         </div>
 
         {/* Right Image */}
-        <div className="relative flex-shrink-0 w-[23.75rem] h-[21.5rem]">
+        <div className="relative flex-shrink-0 w-[20rem] h-auto">
           <Image
             src={data.image}
             alt={data.clientName}

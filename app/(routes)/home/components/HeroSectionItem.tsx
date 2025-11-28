@@ -93,7 +93,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({ data }) => {
         </div>
 
         {/* Right Image */}
-        <div className="relative flex-1 rounded-[1.25rem] border border-primary-blue overflow-hidden bg-[#FBFEFE] p-[0.625rem]">
+        <div className="relative flex-1 rounded-[1.25rem] border border-primary-blue overflow-hidden  p-[0.625rem]">
           <div className="relative w-full h-full aspect-[4/3]">
             <Image
               src={data.image}
