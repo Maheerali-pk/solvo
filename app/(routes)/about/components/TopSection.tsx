@@ -6,16 +6,16 @@ const TopSection = () => {
   return (
     <div className="w-full relative flex flex-col items-center gap-0 gap-section-spacing">
       <img
-        className="h-auto max-w-desktop absolute top-0 -translate-y-[5.5rem]"
+        className="h-auto max-w-desktop absolute top-0 -translate-y-[5.5rem] sm:translate-y-[3rem] sm:w-full"
         src="/images/about/bg-pattern.png"
       ></img>
       {/* Section 1: What is Solvo Engineering */}
-      <section className="w-full flex flex-col items-center gap-6">
+      <section className="w-full flex flex-col items-center gap-6 sm:px-side-space">
         <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6">
           <h1 className="font-obviously text-text-gray font-bold text-center">
             What is <span className="text-primary-blue">Solvo Engineering</span>
           </h1>
-          <h3 className="text-text-gray font-medium font-poppins text-center max-w-[62.375rem] h-[7.25rem]">
+          <h3 className="text-text-gray font-medium font-poppins text-center max-w-[62.375rem] sm:h-auto h-[7.25rem]">
             Solvo Engineering is CAE consultant firm specializing in FA, CFD
             simulations and CAD modeling. We pride ourselves on delivering
             exceptional lifecycle solutions customization to meet the precise
@@ -33,7 +33,7 @@ const TopSection = () => {
       </section>
       <section className="w-full">
         <div className="w-full max-w-desktop mx-auto">
-          <div className="relative w-full h-[36.0625rem]">
+          <div className="relative w-full sm:h-[20rem]  h-[36.0625rem]">
             <Image
               src="/images/about/bottom-section.png"
               alt="About Section"
@@ -46,13 +46,13 @@ const TopSection = () => {
       </section>
 
       {/* Section 2: Building Practical Innovation */}
-      <section className="w-full flex flex-col items-center justify-center gap-[3.75rem] ">
-        <div className="w-full max-w-desktop mx-auto flex flex-col justify-center gap-3">
+      <section className="w-full flex flex-col items-center justify-center gap-[3.75rem] sm:px-side-space ">
+        <div className="w-full max-w-desktop mx-auto flex flex-col justify-center gap-3 sm:w-full">
           <GreenBadge
             icon="/images/zap-icon.svg"
             text="Who we are"
           ></GreenBadge>
-          <div className="grid grid-cols-2  gap-[6.25rem] h-full">
+          <div className="grid grid-cols-2  sm:gap-section-spacing gap-[6.25rem] h-full sm:grid-cols-1">
             {/* Left Content */}
             <div className="flex flex-col justify-center gap-6 flex-1">
               {/* Badge and Title */}
@@ -85,12 +85,11 @@ const TopSection = () => {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-full ">
-              <Image
+            <div className="relative h-full w-full">
+              <img
                 src="/images/about/building-innovation.png"
                 alt="Building Practical Innovation"
-                fill
-                className="object-cover border border-primary-blue rounded-2xl p-4 "
+                className="object-cover border border-primary-blue rounded-2xl p-4 w-full h-auto "
                 loading="lazy"
               />
             </div>

@@ -7,7 +7,7 @@ interface ClientReviewItemProps {
 
 const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <div className="flex flex-col gap-6 w-full sm:px-side-space">
       <div className="flex flex-row items-stretch gap-6 w-full">
         {/* Left Content */}
         <div className="flex flex-col gap-6 flex-1">
@@ -62,7 +62,7 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
         </div>
 
         {/* Right Image */}
-        <div className="relative flex-shrink-0 w-[20rem] h-auto">
+        {/* <div className="relative flex-shrink-0 w-[20rem] h-auto">
           <Image
             src={data.image}
             alt={data.clientName}
@@ -70,7 +70,7 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
             className="object-cover rounded-3xl"
             loading="lazy"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

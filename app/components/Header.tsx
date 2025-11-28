@@ -39,8 +39,8 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
   };
 
   return (
-    <header className="w-full z-20  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
-      <div className="w-full max-w-desktop mx-auto flex items-center justify-between  gap-5">
+    <header className="w-full z-20  sm:h-auto  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
+      <div className="w-full sm:w-auto sm:px-side-space  max-w-desktop mx-auto flex items-center justify-between  gap-5">
         {/* Logo */}
         <div className="w-[8.625rem] h-[3.1875rem] relative flex-shrink-0">
           <Image
@@ -52,7 +52,8 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         </div>
 
         {/* Navigation */}
-        <nav className="flex items-center justify-end gap-3 flex-1 h-6">
+
+        <nav className="flex sm:hidden items-center justify-end gap-3 flex-1 h-6">
           <Link
             href="/home"
             className={classNames(
@@ -135,7 +136,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         </nav>
 
         {/* Contact Button */}
-        <button className=" h-10 bg-primary-blue rounded-xl flex items-center justify-center gap-2 px-6  py-4 flex-shrink-0 cursor-pointer">
+        <button className=" h-10 bg-primary-blue rounded-xl flex items-center justify-center gap-2 px-6  py-4 flex-shrink-0 cursor-pointer sm:hidden">
           <span className="text-sm leading-6 text-white font-normal font-poppins">
             Contact us
           </span>
@@ -143,6 +144,11 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             {allIcons.chevronRight(20, 20)}
           </div>
         </button>
+        <img
+          src="/images/shared/header/menu.png"
+          className="cursor-pointer hover:scale-110 transition-all duration-300 hidden sm:block w-10 h-10"
+          alt="Menu"
+        />
       </div>
     </header>
   );

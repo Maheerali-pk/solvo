@@ -7,7 +7,7 @@ interface CoreValueItemProps {
 
 const CoreValueItem: React.FC<CoreValueItemProps> = ({ data }) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-[1.125rem] p-8 bg-white rounded-[1.25rem] shadow-[0px_0px_31.1px_0px_rgba(0,0,0,0.14)] flex-1 h-[18.0625rem]">
+    <div className="flex flex-col justify-center items-center gap-[1.125rem] p-8 bg-white rounded-[1.25rem] shadow-[0px_0px_31.1px_0px_rgba(0,0,0,0.14)] flex-1 h-[18.0625rem] sm:h-auto">
       {/* Icon */}
       <div className="w-11 h-11 relative flex-shrink-0">
         <Image

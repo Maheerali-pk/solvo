@@ -3,7 +3,7 @@ import { allIcons } from "../helpers/icons";
 
 export default function GetInTouchBanner() {
   return (
-    <div className="relative w-80 h-full">
+    <div className="relative w-80 h-full sm:hidden">
       {/* Overlay Card */}
       <div className="relative w-80 h-full border border-primary-blue rounded-[1.8125rem] flex flex-col gap-[0.625rem] overflow-hidden">
         {/* Title */}

@@ -43,10 +43,10 @@ export default function GetInTouchForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[1.375rem] p-8 border border-primary-blue rounded-[1.25rem] w-[47rem]"
+      className="flex flex-col gap-[1.375rem] p-8 border border-primary-blue rounded-[1.25rem] sm:w-full w-[47rem]"
     >
       {/* Title */}
-      <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins">
+      <h2 className="text-text-gray font-semibold font-poppins">
         How Can We Help You?
       </h2>
 
@@ -54,7 +54,7 @@ export default function GetInTouchForm() {
       <div className="flex flex-col gap-6">
         {/* 6 Fields Grid - 3 cols, 2 rows */}
         <div
-          className="grid grid-cols-[repeat(3,12.5rem)] gap-6"
+          className="grid sm:grid-cols-2 grid-cols-[repeat(3,12.5rem)] gap-6"
           style={{ justifyContent: "space-between" }}
         >
           {/* I am looking to * */}
@@ -64,7 +64,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="I am looking to *"
             required
-            className="w-[12.5rem]"
+            className="w-[12.5rem] sm:w-full"
             options={[
               { value: "consultation", label: "Consultation" },
               { value: "service", label: "Service" },
@@ -80,7 +80,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Full Name *"
             required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] sm:w-full text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
           />
 
           {/* Services I need * */}
@@ -90,7 +90,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Services I need *"
             required
-            className="w-[12.5rem]"
+            className="w-[12.5rem] sm:w-full"
             options={[
               { value: "fea", label: "FEA" },
               { value: "cfd", label: "CFD" },
@@ -106,7 +106,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Email *"
             required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] sm:w-full text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
           />
 
           {/* Preferable Software * */}
@@ -116,7 +116,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Preferable Software *"
             required
-            className="w-[12.5rem]"
+            className="w-[12.5rem] sm:w-full"
             options={[
               { value: "ansys", label: "ANSYS" },
               { value: "solidworks", label: "SolidWorks" },
@@ -131,7 +131,7 @@ export default function GetInTouchForm() {
             onChange={handleChange}
             placeholder="Estimated Budget *"
             required
-            className="w-[12.5rem]"
+            className="w-[12.5rem] sm:w-full"
             options={[
               { value: "under-5k", label: "Under $5,000" },
               { value: "5k-10k", label: "$5,000 - $10,000" },

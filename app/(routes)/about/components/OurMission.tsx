@@ -4,11 +4,11 @@ interface OurMissionProps {}
 
 const OurMission: React.FC<OurMissionProps> = () => {
   return (
-    <section className="relative flex w-full bg-primary-blue text-white h-96 items-center justify-center">
+    <section className="relative flex w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
       <div className="flex flex-col gap-6 w-[600px] items-center relative">
-        <h1 className="font-bold font-obviously font-secondary text-center">
+        <h2 className="font-bold font-obviously font-secondary text-center">
           Our mission
-        </h1>
+        </h2>
         <h3 className="text-white !font-normal  text-center">
           To be the leading CAE consulting firm, driving innovation and
           excellence to empower businesses, startups globally with advanced

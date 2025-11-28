@@ -4,7 +4,7 @@ interface VisionSectionProps {}
 
 const VisionSection: React.FC<VisionSectionProps> = () => {
   return (
-    <section className="flex w-full bg-primary-blue text-white h-96 items-center justify-center">
+    <section className="flex w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
       <div className="flex flex-col gap-6 w-[600px] items-center relative">
         <h2 className="font-bold font-secondary text-center font-obviously">
           Vision

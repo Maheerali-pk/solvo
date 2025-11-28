@@ -87,6 +87,7 @@
 }
 
 @theme {
+  --breakpoint-*: initial;
   --color-secondary-foreground: var(--secondary-foreground);
   --color-primary-light-blue: var(--primary-light-blue);
   --color-badge-bg: var(--badge-bg);
@@ -108,8 +109,9 @@
   --font-mono: var(--font-geist-mono);
   --font-obviously: "Obviously", sans-serif;
   --spacing-section-spacing: var(--section-spacing);
-  --section-spacing: var(--section-spacing);
+  --spacing-side-space: 1.25rem;
 }
+@custom-variant sm (@media (max-width: 768px));
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -167,6 +169,16 @@ body {
   html,
   body {
     font-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 80%;
+  }
+
+  :root {
+    --section-spacing: 1.5rem;
   }
 }
 

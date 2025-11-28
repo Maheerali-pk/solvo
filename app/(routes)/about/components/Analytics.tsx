@@ -26,7 +26,7 @@ interface AnalyticsProps {}
 
 const Analytics: React.FC<AnalyticsProps> = () => {
   return (
-    <section className="flex pb-section-spacing  mx-auto max-w-desktop w-full justify-around  relative">
+    <section className="flex pb-section-spacing sm:grid grid-cols-2   mx-auto max-w-desktop w-full justify-around  relative">
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#fafafa] via-[#8a8a8a] to-[#fafafa]"></div>
       {analyticsItems.map((item, index) => (
         <div key={index} className="flex flex-col gap-5 items-center">
