@@ -2,9 +2,15 @@
 alwaysApply: true
 ---
 
+There are total 4 types texts in whole system.
+
+1. h1 main title
+2. h2 sub title
+3. h3 third title
+4. text-base (span, div, p)
+   Make sure that whenever you add some text it should be in on for four. Also make sure that for h1,h2,h3 you never add tailwind classes for font-size
+
 Always use the tailwind base classes for size/spacing which is equivanlent px value in figma. If there is no tailwind base class then use rem but don't use px into the styles.
-Store the colors in @global.css as css/tailwind variables and then use those on the frontend
-Divide everything in components don't just put so many sections in one page.
 Copy the exact styles from figma.
-Don't the images from figma which is missing and store that in public/images and then use it. Rename the images to meaningful names. Also keep a proper structure in public/images
+Download the images from figma which is missing and store that in public/images and then use it. Rename the images to meaningful names. Also keep a proper structure in public/images
 Store the icons in app/helpers/icons.tsx in the same way I have same one there.

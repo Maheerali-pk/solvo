@@ -138,11 +138,23 @@ body {
   font-size: 1.75rem !important;
 } */
 
-.text-2xl {
+.text-base {
+  font-size: 0.875rem !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 1.875rem !important;
+}
+
+h3 {
   font-size: 1.25rem !important;
 }
 
-.text-base {
+p {
   font-size: 0.875rem !important;
 }
 
@@ -175,6 +187,20 @@ body {
   html,
   body {
     font-size: 80%;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1rem !important;
+  }
+  .text-base {
+    font-size: 0.75rem !important;
   }
   :root {
     --section-spacing: 1.5rem;
@@ -215,24 +241,4 @@ body {
 
 .animate-scroll-infinite:hover {
   animation-play-state: paused;
-}
-
-.text-base {
-  font-size: 0.875rem !important;
-}
-
-h1 {
-  font-size: 3rem !important;
-}
-
-h2 {
-  font-size: 1.875rem !important;
-}
-
-h3 {
-  font-size: 1.25rem !important;
-}
-
-p {
-  font-size: 0.875rem !important;
 }
