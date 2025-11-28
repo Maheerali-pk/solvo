@@ -198,3 +198,19 @@ body {
 .text-base {
   font-size: 0.875rem !important;
 }
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 1.875rem !important;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+}
+
+p {
+  font-size: 0.875rem !important;
+}

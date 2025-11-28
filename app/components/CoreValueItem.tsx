@@ -22,7 +22,7 @@ const CoreValueItem: React.FC<CoreValueItemProps> = ({ data }) => {
       {/* Content */}
       <div className="flex flex-col gap-[0.625rem] w-full">
         {/* Title */}
-        <h3 className="text-xl leading-[1.8em] text-footer-heading font-semibold font-poppins text-center">
+        <h3 className="text-footer-heading font-semibold font-poppins text-center">
           {data.title}
         </h3>
 

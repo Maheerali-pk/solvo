@@ -1,25 +1,26 @@
 import Image from "next/image";
 import { allIcons } from "@/app/helpers/icons";
+import GreenBadge from "@/app/components/GreenBadge";
 
 const TopSection = () => {
   return (
-    <div className="w-full relative flex flex-col items-center gap-0">
+    <div className="w-full relative flex flex-col items-center gap-0 gap-section-spacing">
       <img
         className="h-auto max-w-desktop absolute top-0 -translate-y-[5.5rem]"
         src="/images/about/bg-pattern.png"
       ></img>
       {/* Section 1: What is Solvo Engineering */}
-      <section className="w-full flex flex-col items-center gap-6 py-[3.125rem]">
+      <section className="w-full flex flex-col items-center gap-6">
         <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6">
-          <h1 className="text-[3rem] leading-[1.104em] text-text-gray font-bold text-center">
+          <h1 className="font-obviously text-text-gray font-bold text-center">
             What is <span className="text-primary-blue">Solvo Engineering</span>
           </h1>
-          <p className="text-2xl leading-[1.5em] text-text-gray font-medium font-poppins text-center max-w-[62.375rem] h-[7.25rem]">
+          <h3 className="text-text-gray font-medium font-poppins text-center max-w-[62.375rem] h-[7.25rem]">
             Solvo Engineering is CAE consultant firm specializing in FA, CFD
             simulations and CAD modeling. We pride ourselves on delivering
             exceptional lifecycle solutions customization to meet the precise
             needs of our clients.
-          </p>
+          </h3>
           <button className="flex flex-row items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-[10.75rem] h-12 hover:opacity-90 transition-opacity">
             <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
               Lets Connect
@@ -30,7 +31,7 @@ const TopSection = () => {
           </button>
         </div>
       </section>
-      <section className="w-full mb-[3.125rem]">
+      <section className="w-full">
         <div className="w-full max-w-desktop mx-auto">
           <div className="relative w-full h-[36.0625rem]">
             <Image
@@ -45,19 +46,12 @@ const TopSection = () => {
       </section>
 
       {/* Section 2: Building Practical Innovation */}
-      <section className="w-full flex flex-col items-center justify-center gap-[3.75rem] pb-[3.125rem]">
+      <section className="w-full flex flex-col items-center justify-center gap-[3.75rem] ">
         <div className="w-full max-w-desktop mx-auto flex flex-col justify-center gap-3">
-          <div className="flex flex-row items-center justify-center gap-2 bg-badge-bg px-[0.875rem] w-fit py-1 rounded-full">
-            <Image
-              src="/images/zap-icon.svg"
-              alt="Who we are"
-              width={18}
-              height={18}
-            />
-            <span className="text-sm leading-[1.714em] text-badge-text font-normal font-poppins text-center">
-              Who we are
-            </span>
-          </div>
+          <GreenBadge
+            icon="/images/zap-icon.svg"
+            text="Who we are"
+          ></GreenBadge>
           <div className="grid grid-cols-2  gap-[6.25rem] h-full">
             {/* Left Content */}
             <div className="flex flex-col justify-center gap-6 flex-1">

@@ -26,16 +26,16 @@ interface AnalyticsProps {}
 
 const Analytics: React.FC<AnalyticsProps> = () => {
   return (
-    <section className="flex py-16 mx-auto max-w-desktop w-full justify-around  relative">
+    <section className="flex pb-section-spacing  mx-auto max-w-desktop w-full justify-around  relative">
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#fafafa] via-[#8a8a8a] to-[#fafafa]"></div>
       {analyticsItems.map((item, index) => (
         <div key={index} className="flex flex-col gap-5 items-center">
-          <h1 className="text-5xl font-bold text-primary-blue font-secondary">
+          <h1 className="text-5xl font-bold text-primary-blue font-obviously">
             {item.value}
           </h1>
-          <span className="text-footer-text font-normal font-poppins">
+          <p className="text-base text-footer-text font-normal font-poppins">
             {item.description}
-          </span>
+          </p>
         </div>
       ))}
     </section>

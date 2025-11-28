@@ -5,10 +5,10 @@ interface OurCoreValueSectionProps {}
 
 const OurCoreValueSection: React.FC<OurCoreValueSectionProps> = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-6 py-[3.125rem]">
+    <section className="w-full flex flex-col items-center gap-6 ">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
         {/* Title */}
-        <h2 className="text-[1.875rem] leading-[1.2em] text-secondary-foreground font-semibold font-poppins text-center">
+        <h2 className=" text-secondary-foreground font-semibold font-poppins text-center">
           Our <span className="text-primary-blue">Core Values</span>
         </h2>
 

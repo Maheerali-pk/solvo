@@ -3,10 +3,10 @@ import { allIndustries } from "../helpers/data";
 
 const IndustriesWeServe = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-6 py-[3.125rem]">
+    <section className="w-full flex flex-col items-center gap-6">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
         {/* Title */}
-        <h2 className="text-3xl leading-[1.2em] text-footer-heading font-semibold font-poppins text-center">
+        <h2 className=" text-footer-heading font-semibold font-poppins text-center">
           Industries <span className="text-primary-blue">We Serve</span>
         </h2>
 
@@ -29,9 +29,9 @@ const IndustriesWeServe = () => {
                   />
                 </div>
               </div>
-              <span className="text-xl leading-[1.5em] text-footer-heading font-semibold font-poppins text-center flex items-start h-full px-10 ">
+              <h3 className="text-footer-heading font-semibold font-poppins text-center flex items-start h-full px-10 ">
                 {industry.name}
-              </span>
+              </h3>
             </div>
           ))}
         </div>
