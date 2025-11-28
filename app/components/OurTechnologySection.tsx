@@ -31,7 +31,7 @@ const OurTechnologySection = () => {
   };
 
   return (
-    <section className="w-full flex max-w-desktop mx-auto flex-col items-center gap-6 py-[3.125rem] relative">
+    <section className="w-full flex max-w-desktop mx-auto flex-col items-center gap-6 pb-section-spacing relative">
       {/* Gradient Border Bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#FAFAFA] via-[#8A8A8A] to-[#FAFAFA]"></div>
 
