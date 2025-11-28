@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IHomePageServiceItem } from "../helpers/data";
 
 import { allIcons } from "../helpers/icons";
+import classNames from "classnames";
 
 interface ServicesContentProps {
   services: IHomePageServiceItem[];
@@ -40,9 +41,9 @@ export default function ServicesContent({
   }
 
   return (
-    <div className="w-full grid grid-cols-[13.75rem_auto] items-center gap-[2.1875rem]">
+    <div className="w-full grid grid-cols-[13.75rem_auto] items-center gap-[2.1875rem] sm:grid-cols-1">
       {/* Content Area - Left */}
-      <div className="flex flex-col gap-4 w-[13.75rem]">
+      <div className="flex flex-col gap-4 w-[13.75rem] sm:w-full sm:flex-row">
         {subItems.map((subItem, index) => {
           const isSelected = index === internalSelectedSubItemIndex;
 
@@ -50,11 +51,17 @@ export default function ServicesContent({
             <button
               key={`${selectedServiceIndex}-${index}-${subItem.tabText}`}
               onClick={() => handleSubItemClick(index)}
-              className={`flex flex-row items-center  w-full cursor-pointer gap-[0.625rem] px-3 py-2 rounded-[0.625rem] border border-[#BDBCC7] transition-all ${
-                isSelected
-                  ? "bg-primary-blue text-white"
-                  : "bg-white text-footer-border hover:bg-gray-50"
-              }`}
+              className={classNames(
+                `flex flex-row items-center w-full cursor-pointer gap-[0.625rem] px-3 py-2 rounded-[0.625rem] border border-[#BDBCC7] transition-all
+                sm:border-t-0 sm:border-x-0  sm:text-footer-border !sm:border-b sm:rounded-none sm:px-0 sm:py-1  sm:w-fit 
+                `,
+                {
+                  "bg-primary-blue text-white sm:text-primary-blue sm:border-b-primary-blue sm:bg-transparent":
+                    isSelected,
+                  "bg-white text-footer-border hover:bg-gray-50 sm:text-footer-border sm:border-b-transparent sm:hover:bg-transparent":
+                    !isSelected,
+                }
+              )}
             >
               {/* Icon */}
               {subItem.tabIcon && !isSelected && (
@@ -63,7 +70,7 @@ export default function ServicesContent({
                   alt={subItem.tabText}
                   width={24}
                   height={24}
-                  className=" w-6 h-6 object-cotanin"
+                  className=" w-6 h-6 object-cotanin sm:hidden"
                   loading="lazy"
                 />
               )}
@@ -73,13 +80,13 @@ export default function ServicesContent({
                   alt={subItem.tabText}
                   width={24}
                   height={24}
-                  className=" w-6 h-6 object-contain"
+                  className=" w-6 h-6 object-contain sm:hidden"
                   loading="lazy"
                 />
               )}
 
               {/* Tab Text */}
-              <span className="text-sm leading-[2.25em] font-semibold font-poppins text-center w-full">
+              <span className="text-sm !sm:text-[0.5rem]  font-semibold font-poppins text-center w-full sm:font-normal">
                 {subItem.tabText}
               </span>
             </button>

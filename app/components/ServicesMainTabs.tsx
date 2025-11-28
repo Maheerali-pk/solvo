@@ -72,24 +72,27 @@ export default function OurServicesSection({
               >
                 {/* Image */}
                 <div
-                  className={`w-full h-[13.75rem] relative transition-opacity flex w-full justify-ccenter ${imageOpacity}`}
+                  className={`w-full h-[13.75rem] sm:h-auto relative transition-opacity flex sm:w-full justify-center ${imageOpacity}`}
                 >
                   <img
                     src={service.image}
                     alt={service.title}
-                    className={classNames("object-contain w-[17.5rem] h-auto", {
-                      grayscale: !isSelected,
-                    })}
+                    className={classNames(
+                      "object-contain w-[7.75rem]  h-auto",
+                      {
+                        grayscale: !isSelected,
+                      }
+                    )}
                     loading="lazy"
                   />
                 </div>
                 {/* Content */}
                 <div className="flex flex-col items-center gap-[0.375rem] w-full">
                   {/* Title with border */}
-                  <div className="w-full flex flex-row justify-center items-center gap-4 py-4 border-b border-[rgba(138,138,138,0.6)]">
+                  <div className="w-full y flex flex-row justify-center items-center gap-4 py-4 sm:border-none border-b border-[rgba(138,138,138,0.6)]">
                     <h3
                       className={classNames(
-                        `text-2xl leading-[1.5em] font-semibold font-poppins text-center ${titleColor} transition-colors`,
+                        `text-2xl leading-[1.5em] font-semibold sm:font-obviously font-poppins text-center ${titleColor} transition-colors`,
                         { "text-disable": !isSelected }
                       )}
                     >
@@ -98,7 +101,7 @@ export default function OurServicesSection({
                   </div>
 
                   {/* Description */}
-                  <div className="w-full flex flex-row justify-center items-center gap-[0.625rem] py-4">
+                  <div className="w-full flex flex-row justify-center items-center gap-[0.625rem] py-4 sm:hidden">
                     <p
                       className={classNames(
                         `text-base leading-[1.5em] font-normal font-poppins text-center ${descriptionColor} transition-colors`,

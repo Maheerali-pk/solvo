@@ -11,11 +11,12 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
     setSelectedIndex(index);
   };
   return (
-    <div className="flex flex-col max-w-desktop mx-auto gap-6">
+    <div className="flex flex-col max-w-desktop mx-auto gap-6 sm:px-side-space">
       <OurServicesSection
         selectedIndex={selectedIndex}
         onServiceClick={handleServiceClick}
       ></OurServicesSection>
+
       <ServicesContent
         services={allHomePageServiceItems}
         selectedServiceIndex={selectedIndex}
