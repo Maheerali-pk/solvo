@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-.btn-primary {
-  @apply bg-primary-blue text-white;
-}
-
-.btn {
-  @apply h-10 rounded-xl flex items-center justify-center gap-2 px-6 py-4 flex-shrink-0 cursor-pointer sm:hidden;
-}
-
-.btn-secondary {
-  @apply bg-white text-primary-blue border border-primary-blue;
-}
 /* Obviously Font Family */
 @font-face {
   font-family: "Obviously";
@@ -267,4 +256,16 @@ p {
 .animate-scroll-infinite-smooth {
   animation: scroll-infinite-smooth 30s linear infinite;
   will-change: transform;
+}
+
+.btn-primary {
+  @apply bg-primary-blue text-white;
+}
+
+.btn {
+  @apply h-10 rounded-xl flex items-center justify-center gap-2 px-6 py-4 flex-shrink-0 cursor-pointer;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary-blue border border-primary-blue;
 }

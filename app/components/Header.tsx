@@ -172,7 +172,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         </nav>
 
         {/* Contact Button */}
-        <button className="btn btn-primary">
+        <button className="btn btn-primary sm:!hidden">
           <span className="text-sm leading-6 font-normal font-poppins">
             Contact us
           </span>
