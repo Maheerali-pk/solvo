@@ -19,12 +19,12 @@ const PageHeading: FunctionComponent<PageHeadingProps> = ({
         className
       )}
     >
-      <h1 className="text-footer-heading font-semibold font-obviously text-center">
+      <h1 className="text-footer-heading font-bold font-obviously text-center">
         {title}
       </h1>
-      <h3 className="text-footer-text font-normal font-poppins text-center">
+      <p className="text-footer-text text-base font-normal font-poppins text-center">
         {description}
-      </h3>
+      </p>
     </div>
   );
 };

@@ -5,7 +5,7 @@ interface OurCoreValueSectionProps {}
 
 const OurCoreValueSection: React.FC<OurCoreValueSectionProps> = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-6 sm:px-side-space">
+    <section className="w-full flex flex-col items-center gap-6 sm:px-side-space ]">
       <div className="w-full max-w-desktop relative mx-auto flex flex-col gap-6">
         <img
           src="/images/about/core-values/path.png"

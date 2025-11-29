@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
 const OurTechnologySection = () => {
   const technologyLogos = [
@@ -34,7 +31,7 @@ const OurTechnologySection = () => {
   };
 
   return (
-    <section className="w-full flex max-w-desktop mx-auto flex-col items-center gap-6 pb-section-spacing relative">
+    <section className="w-full flex max-w-desktop mx-auto flex-col items-center gap-6 pb-section-spacing relative sm:px-side-space">
       {/* Gradient Border Bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#FAFAFA] via-[#8A8A8A] to-[#FAFAFA]"></div>
 
@@ -44,41 +41,44 @@ const OurTechnologySection = () => {
           Our <span className="text-primary-blue">Technology</span>
         </h2>
 
-        {/* Technology Logos - Swiper Autoplay */}
+        {/* Technology Logos - Continuous Linear Scroll */}
         <div className="w-full overflow-hidden relative">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={64}
-            slidesPerView="auto"
-            loop={true}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-            }}
-            speed={3000}
-            allowTouchMove={false}
-            className="w-full"
-          >
+          <div className="flex items-center gap-16 animate-scroll-infinite-smooth">
+            {/* First set */}
             {technologyLogos.map((logo, index) => (
-              <SwiperSlide
-                key={index}
-                className="!w-auto"
-                style={{
-                  width: getLogoWidth(index),
-                }}
+              <div
+                key={`set1-${index}`}
+                className="shrink-0 h-[2.609375rem] flex items-center"
+                style={{ width: getLogoWidth(index) }}
               >
-                <div className="relative flex-shrink-0 h-[2.609375rem] w-full">
-                  <Image
-                    src={logo}
-                    alt={`Technology ${index + 1}`}
-                    fill
-                    className="object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              </SwiperSlide>
+                <Image
+                  src={logo}
+                  alt={`Technology ${index + 1}`}
+                  width={200}
+                  height={42}
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
             ))}
-          </Swiper>
+            {/* Duplicate set for seamless loop */}
+            {technologyLogos.map((logo, index) => (
+              <div
+                key={`set2-${index}`}
+                className="shrink-0 h-[2.609375rem] flex items-center"
+                style={{ width: getLogoWidth(index) }}
+              >
+                <Image
+                  src={logo}
+                  alt={`Technology ${index + 1}`}
+                  width={200}
+                  height={42}
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

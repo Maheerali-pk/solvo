@@ -1,46 +1,69 @@
 import Image from "next/image";
 import { allIcons } from "@/app/helpers/icons";
 import GreenBadge from "@/app/components/GreenBadge";
+import PageHeading from "@/app/components/PageHeading";
 
 const TopSection = () => {
   return (
     <div className="w-full relative flex flex-col items-center gap-0 gap-section-spacing">
-      <img
-        className="h-auto max-w-desktop absolute top-0 -translate-y-[5.5rem] sm:translate-y-[3rem] sm:w-full"
-        src="/images/about/bg-pattern.png"
-      ></img>
       {/* Section 1: What is Solvo Engineering */}
-      <section className="w-full flex flex-col items-center gap-6 sm:px-side-space">
-        <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6">
-          <h1 className="font-obviously text-text-gray font-bold text-center">
-            What is <span className="text-primary-blue">Solvo Engineering</span>
-          </h1>
-          <h3 className="text-text-gray font-medium font-poppins text-center max-w-[62.375rem] sm:h-auto h-[7.25rem]">
-            Solvo Engineering is CAE consultant firm specializing in FA, CFD
-            simulations and CAD modeling. We pride ourselves on delivering
-            exceptional lifecycle solutions customization to meet the precise
-            needs of our clients.
-          </h3>
-          <button className="flex flex-row items-center justify-center gap-2 bg-primary-blue rounded-xl px-4 py-4 w-[10.75rem] h-12 hover:opacity-90 transition-opacity">
-            <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
-              Lets Connect
-            </span>
-            <div className="w-6 h-6 text-white">
-              {allIcons.chevronRight(24, 24)}
-            </div>
-          </button>
+
+      <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6 sm:px-side-space relative">
+        <img
+          src="/images/about/hero-dots2.png"
+          className="absolute top-0 left-0 -translate-y-[3rem] sm:h-[10rem] h-[15rem] "
+          alt="Background Pattern"
+        ></img>
+
+        <PageHeading
+          className="w-[calc(100%-5rem)] sm:w-full"
+          title={
+            <>
+              What is{" "}
+              <span className="text-primary-blue">Solvo Engineering</span>
+            </>
+          }
+          description={
+            <>
+              Solvo Engineering is CAE consultant firm specializing in FA, CFD
+              simulations and CAD modeling. We pride ourselves on delivering
+              exceptional lifecycle solutions customization to meet the precise
+              needs of our clients.
+            </>
+          }
+        ></PageHeading>
+      </div>
+      <button className="btn btn-primary">
+        <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+          Lets Connect
+        </span>
+        <div className="w-6 h-6 text-white">
+          {allIcons.chevronRight(24, 24)}
         </div>
-      </section>
-      <section className="w-full">
-        <div className="w-full max-w-desktop mx-auto">
-          <div className="relative w-full sm:h-[20rem]  h-[36.0625rem]">
-            <Image
-              src="/images/about/bottom-section.png"
-              alt="About Section"
-              fill
-              className="object-cover"
-              loading="lazy"
-            />
+      </button>
+
+      <section className="w-full sm:px-side-space overflow-hidden">
+        <div className="w-full max-w-desktop mx-auto max-w-desktop">
+          <div className="relative  sm:h-[20rem]  sm:w-full w-[80%] mx-auto h-auto  ">
+            <img
+              src="/images/about/hero-cloud.png"
+              className="absolute top-0 left-0 -translate-y-[0rem] h-[60%]"
+              alt="Background Pattern"
+            ></img>
+
+            <img
+              src="/images/about/hero-dots.png"
+              className="absolute top-0 right-0 -translate-x-[0rem] h-[60%]"
+              alt="Background Pattern"
+            ></img>
+            <div className="relative z-10">
+              <img
+                src="/images/about/bottom-section.png"
+                alt="About Section"
+                className="object-contain w-full h-full z-10 "
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>

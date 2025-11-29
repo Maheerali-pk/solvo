@@ -4,7 +4,18 @@ interface VisionSectionProps {}
 
 const VisionSection: React.FC<VisionSectionProps> = () => {
   return (
-    <section className="flex w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
+    <section className="flex relative overflow-visible  w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
+      <img
+        src="/images/about/spiral-lines-right.png"
+        alt="Client Reviews Background"
+        className="absolute right-0   -top-[47rem] h-[69rem] sm:hidden z-10"
+      />
+
+      <img
+        src="/images/about/spiral-lines-left.png"
+        alt="Client Reviews Background"
+        className="absolute left-0 -top-[47rem] h-[69rem] sm:hidden"
+      />
       <div className="flex flex-col gap-6 w-[600px] items-center relative">
         <h2 className="font-bold font-secondary text-center font-obviously">
           Vision
