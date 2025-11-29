@@ -50,7 +50,11 @@ export default function Faq({ faqs, className = "" }: FaqProps) {
 
             {/* Answer Content */}
             <div
-              ref={(el) => (contentRefs.current[index] = el)}
+              ref={(el) => {
+                if (el) {
+                  contentRefs.current[index] = el;
+                }
+              }}
               className="overflow-hidden transition-all duration-300 ease-in-out"
               style={{
                 maxHeight: isOpen
