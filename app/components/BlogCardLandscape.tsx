@@ -12,9 +12,10 @@ export default function BlogCardLandscape({
   className = "",
 }: BlogCardLandscapeProps) {
   // Get the first category or use "All Categories" as default
-  const categoryLabel = blog.categories && blog.categories.length > 0
-    ? blog.categories[0]
-    : "All Categories";
+  const categoryLabel =
+    blog.categories && blog.categories.length > 0
+      ? blog.categories[0]
+      : "All Categories";
 
   return (
     <Link
@@ -86,4 +87,3 @@ export default function BlogCardLandscape({
     </Link>
   );
 }
-
