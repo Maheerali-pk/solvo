@@ -49,20 +49,42 @@ export default function Sidebar({
 
   return (
     <aside className="w-full h-full flex flex-col bg-white shadow-[10px_0px_20px_0px_rgba(0,0,0,0.06)] ">
-      {/* Close Button */}
-      {/* <div className="flex items-center justify-end p-4 border-b border-border-select-item">
+      {/* Header with Logo and Close Button */}
+      <div className="relative flex items-center justify-between px-6 py-4 border-b border-border-select-item">
+        {/* Logo */}
+        <div className="w-[8rem] relative flex justify-start object-left">
+          <img
+            src="/images/logo-176606.png"
+            alt="Logo"
+            className="object-contain"
+          />
+        </div>
+        {/* Close Button */}
         <button
           onClick={onClose}
           className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
           aria-label="Close sidebar"
         >
-          <div className="w-5 h-5 text-footer-border">
-            {allIcons.chevronLeft(20, 20)}
-          </div>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-footer-border"
+          >
+            <path
+              d="M5 5L15 15M15 5L5 15"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
-      </div> */}
+      </div>
 
-      <div className="flex flex-col overflow-y-auto flex-1 bg-primary-light-blue ">
+      <div className="flex flex-col overflow-y-auto flex-1 bg-white">
         {menuItems.map((item, index) => {
           const isActive = activeRoute === item.id;
           const isServices = item.id === "services";
@@ -75,7 +97,7 @@ export default function Sidebar({
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
                     className={classNames(
-                      "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-primary-light-blue transition-colors",
+                      "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors h-[3.25rem]",
                       {
                         "border-b border-border-select-item":
                           !isServicesOpen && hasBottomBorder,
@@ -84,7 +106,7 @@ export default function Sidebar({
                   >
                     <span
                       className={classNames(
-                        "flex-1 leading-[2em] font-semibold font-poppins text-left",
+                        "flex-1 leading-[1.5em] font-medium font-poppins text-left",
                         {
                           "text-primary-blue": isActive,
                           "text-footer-border": !isActive,
@@ -107,27 +129,15 @@ export default function Sidebar({
                   </button>
                   {/* Nested Services Items */}
                   {isServicesOpen && (
-                    <div className="bg-white border-b border-border-select-item">
+                    <div className="bg-white">
                       {servicesItems.map((service, serviceIndex) => (
                         <Link
                           key={serviceIndex}
                           href={service.link}
                           onClick={onClose}
-                          className="flex flex-row items-center gap-[0.625rem] px-6 py-3 pl-12 hover:bg-[rgba(2,115,189,0.15)] transition-colors border-b border-border-select-item last:border-b-0"
+                          className="flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[4.125rem]"
                         >
-                          <div className="w-5 h-5 flex-shrink-0 flex items-center justify-center">
-                            <Image
-                              src={service.icon}
-                              alt={service.name}
-                              width={20}
-                              height={20}
-                              className="w-5 h-5 object-contain"
-                            />
-                          </div>
-                          <span
-                            className="leading-[2em] text-primary-blue font-normal font-poppins"
-                            style={{ fontSize: "1rem" }}
-                          >
+                          <span className="best-base  text-footer-border font-medium font-poppins">
                             {service.name}
                           </span>
                         </Link>
@@ -143,15 +153,16 @@ export default function Sidebar({
                   href={item.href}
                   onClick={onClose}
                   className={classNames(
-                    "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-primary-light-blue transition-colors",
+                    "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors h-[3.25rem]",
                     {
                       "border-b border-border-select-item": hasBottomBorder,
+                      "rounded-b-[0.5rem]": isLastItem(index),
                     }
                   )}
                 >
                   <span
                     className={classNames(
-                      "leading-[2em] font-semibold font-poppins",
+                      "leading-[1.5em] font-medium font-poppins",
                       {
                         "text-primary-blue": isActive,
                         "text-footer-border": !isActive,

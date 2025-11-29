@@ -210,7 +210,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         <div
           ref={sidebarRef}
           className={classNames(
-            "fixed top-0 left-0 h-full w-[24rem] z-50 sm:block hidden transition-transform duration-300 ease-in-out",
+            "fixed top-0 left-0 h-full w-[22.5rem] z-50 sm:block hidden transition-transform duration-300 ease-in-out",
             {
               "translate-x-0": isSidebarOpen,
               "-translate-x-full": !isSidebarOpen,

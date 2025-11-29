@@ -59,14 +59,6 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
                 />
               </div>
             </div>
-            <Slider
-              currentIndex={currentIndex}
-              totalItems={totalItems}
-              onPrevious={onPrevious}
-              onNext={onNext}
-              onDotClick={onDotClick}
-              mode="mobile"
-            ></Slider>
           </div>
 
           {/* Features List */}

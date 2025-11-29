@@ -64,6 +64,17 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         </div>
 
         {/* Slider Controls */}
+
+        <div className="hidden sm:block">
+          <Slider
+            currentIndex={currentIndex}
+            totalItems={allHeroSectionItems.length}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onDotClick={handleDotClick}
+            mode="mobile"
+          ></Slider>
+        </div>
         <div className="sm:hidden">
           <Slider
             currentIndex={currentIndex}
