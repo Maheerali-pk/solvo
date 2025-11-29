@@ -49,7 +49,7 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
           </div>
           <a
             href={data.verifyLink}
-            className="text-base leading-6 underline text-primary-blue font-normal font-poppins hover:underline"
+            className="text-base leading-6 underline text-primary-blue font-normal font-poppins hover:underline sm:hidden"
           >
             {data.verifyLinkText}
           </a>

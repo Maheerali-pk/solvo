@@ -53,7 +53,7 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
 
   return (
     <>
-      <section className="w-full hidden sm:flex overflow-hidden flex flex-col items-center gap-6 py-[3.125rem] relative bg-primary-light-blue">
+      <section className="w-full hidden sm:flex overflow-hidden flex-col items-center gap-6 py-[3.125rem] relative bg-primary-light-blue">
         <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 relative">
           {/* <img
             src="/images/client-reviews/bg-item.png"
@@ -61,6 +61,7 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
             className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
           /> */}
           {/* Swiper Container */}
+
           <div className="w-full">
             <Swiper
               spaceBetween={0}
@@ -84,6 +85,12 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
           </div>
 
           {/* Slider Controls */}
+          <a
+            href="/verify-reviews"
+            className="text-base leading-6 underline text-primary-blue font-normal font-poppins hover:underline sm:px-side-space hidden sm:block "
+          >
+            Verify our reviews
+          </a>
           <ReviewsSlider
             thumbnails={allClientReviews.map((review) => review.image)}
             currentIndex={desktopCurrentIndex}

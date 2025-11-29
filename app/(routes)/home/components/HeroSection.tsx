@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         {/* Swiper Container */}
         <div className="w-full">
           <Swiper
-            spaceBetween={0}
+            spaceBetween={30}
             slidesPerView={1}
             onSwiper={setSwiperInstance}
             onSlideChange={handleSlideChange}

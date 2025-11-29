@@ -106,15 +106,20 @@ export default function GetInTouchForm() {
           />
 
           {/* Full Name * */}
-          <input
-            type="text"
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleChange}
-            placeholder="Full Name *"
-            required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] sm:w-full text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
-          />
+          <div className="relative w-[12.5rem] sm:w-full">
+            <input
+              type="text"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              placeholder="Full Name"
+              required
+              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            />
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none">
+              *
+            </span>
+          </div>
 
           {/* Services I need * */}
           <CustomSelect
@@ -132,15 +137,20 @@ export default function GetInTouchForm() {
           />
 
           {/* Email * */}
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email *"
-            required
-            className="px-3 py-1 border border-footer-border rounded-lg w-[12.5rem] sm:w-full text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
-          />
+          <div className="relative w-[12.5rem] sm:w-full">
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              required
+              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+            />
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none">
+              *
+            </span>
+          </div>
 
           {/* Preferable Software * */}
           <CustomSelect
@@ -180,7 +190,7 @@ export default function GetInTouchForm() {
             htmlFor="message"
             className="text-lg leading-[1.333em] text-text-gray font-medium font-poppins"
           >
-            Your Massage *
+            Your Massage <span className="text-red-500">*</span>
           </label>
           <textarea
             id="message"

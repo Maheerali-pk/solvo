@@ -66,7 +66,7 @@ export default function OurServicesSection({
               <div
                 key={index}
                 onClick={() => onServiceClick?.(index)}
-                className={`flex-1 flex flex-col items-center bg-white cursor-pointer transition-opacity gap-6 justify-between ${
+                className={`flex-1 flex flex-col items-center bg-white cursor-pointer transition-opacity gap-6 sm:grid sm:items-start sm:grid-rows-[1.1fr_1fr]  ${
                   !isSelected ? "hover:opacity-80" : ""
                 }`}
               >

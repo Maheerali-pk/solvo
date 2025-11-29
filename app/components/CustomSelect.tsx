@@ -100,7 +100,16 @@ export default function CustomSelect({
         disabled={disabled}
         className="w-full px-3 py-1 pr-8 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins bg-white outline-none cursor-pointer focus:border-primary-blue disabled:opacity-50 disabled:cursor-not-allowed text-left flex items-center justify-between"
       >
-        <span className={value ? "" : "text-footer-text"}>{displayText}</span>
+        <span className={value ? "" : "text-footer-text"}>
+          {displayText.includes(" *") ? (
+            <>
+              {displayText.replace(" *", "")}
+              <span className="text-red-500"> *</span>
+            </>
+          ) : (
+            displayText
+          )}
+        </span>
         <div
           className={`absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-footer-border transition-transform ${
             isOpen ? "rotate-180" : ""
