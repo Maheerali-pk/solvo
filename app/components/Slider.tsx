@@ -12,7 +12,7 @@ interface SliderProps {
   showDots?: boolean;
   showArrows?: boolean;
   disabled?: boolean;
-  mode?: "default" | "figma" | "mobile";
+  mode?: "default" | "figma" | "mobile" | "arrows-only";
 }
 
 export default function Slider({
@@ -47,6 +47,47 @@ export default function Slider({
       onDotClick(index);
     }
   };
+
+  // Arrows-only mode layout - only arrows, no pagination
+  if (mode === "arrows-only") {
+    return (
+      <div
+        className={`flex items-center justify-end gap-3 ${className} w-full`}
+      >
+        {showArrows && (
+          <button
+            type="button"
+            onClick={handlePrevious}
+            disabled={isFirstSlide || disabled}
+            className={`flex items-center justify-center w-10 h-10 rounded-xl border transition-all ${
+              isFirstSlide || disabled
+                ? "border-footer-border text-footer-border cursor-not-allowed opacity-50"
+                : "border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white cursor-pointer"
+            }`}
+            aria-label="Previous slide"
+          >
+            <div className="w-5 h-5">{allIcons.arrowLeft(20, 20)}</div>
+          </button>
+        )}
+
+        {showArrows && (
+          <button
+            type="button"
+            onClick={handleNext}
+            disabled={isLastSlide || disabled}
+            className={`flex items-center justify-center w-10 h-10 rounded-xl border transition-all ${
+              isLastSlide || disabled
+                ? "border-footer-border text-footer-border cursor-not-allowed opacity-50"
+                : "border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white cursor-pointer"
+            }`}
+            aria-label="Next slide"
+          >
+            <div className="w-5 h-5">{allIcons.arrowRight(20, 20)}</div>
+          </button>
+        )}
+      </div>
+    );
+  }
 
   // Mobile mode layout - only dots, no arrows
   if (mode === "mobile") {

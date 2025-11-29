@@ -5,8 +5,9 @@ import Link from "next/link";
 const WelcomeToSolvoEnngineers = () => {
   return (
     <div className="w-full max-w-desktop mx-auto px-side-space">
-      <div className="w-full  items-center gap-[8rem] sm:flex-col sm:gap-6 grid grid-cols-[auto_max-content]">
+      <div className="w-full  items-center gap-[8rem] sm:flex-col   sm:gap-6 grid grid-cols-[auto_max-content]">
         {/* Left Content */}
+
         <div className="flex flex-col gap-6 flex-1">
           {/* Title */}
           <h2 className="leading-[1.2em] font-semibold font-poppins text-[#1E1E1E] whitespace-pre-line">
@@ -15,7 +16,7 @@ const WelcomeToSolvoEnngineers = () => {
           </h2>
 
           {/* Description Section */}
-          <div className="flex flex-col gap-[1.375rem]">
+          <div className="flex flex-col gap-[1.375rem] sm:grid sm:grid-cols-2">
             <span
               className="text-base leading-[1.666em] text-[#4A4A4A] font-normal font-poppins"
               style={{ fontSize: "1.125rem" }}
@@ -26,6 +27,13 @@ const WelcomeToSolvoEnngineers = () => {
               Expertise And Advanced Technology, We Ensure To Transform Your
               Vision Into Real-Time, Functional, And High-Performance Solutions.
             </span>
+            <div className="relative w-[29rem] sm:flex hidden h-full shrink-0 sm:w-full sm:h-auto  border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
+              <img
+                src="/images/services/welcome-to-solvo-engineers-image.png"
+                alt="Welcome To SOLVO Engineers"
+                className="w-full h-full object-contain "
+              />
+            </div>
           </div>
 
           {/* Button */}
@@ -43,7 +51,7 @@ const WelcomeToSolvoEnngineers = () => {
         </div>
 
         {/* Right Image */}
-        <div className="relative w-[29rem]  h-full shrink-0 sm:w-full sm:h-auto  border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
+        <div className="relative sm:hidden block w-[29rem] h-full shrink-0 sm:w-full sm:h-auto  border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
           <img
             src="/images/services/welcome-to-solvo-engineers-image.png"
             alt="Welcome To SOLVO Engineers"

@@ -57,7 +57,7 @@ const TopSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="w-full flex flex-row items-center justify-center gap-[9.375rem] sm:flex-col sm:gap-6 sm:grid sm:grid-cols-2 sm:h-full"
+              className="w-full  items-center justify-center grid grid-cols-2 gap-10 sm:flex-col sm:gap-6 sm:grid sm:grid-cols-2 sm:h-full"
             >
               {service.imagePosition === "left" && (
                 <div className="relative w-[29.5625rem] h-[18.25rem] sm:h-full shrink-0 sm:w-full  ">
