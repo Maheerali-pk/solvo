@@ -14,17 +14,17 @@ interface SidebarProps {
 const servicesItems = [
   {
     name: "Computational Fluid Dynamics (CFD)",
-    link: "/services/cfd",
+    link: "/services/cfd-analysis",
     icon: "/images/shared/services-dropdown/img1.png",
   },
   {
     name: "2D/3D Modeling & Rendering (CAD)",
-    link: "/services/cad",
+    link: "/services/cad-analysis",
     icon: "/images/shared/services-dropdown/img2.png",
   },
   {
     name: "Finite Element Analysis (FEA)",
-    link: "/services/fea",
+    link: "/services/fea-analysis",
     icon: "/images/shared/services-dropdown/img3.png",
   },
 ];

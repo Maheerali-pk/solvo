@@ -70,7 +70,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
             {/* Right: Image and More Services */}
             <div className="flex flex-col gap-6 w-[31.1875rem] shrink-0 sm:w-full">
               {/* Image */}
-              <div className="relative w-full h-[24.375rem] rounded-[1.25rem] overflow-hidden sm:h-auto sm:aspect-[499/390]">
+              <div className="relative w-full sm:h-auto sm:max-w-[25rem] sm:mx-auto h-[24.375rem] rounded-[1.25rem] overflow-hidden sm:h-auto sm:aspect-[499/390]">
                 <Image
                   src={serviceItem.content.rightSection.image}
                   alt="Service Content"
@@ -88,9 +88,9 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
                 <div className="flex flex-col gap-6">
                   {serviceItem.content.rightSection.moreServices.map(
                     (service, index) => (
-                      <div key={index} className="flex flex-col gap-0">
+                      <div key={index} className="flex flex-col gap-1">
                         <div className="flex flex-row items-center gap-[0.625rem]">
-                          <div className="w-5 h-5 shrink-0 ">
+                          <div className="w-6 h-6 shrink-0 ">
                             <img
                               src={service.logo}
                               alt={service.title}
@@ -99,7 +99,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
                           </div>
                           <Link
                             href={service.link}
-                            className="text-[1rem] leading-[2em] text-primary-blue font-semibold font-poppins hover:underline"
+                            className="text-[1.125rem] leading-[2em] text-primary-blue font-semibold font-poppins hover:underline"
                           >
                             {service.title}
                           </Link>
