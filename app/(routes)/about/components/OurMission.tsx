@@ -4,7 +4,7 @@ interface OurMissionProps {}
 
 const OurMission: React.FC<OurMissionProps> = () => {
   return (
-    <section className="relative overflow-hidden flex w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
+    <section className="relative overflow-hidden flex w-full bg-primary-blue text-white sm:h-72 h-96 items-center justify-center sm:px-side-space">
       <img
         src="/images/about/spiral-lines-right.png"
         alt="Client Reviews Background"

@@ -4,7 +4,7 @@ interface VisionSectionProps {}
 
 const VisionSection: React.FC<VisionSectionProps> = () => {
   return (
-    <section className="flex relative overflow-visible  w-full bg-primary-blue text-white h-96 items-center justify-center sm:px-side-space">
+    <section className="flex relative overflow-visible  w-full bg-primary-blue text-white sm:h-72 h-96 items-center justify-center sm:px-side-space">
       <img
         src="/images/about/spiral-lines-right.png"
         alt="Client Reviews Background"

@@ -44,7 +44,7 @@ const TopSection = () => {
 
       <section className="w-full sm:px-side-space overflow-hidden">
         <div className="w-full max-w-desktop mx-auto max-w-desktop">
-          <div className="relative  sm:h-[20rem]  sm:w-full w-[80%] mx-auto h-auto  ">
+          <div className="relative   sm:w-full w-[80%] mx-auto h-auto  ">
             <img
               src="/images/about/hero-cloud.png"
               className="absolute top-0 left-0 -translate-y-[0rem] h-[60%]"
@@ -60,7 +60,7 @@ const TopSection = () => {
               <img
                 src="/images/about/bottom-section.png"
                 alt="About Section"
-                className="object-contain w-full h-full z-10 "
+                className="object-contain w-full h-full z-10 sm:object-cover"
                 loading="lazy"
               />
             </div>
@@ -112,7 +112,7 @@ const TopSection = () => {
               <img
                 src="/images/about/building-innovation.png"
                 alt="Building Practical Innovation"
-                className="object-cover border border-primary-blue rounded-2xl p-4 w-full h-auto "
+                className="object-contain border border-primary-blue rounded-2xl p-4 w-full h-auto sm:h-[20rem] "
                 loading="lazy"
               />
             </div>
