@@ -1064,4 +1064,40 @@ export const allProjects: IProject[] = [
     image: "/images/shared/projects/img6.png",
     link: "/projects/cfd-f1-rear-wing",
   },
+  {
+    title: "CFD Analysis of CD Nozzle (Convergent-Divergent)",
+    description:
+      "Supersonic flow simulation through a CD nozzle capturing Mach variations and shock transitions for propulsion system...",
+    image: "/images/shared/projects/img1.png",
+    link: "/projects/cfd-cd-nozzle",
+  },
+  {
+    title: "FEA Analysis and Optimization of Industrial Fixture",
+    description:
+      "Structural FEA of a precision fixture under clamping loads with optimization for stiffness, deformation...",
+    image: "/images/shared/projects/img2.png",
+    link: "/projects/fea-industrial-fixture",
+  },
+  {
+    title: "FEA Analysis of Beam Bracket for Structural Integrity",
+    description:
+      "Simulation of a beam bracket to ensure durability and strength under static loading, evaluating stress distribution...",
+    image: "/images/shared/projects/img3.png",
+    link: "/projects/fea-beam-bracket",
+  },
+  {
+    title:
+      "CFD Analysis of Flow Characteristics Around an Ahmed Body with Varying Slant Angles Using Ansys",
+    description:
+      "External aerodynamic simulation of an Ahmed body to study drag sensitivity across...",
+    image: "/images/shared/projects/img5.png",
+    link: "/projects/cfd-ahmed-body",
+  },
+  {
+    title: "Drag Reduction CFD Study of W11 F1 Rear Wing",
+    description:
+      "A focused aerodynamic study of the Mercedes W11 rear wing assembly to reduce drag and vortex shedding at...",
+    image: "/images/shared/projects/img6.png",
+    link: "/projects/cfd-f1-rear-wing",
+  },
 ];

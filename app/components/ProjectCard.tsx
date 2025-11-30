@@ -14,10 +14,10 @@ export default function ProjectCard({
   return (
     <Link
       href={project.link}
-      className={`flex flex-col items-center gap-3 p-3 bg-white border border-footer-border rounded-[1.25rem] w-full max-w-[21.833125rem] hover:shadow-lg transition-shadow min-h-full ${className}`}
+      className={`flex flex-col items-center gap-3 p-3 bg-white border border-footer-border rounded-[1.25rem] w-full max-w-[21.833125rem] sm:max-w-full hover:shadow-lg transition-shadow min-h-full ${className}`}
     >
       {/* Image */}
-      <div className="relative w-full h-[17rem] rounded-[1.25rem] overflow-hidden bg-[#D7D7D7]">
+      <div className="relative w-full h-[17rem] sm:max-w-[17rem] sm:max-h-[12rem] rounded-[1.25rem] overflow-hidden bg-[#D7D7D7]">
         <Image
           src={project.image}
           alt={project.title}

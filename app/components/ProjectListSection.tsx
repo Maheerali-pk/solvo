@@ -13,7 +13,7 @@ import { allIcons } from "../helpers/icons";
 import { Router } from "next/router";
 import { useRouter } from "next/navigation";
 
-export default function ProjectListSection() {
+export default function ProjectListSection({ withoutHeading = false }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
@@ -40,15 +40,19 @@ export default function ProjectListSection() {
         {/* Badge */}
 
         {/* Title */}
-        <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
-          Our <span className="text-primary-blue">Projects</span>
-        </h2>
+        {!withoutHeading && (
+          <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+            Our <span className="text-primary-blue">Projects</span>
+          </h2>
+        )}
 
         {/* Description */}
-        <p className="text-footer-text max-w-md text-center text-base">
-          See how Solvo Products has helped its clients achieve their vision of
-          digital innovation.
-        </p>
+        {!withoutHeading && (
+          <p className="text-footer-text max-w-md text-center text-base">
+            See how Solvo Products has helped its clients achieve their vision
+            of digital innovation.
+          </p>
+        )}
 
         {/* Swiper Container */}
         <div className="w-full">
