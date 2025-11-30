@@ -1,5 +1,7 @@
 import Header from "@/app/components/Header";
 import TopSection from "./components/TopSection";
+import BlogListSection from "./components/BlogListSection";
+import { LatestNewsSection } from "./components/LatestNewsSection";
 
 interface AboutProps {}
 
@@ -9,6 +11,9 @@ const About: React.FC<AboutProps> = () => {
       <Header activeRoute="about" />
 
       <TopSection></TopSection>
+      <LatestNewsSection></LatestNewsSection>
+
+      <BlogListSection></BlogListSection>
     </div>
   );
 };

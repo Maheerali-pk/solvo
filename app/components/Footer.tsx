@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { allIcons } from "../helpers/icons";
 import { FooterWrapper } from "./Footer/FooterWrapper";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 // Left Section Component
 function LeftSection() {
@@ -27,21 +28,6 @@ function LeftSection() {
           products.
         </p>
       </div>
-    </div>
-  );
-}
-
-// Social Media Icons Component
-function SocialMediaIcons() {
-  return (
-    <div className="flex flex-row items-center justify-end gap-3 w-full">
-      <Image
-        src="/images/social-icons.svg"
-        alt="Social Media Icons"
-        width={529}
-        height={44}
-        className="h-11"
-      />
     </div>
   );
 }
@@ -181,7 +167,9 @@ function RightSection() {
         </div>
       </div>
 
-      <SocialMediaIcons />
+      <div className="w-full flex justify-end">
+        <SocialMediaIcons />
+      </div>
     </div>
   );
 }

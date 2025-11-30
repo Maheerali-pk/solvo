@@ -156,8 +156,8 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           </div>
 
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
-            <a
-              href="#"
+            <Link
+              href="/blogs"
               className={classNames(
                 "text-base leading-6 font-normal font-poppins",
                 {
@@ -167,7 +167,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
               )}
             >
               Blogs
-            </a>
+            </Link>
           </div>
         </nav>
 

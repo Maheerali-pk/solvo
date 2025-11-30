@@ -40,7 +40,7 @@ export default function Sidebar({
     { id: "about", label: "About Us", href: "/about" },
     { id: "services", label: "Services", href: "#", hasDropdown: true },
     { id: "career", label: "Career", href: "#" },
-    { id: "blogs", label: "Blogs", href: "#" },
+    { id: "blogs", label: "Blogs", href: "/blogs" },
     { id: "contact", label: "Contact Us", href: "#" },
   ];
 

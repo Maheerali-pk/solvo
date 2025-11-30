@@ -19,16 +19,14 @@ const TopSection = () => {
           className="w-[calc(100%-5rem)] sm:w-full"
           title={
             <>
-              What is{" "}
-              <span className="text-primary-blue">Solvo Engineering</span>
+              Our <span className="text-primary-blue">Blogs</span>
             </>
           }
           description={
             <>
-              Solvo Engineering is CAE consultant firm specializing in FA, CFD
-              simulations and CAD modeling. We pride ourselves on delivering
-              exceptional lifecycle solutions customization to meet the precise
-              needs of our clients.
+              Explore information and engaging blogs articles in a wide range of
+              topics, written by <br></br> experts and curated for your reading
+              pleasure.
             </>
           }
         ></PageHeading>
