@@ -11,7 +11,7 @@ const services = [
       "Optimize designs and ensure structural integrity with precise and efficient simulation techniques.",
     image: "/images/services/top-section/fea-image.png",
     imagePosition: "left" as const,
-    link: "/services/fea",
+    link: "/services/fea-analysis",
   },
   {
     id: "cfd",
@@ -20,7 +20,7 @@ const services = [
       "Analyze fluid dynamics and thermal processes to enhance performance and energy efficiency.",
     image: "/images/services/top-section/cfd-image.png",
     imagePosition: "right" as const,
-    link: "/services/cfd",
+    link: "/services/cfd-analysis",
   },
   {
     id: "cad",
@@ -29,7 +29,7 @@ const services = [
       "Transform concepts into accurate CAD model with seamless integration and practical solutions.",
     image: "/images/services/top-section/cad-image.png",
     imagePosition: "left" as const,
-    link: "/services/cad",
+    link: "/services/cad-analysis",
   },
 ];
 
