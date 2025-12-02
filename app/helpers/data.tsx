@@ -25,7 +25,7 @@ export const allProducts: ProductDetail[] = [
       "Design Optimizing and CFD Analysis for Radial Vortex Flow Controls Device (VFC)",
     description:
       "SuDS Enviro Ltd engaged us to design and simulate a set of Radial Vortex Flow Control (VFC) devices that control stormwater flows using a purely hydraulic mechanism—without moving parts, power, or complex control systems. These devices needed to manage both low and high flow conditions, enabling unrestricted flow at low volumes and inducing vortex-driven throttling during peak flows.",
-    caseStudyLink: "/case-study/vfc-device",
+    caseStudyLink: "/case-study/fea",
     image: "/images/products/vfc-device-image.webp",
   },
   {
@@ -47,8 +47,6 @@ export const allProducts: ProductDetail[] = [
     image: "/images/products/dehydrator-system-image.webp",
   },
 ];
-
-import { allIcons } from "./icons";
 
 export interface IHomePageServiceSubItem {
   tabText: string;

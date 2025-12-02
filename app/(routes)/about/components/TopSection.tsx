@@ -119,7 +119,6 @@ const TopSection = () => {
           </div>
         </div>
       </section>
-
       {/* Section 3: Bottom Image Section */}
     </div>
   );
