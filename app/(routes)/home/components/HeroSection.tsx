@@ -108,8 +108,8 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         </div>
 
         {/* Slider Controls */}
-        <div className="absolute bottom-0 left-0 z-10  hidden sm:block  transition-all duration-500 ease-in-out sm:relative sm:bottom-auto sm:left-auto sm:mt-6">
-          <div className=" gap-[1.375rem] sm:gap-4 w-screen grid pr-[2.5rem]  grid-cols-2 ">
+        <div className="absolute bottom-0 left-0 z-10  hidden sm:block  transition-all duration-500 ease-in-out sm:relative sm:bottom-auto  sm:mt-6">
+          <div className=" gap-[1.375rem] sm:gap-4 w-full   grid   grid-cols-2 ">
             {/* Place Your Order Button */}
             <Link
               href={currentItem.placeOrderLink}

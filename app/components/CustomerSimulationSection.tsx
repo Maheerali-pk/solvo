@@ -157,7 +157,7 @@ const CustomerSimulationSection: React.FC<
             <img
               src="/images/customer-simulation/line-mobile.webp"
               alt="Background"
-              className="absolute bottom-6 w-full left-side-space right-  right-0 z-10"
+              className="absolute bottom-6 w-full px-side-space  right-  right-0 "
               loading="lazy"
             />
             <img
