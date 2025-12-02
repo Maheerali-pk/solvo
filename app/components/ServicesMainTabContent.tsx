@@ -123,12 +123,15 @@ export default function ServicesContent({
           {/* Image */}
           {currentSubItem?.contentImage && (
             <div
-              className={classNames("relative max-w-[40%] w-1/3", {
-                "w-2/3":
+              className={classNames("relative max-w-[40%] sm:w-1/3", {
+                "sm:w-2/3":
                   (selectedServiceIndex === 1 &&
                     internalSelectedSubItemIndex === 3) ||
                   (selectedServiceIndex === 2 &&
                     internalSelectedSubItemIndex === 3),
+                "sm:w-1/4":
+                  selectedServiceIndex === 0 &&
+                  internalSelectedSubItemIndex === 0,
               })}
             >
               <img
