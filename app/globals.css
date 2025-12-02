@@ -283,7 +283,7 @@ li::before {
 }
 
 .animate-scroll-infinite-smooth {
-  animation: scroll-infinite-smooth 30s linear infinite;
+  animation: scroll-infinite-smooth 5s linear infinite;
   will-change: transform;
 }
 

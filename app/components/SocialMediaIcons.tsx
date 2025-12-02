@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { allIcons } from "../helpers/icons";
 
 interface SocialMediaIconsProps {
   small?: boolean;
@@ -6,43 +7,15 @@ interface SocialMediaIconsProps {
 
 const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ small }) => {
   const myClass =
-    "social-media relative cursor-pointer" +
+    "flex h-10 w-10 bg-primary-blue rounded-xl items-center justify-center cursor-pointer" +
     (small ? " social-media-small" : "");
   return (
     <div className="flex flex-row items-center gap-3 ">
-      <div className={myClass}>
-        <Image
-          src="/images/social-media/item1.webp"
-          alt="Instagram"
-          fill
-          className="object-cover"
-        />
-      </div>
+      <div className={myClass}>{allIcons.socialMedia.insta(20, 20)}</div>
 
-      <div className={myClass}>
-        <Image
-          src="/images/social-media/item2.webp"
-          alt="LinkedIn"
-          fill
-          className="object-cover"
-        />
-      </div>
-      <div className={myClass}>
-        <Image
-          src="/images/social-media/item3.webp"
-          alt="WhatsApp"
-          fill
-          className="object-cover"
-        />
-      </div>
-      <div className={myClass}>
-        <Image
-          src="/images/social-media/item4.webp"
-          alt="LinkedIn"
-          fill
-          className="Messenger"
-        />
-      </div>
+      <div className={myClass}>{allIcons.socialMedia.linkedin(20, 20)}</div>
+      <div className={myClass}>{allIcons.socialMedia.whatsapp(20, 20)}</div>
+      <div className={myClass}>{allIcons.socialMedia.messanger(20, 20)}</div>
     </div>
   );
 };

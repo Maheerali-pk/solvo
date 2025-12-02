@@ -124,11 +124,7 @@ function RightSection() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-row items-center gap-2.5 w-full">
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                <img
-                  className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon1.webp"
-                  alt="Phone Icon"
-                ></img>
+                {allIcons.footer.contact(20, 20)}
               </div>
               <a
                 href="tel:+923126099600"
@@ -139,11 +135,7 @@ function RightSection() {
             </div>
             <div className="flex flex-row items-center gap-2.5">
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                <img
-                  className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon2.webp"
-                  alt="Mail Icon"
-                ></img>
+                {allIcons.footer.message(20, 20)}
               </div>
               <a
                 href="mailto:contact@solvoengineers.com"
@@ -154,11 +146,7 @@ function RightSection() {
             </div>
             <div className="flex flex-row items-center gap-2.5 w-full">
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
-                <img
-                  className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon3.webp"
-                  alt="Location Icon"
-                ></img>
+                {allIcons.footer.location(20, 20)}
               </div>
               <a
                 href="https://maps.google.com/?q=Block+C2+Johar+Town,+Lahore"

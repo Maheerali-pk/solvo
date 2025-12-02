@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const OurTechnologySection = () => {
   const technologyLogos = [
@@ -11,24 +12,6 @@ const OurTechnologySection = () => {
     "/images/technology-images/tech5.webp",
     "/images/technology-images/tech6.webp",
   ];
-
-  // Logo widths for each index
-  const getLogoWidth = (index: number) => {
-    switch (index) {
-      case 0:
-        return "6.263125rem";
-      case 1:
-        return "7.6425rem";
-      case 2:
-        return "10.1775rem";
-      case 3:
-        return "11.93rem";
-      case 4:
-        return "8.611875rem";
-      default:
-        return "12.48875rem";
-    }
-  };
 
   return (
     <section className="w-full flex max-w-desktop mx-auto flex-col items-center gap-6 pb-section-spacing relative sm:px-side-space">
@@ -43,42 +26,32 @@ const OurTechnologySection = () => {
 
         {/* Technology Logos - Continuous Linear Scroll */}
         <div className="w-full overflow-hidden relative">
-          <div className="flex items-center gap-16 animate-scroll-infinite-smooth">
-            {/* First set */}
-            {technologyLogos.map((logo, index) => (
-              <div
-                key={`set1-${index}`}
-                className="shrink-0 h-[2.609375rem] flex items-center"
-                style={{ width: getLogoWidth(index) }}
-              >
-                <Image
-                  src={logo}
-                  alt={`Technology ${index + 1}`}
-                  width={200}
-                  height={42}
-                  className="w-full h-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {technologyLogos.map((logo, index) => (
-              <div
-                key={`set2-${index}`}
-                className="shrink-0 h-[2.609375rem] flex items-center"
-                style={{ width: getLogoWidth(index) }}
-              >
-                <Image
-                  src={logo}
-                  alt={`Technology ${index + 1}`}
-                  width={200}
-                  height={42}
-                  className="w-full h-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+          <Marquee
+            speed={90}
+            gradient={false}
+            pauseOnHover={false}
+            className="flex items-center"
+          >
+            {/* Duplicate logos to create seamless loop */}
+            {[...technologyLogos, ...technologyLogos].map((logo, index) => {
+              const originalIndex = index % technologyLogos.length;
+              return (
+                <div
+                  key={`logo-${index}`}
+                  className="shrink-0 flex items-center mx-[2.1875rem]"
+                >
+                  <Image
+                    src={logo}
+                    alt={`Technology ${originalIndex + 1}`}
+                    width={200}
+                    height={42}
+                    className="w-auto h-[2.609375rem] object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            })}
+          </Marquee>
         </div>
       </div>
     </section>
