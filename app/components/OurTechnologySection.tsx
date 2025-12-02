@@ -27,7 +27,7 @@ const OurTechnologySection = () => {
         {/* Technology Logos - Continuous Linear Scroll */}
         <div className="w-full overflow-hidden relative">
           <Marquee
-            speed={90}
+            speed={80}
             gradient={false}
             pauseOnHover={false}
             className="flex items-center"

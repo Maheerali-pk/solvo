@@ -21,7 +21,7 @@ export default function BlogCardLandscape({
   return (
     <Link
       href={blog.link}
-      className={`w-full sm:grid-cols-1 grid grid-cols-[1.6fr_1fr] gap-3 p-3 bg-white border border-footer-border rounded-[1.25rem] w-full hover:shadow-lg transition-shadow sm:flex-col ${className}`}
+      className={`w-full sm:grid-cols-1 grid grid-cols-[1fr_1fr] gap-3 p-3 bg-white border border-footer-border rounded-[1.25rem] w-full hover:shadow-lg transition-shadow sm:flex-col ${className}`}
     >
       {/* Image - Left Side */}
       <div className="relative w-full h-full  rounded-[1.25rem] overflow-hidden bg-[#D7D7D7] shrink-0 sm:w-full sm:min-h-[17rem]">

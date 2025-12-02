@@ -30,7 +30,7 @@ export default function BlogCard({
       <div
         className={classNames(
           "relative w-full h-[17rem] rounded-[1.25rem] overflow-hidden bg-[#D7D7D7]",
-          { "h-[20rem]": big }
+          { "h-[17rem]": big }
         )}
       >
         <Image

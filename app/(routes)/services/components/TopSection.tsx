@@ -76,7 +76,7 @@ const TopSection = () => {
                     {service.title}
                   </h2>
                   <span
-                    className="text-base  sm:max-w-full"
+                    className="text-base  sm:max-w-full text-footer-text"
                     style={{ fontSize: "1rem" }}
                   >
                     {service.description}
