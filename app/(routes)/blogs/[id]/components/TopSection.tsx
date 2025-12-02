@@ -17,7 +17,7 @@ export default function TopSection({ blog }: TopSectionProps) {
           </h3>
 
           {/* Title */}
-          <h2 className=" leading-[1.395em] text-footer-heading font-[570] font-obviously">
+          <h2 className="  text-footer-heading font-[570] font-obviously">
             {blog.title}
           </h2>
 
@@ -31,7 +31,7 @@ export default function TopSection({ blog }: TopSectionProps) {
                 className="object-cover"
               />
             </div>
-            <span className="text-sm leading-[1.286em] text-footer-text font-normal font-poppins whitespace-pre-line">
+            <span className="text-sm  text-footer-text font-normal font-poppins whitespace-pre-line">
               {blog.author.name}
               {"\n"}
               {blog.date}

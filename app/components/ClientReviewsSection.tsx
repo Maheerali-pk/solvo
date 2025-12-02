@@ -87,7 +87,7 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
           {/* Slider Controls */}
           <a
             href="/verify-reviews"
-            className="text-base leading-6 underline text-primary-blue font-normal font-poppins hover:underline sm:px-side-space hidden sm:block "
+            className="text-base underline text-primary-blue font-normal font-poppins hover:underline sm:px-side-space hidden sm:block "
           >
             Verify our reviews
           </a>

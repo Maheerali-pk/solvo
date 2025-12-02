@@ -10,7 +10,7 @@ export default function JobDetails({ job }: JobDetailsProps) {
     <div className="w-full bg-white sm:px-side-space">
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6  sm:px-0">
         {/* Job Title */}
-        <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins">
+        <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins">
           {job.title}
         </h2>
 
@@ -53,7 +53,7 @@ export default function JobDetails({ job }: JobDetailsProps) {
           {/* Team Badge */}
           <div className="flex flex-row gap-[0.625rem] items-center">
             <div className=" py-0  rounded-[1000px]">
-              <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+              <span className="text-sm  text-primary-blue font-normal font-poppins">
                 Team: [{job.team}]
               </span>
             </div>
@@ -63,20 +63,20 @@ export default function JobDetails({ job }: JobDetailsProps) {
         {/* Job Content */}
         <div className="flex flex-col gap-6">
           {/* Introduction */}
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins whitespace-pre-line">
+          <p className="text-base  text-footer-text font-normal font-poppins whitespace-pre-line">
             {job.introduction}
           </p>
 
           {/* Key Responsibilities */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-base leading-[1.5em] text-footer-heading font-semibold font-poppins">
+            <h3 className="text-base  text-footer-heading font-semibold font-poppins">
               Key Responsibilities
             </h3>
             <ul className="flex flex-col gap-2">
               {job.keyResponsibilities.map((responsibility, index) => (
                 <li
                   key={index}
-                  className="text-base leading-[1.5em] text-footer-text font-normal font-poppins"
+                  className="text-base  text-footer-text font-normal font-poppins"
                 >
                   {responsibility}
                 </li>
@@ -86,14 +86,14 @@ export default function JobDetails({ job }: JobDetailsProps) {
 
           {/* Qualifications */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-base leading-[1.5em] text-footer-heading font-semibold font-poppins">
+            <h3 className="text-base  text-footer-heading font-semibold font-poppins">
               Qualifications
             </h3>
             <ul className="flex flex-col gap-2">
               {job.qualifications.map((qualification, index) => (
                 <li
                   key={index}
-                  className="text-base leading-[1.5em] text-footer-text font-normal font-poppins"
+                  className="text-base  text-footer-text font-normal font-poppins"
                 >
                   {qualification}
                 </li>
@@ -103,14 +103,14 @@ export default function JobDetails({ job }: JobDetailsProps) {
 
           {/* Why Join Us */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-base leading-[1.5em] text-footer-heading font-semibold font-poppins">
+            <h3 className="text-base  text-footer-heading font-semibold font-poppins">
               Why Join Us?
             </h3>
             <ul className="flex flex-col gap-2">
               {job.whyJoinUs.map((benefit, index) => (
                 <li
                   key={index}
-                  className="text-base leading-[1.5em] text-footer-text font-normal font-poppins"
+                  className="text-base  text-footer-text font-normal font-poppins"
                 >
                   {benefit}
                 </li>
@@ -120,10 +120,10 @@ export default function JobDetails({ job }: JobDetailsProps) {
 
           {/* Ready to Apply */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-base leading-[1.5em] text-footer-heading font-semibold font-poppins">
+            <h3 className="text-base  text-footer-heading font-semibold font-poppins">
               Ready to Apply?
             </h3>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins whitespace-pre-line">
+            <p className="text-base  text-footer-text font-normal font-poppins whitespace-pre-line">
               {job.readyToApply}
             </p>
           </div>

@@ -13,7 +13,7 @@ export default function TopSection({ project }: TopSectionProps) {
       </h3>
 
       {/* Title */}
-      <h1 className="text-[2.25rem] leading-[1.111em] text-footer-heading font-[570] font-obviously">
+      <h1 className="text-[2.25rem]  text-footer-heading font-[570] font-obviously">
         {project.title}
       </h1>
 

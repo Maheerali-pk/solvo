@@ -261,7 +261,7 @@ const MethodSteps: FunctionComponent<MethodStepsProps> = () => {
               <h2 className="text-footer-heading font-semibold font-poppins">
                 {step.title}
               </h2>
-              <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins whitespace-pre-line">
+              <p className="text-base  text-footer-text font-normal font-poppins whitespace-pre-line">
                 {step.description}
               </p>
             </div>

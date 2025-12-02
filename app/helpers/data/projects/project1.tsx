@@ -12,7 +12,7 @@ export const project1: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project focused on performing a detailed coupled thermal and
               mechanical stress analysis of a standard 1U CubeSat intended for
               low Earth orbit operations. The objective was to study how
@@ -23,7 +23,7 @@ export const project1: IFullProject = {
               large temperature fluctuations experienced in space as the CubeSat
               transitions between sunlight and shadowed regions of orbit.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The analysis was designed to represent realistic mission
               conditions. This involved applying both transient thermal cycles
               and mechanical load cases simultaneously to evaluate the
@@ -52,32 +52,32 @@ export const project1: IFullProject = {
       title: "Objectives and Approach",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The core goal of this study was to ensure that the CubeSat's
             structural design could sustain combined loading without failure,
             deformation, or functional compromise. Specific objectives included:
           </p>
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Determining how temperature gradients influence the distribution
               of stress and strain within the satellite's structural frame.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Simulating the dynamic acceleration and vibration effects
               experienced during rocket launch.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Identifying stress concentrations, potential failure zones, and
               the influence of material choices under combined
               thermal-mechanical loading.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Providing recommendations for improving the CubeSat's mechanical
               stability and thermal resilience through minor geometric or
               material adjustments.
             </li>
           </ul>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             A high-fidelity finite element model of the CubeSat's structure was
             developed for the analysis. The model included all key subsystems
             such as outer panels, internal frames, fasteners, and PCB mounting
@@ -95,36 +95,36 @@ export const project1: IFullProject = {
       title: "Simulation Conditions and Assumptions",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The coupled analysis accounted for the extreme environmental and
             operational loads typical of CubeSat missions. The following
             conditions and parameters were considered:
           </p>
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Thermal cycling between –40°C and +85°C to represent orbital
               exposure to sunlight and Earth shadow.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Heat flux boundary conditions corresponding to solar radiation and
               radiation to deep space.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Structural loads corresponding to launch acceleration up to 20 g,
               applied in multiple directions to simulate dynamic excitation.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Material properties based on aerospace-grade aluminum alloy
               7075-T6 for the main frame and thermally stable polymer composites
               for electronic component housings.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Fixed boundary constraints were applied at the deployer interface
               points, while time-dependent conditions captured temperature and
               stress variation during a complete orbit cycle.
             </li>
           </ul>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             All analyses were performed using advanced solver algorithms to
             ensure convergence under nonlinear temperature-dependent material
             properties. The coupling between the thermal and mechanical solvers
@@ -139,14 +139,14 @@ export const project1: IFullProject = {
       title: "Results and Findings",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The coupled thermal-mechanical analysis provided key insights into
             the CubeSat's performance under realistic conditions. The results
             showed that the structural configuration remained within acceptable
             stress limits under all simulated scenarios, but several notable
             findings emerged.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Localized thermal gradients caused small but measurable deformations
             around the mounting brackets and hinge connections, suggesting the
             potential for minor misalignments in the deployment mechanism. The
@@ -157,7 +157,7 @@ export const project1: IFullProject = {
             This demonstrated the critical influence of thermal effects on the
             overall stress field.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Based on the results, minor geometric improvements were recommended,
             including the addition of fillets at sharp intersections and
             optimization of panel thickness to enhance stiffness while
@@ -166,7 +166,7 @@ export const project1: IFullProject = {
             reduced the risk of fatigue or deformation during launch and orbital
             operation.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The study successfully demonstrated that coupled multiphysics
             simulation is essential for ensuring the durability and reliability
             of CubeSat structures. The findings contributed to a more robust

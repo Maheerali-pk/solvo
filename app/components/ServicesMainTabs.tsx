@@ -44,7 +44,7 @@ export default function OurServicesSection({
         <GreenBadge icon="/images/zap-icon.svg" text="Our Services" />
 
         {/* Title */}
-        <h2 className="text-[1.875rem] mb-7 w-[60%] sm:w-full leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+        <h2 className="text-[1.875rem] mb-7 w-[60%] sm:w-full !leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
           Run entire engineering{" "}
           <span className="text-primary-blue">AI & Simulation workflows</span>{" "}
           in your browser
@@ -92,7 +92,7 @@ export default function OurServicesSection({
                   <div className="w-full y flex flex-row justify-center items-center sm:py-0 gap-4 py-4 sm:border-none border-b border-[rgba(138,138,138,0.6)]">
                     <h3
                       className={classNames(
-                        `text-2xl leading-[1.5em] font-semibold sm:font-obviously font-poppins text-center ${titleColor} transition-colors`,
+                        `text-2xl !leading-[1.5em] font-semibold sm:font-obviously font-poppins text-center ${titleColor} transition-colors`,
                         { "text-disable": !isSelected }
                       )}
                     >
@@ -104,7 +104,7 @@ export default function OurServicesSection({
                   <div className="w-full flex flex-row justify-center items-center gap-[0.625rem] py-4 sm:hidden">
                     <p
                       className={classNames(
-                        `text-base leading-[1.5em] font-normal font-poppins text-center ${descriptionColor} transition-colors`,
+                        `text-base !leading-[1.5em] font-normal font-poppins text-center ${descriptionColor} transition-colors`,
                         { "text-disable": !isSelected }
                       )}
                     >

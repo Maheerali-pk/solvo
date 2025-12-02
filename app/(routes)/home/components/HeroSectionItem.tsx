@@ -36,7 +36,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
 
             {/* Title */}
             <h1
-              className="text-[3rem] leading-[1.104em] text-footer-heading font-semibold"
+              className="text-[3rem]  text-footer-heading font-semibold"
               style={{ fontFamily: "Obviously, sans-serif" }}
             >
               {data.title.split("-")[0]}
@@ -73,7 +73,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
                   <div className="w-6 h-6 flex items-center justify-center">
                     {allIcons.checkCircle(24, 24)}
                   </div>
-                  <span className="text-base leading-[2.25em] text-footer-text font-semibold font-poppins whitespace-nowrap">
+                  <span className="text-base  text-footer-text font-semibold font-poppins whitespace-nowrap">
                     {feature}
                   </span>
                 </div>
@@ -87,7 +87,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
           <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
             {/* Place Your Order Button */}
             <a href={data.placeOrderLink} className="btn btn-primary">
-              <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+              <span className="text-sm  text-white font-normal font-poppins">
                 Place Your Order
               </span>
               <div className="w-6 h-6 text-white">
@@ -97,7 +97,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
 
             {/* Our Services Button */}
             <a href={data.ourServicesLink} className="btn btn-secondary">
-              <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+              <span className="text-sm  text-primary-blue font-normal font-poppins">
                 Our Services
               </span>
               <div className="w-6 h-6 text-primary-blue">

@@ -43,12 +43,12 @@ export default function ProductDetailCard({
           />
 
           {/* Title */}
-          <h3 className="text-xl leading-[1.5em] text-secondary-foreground  font-semibold font-poppins">
+          <h3 className="text-xl  text-secondary-foreground  font-semibold font-poppins">
             {title}
           </h3>
 
           {/* Description */}
-          <p className="text-base leading-6 text-secondary-foreground font-normal font-poppins">
+          <p className="text-base text-secondary-foreground font-normal font-poppins">
             {description}
           </p>
         </div>

@@ -32,7 +32,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
             ></GreenBadge>
 
             {/* Title */}
-            <h2 className="text-[1.875rem]  leading-[1.2em] text-text-gray font-semibold font-poppins">
+            <h2 className="text-[1.875rem]   text-text-gray font-semibold font-poppins">
               {data.title}
             </h2>
           </div>
@@ -43,7 +43,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
             <div className="flex flex-col gap-9 flex-1">
               <div className="flex flex-col gap-3 justify-start">
                 {/* Phase Title */}
-                <h3 className="text-xl leading-[1.8em] text-footer-heading font-semibold font-poppins ">
+                <h3 className="text-xl  text-footer-heading font-semibold font-poppins ">
                   {data.leftPhase.phaseTitle}
                 </h3>
 
@@ -57,7 +57,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
                       <div className="w-6 h-6 flex items-center justify-center">
                         {allIcons.checkCircle(24, 24)}
                       </div>
-                      <span className="text-base leading-[1.5em] text-text-gray font-normal font-poppins">
+                      <span className="text-base  text-text-gray font-normal font-poppins">
                         {item}
                       </span>
                     </div>
@@ -98,7 +98,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
             <div className="flex flex-col gap-9 flex-1">
               <div className="flex flex-col gap-3">
                 {/* Phase Title */}
-                <h3 className="text-xl leading-[1.8em] text-footer-heading font-semibold font-poppins ">
+                <h3 className="text-xl  text-footer-heading font-semibold font-poppins ">
                   {data.rightPhase.phaseTitle}
                 </h3>
 
@@ -112,7 +112,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
                       <div className="w-6 h-6 flex items-center justify-center">
                         {allIcons.checkCircle(24, 24)}
                       </div>
-                      <span className="text-base leading-[1.5em] text-text-gray font-normal font-poppins">
+                      <span className="text-base  text-text-gray font-normal font-poppins">
                         {item}
                       </span>
                     </div>

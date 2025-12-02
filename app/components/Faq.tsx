@@ -65,7 +65,7 @@ export default function Faq({ faqs, className = "" }: FaqProps) {
             >
               <div className="px-[1.875rem] pb-[1.875rem]">
                 <div className="pt-0">
-                  <p className="text-[1.125rem] leading-[1.667em] text-footer-text font-normal font-poppins">
+                  <p className="text-[1.125rem]  text-footer-text font-normal font-poppins">
                     {faq.answer}
                   </p>
                 </div>

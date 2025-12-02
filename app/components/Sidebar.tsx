@@ -114,7 +114,7 @@ export default function Sidebar({
                   >
                     <span
                       className={classNames(
-                        "flex-1 leading-[1.5em] font-medium font-poppins text-left",
+                        "flex-1  font-medium font-poppins text-left",
                         {
                           "text-primary-blue": isActive,
                           "text-footer-border": !isActive,
@@ -169,13 +169,10 @@ export default function Sidebar({
                   )}
                 >
                   <span
-                    className={classNames(
-                      "leading-[1.5em] font-medium font-poppins",
-                      {
-                        "text-primary-blue": isActive,
-                        "text-footer-border": !isActive,
-                      }
-                    )}
+                    className={classNames(" font-medium font-poppins", {
+                      "text-primary-blue": isActive,
+                      "text-footer-border": !isActive,
+                    })}
                     style={{ fontSize: "1rem" }}
                   >
                     {item.label}

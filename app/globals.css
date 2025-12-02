@@ -148,13 +148,19 @@ h1 {
 
 h2 {
   font-size: 1.875rem !important;
+  line-height: 1.2 !important;
 }
 
 h3 {
   font-size: 1.25rem !important;
+  line-height: 1.4 !important;
 }
 
+.text-base {
+  line-height: 1.71 !important;
+}
 p {
+  line-height: 1.71 !important;
   font-size: 0.875rem !important;
 }
 

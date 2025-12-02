@@ -13,7 +13,7 @@ export const project7: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project presents a detailed Computational Fluid Dynamics
               (CFD) analysis of the Mercedes-AMG W11 Formula One front wing,
               with a focus on optimizing aerodynamic performance by minimizing
@@ -23,7 +23,7 @@ export const project7: IFullProject = {
               streamlines to analyze flow separation, vortex generation, and
               wake development.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The front wing of a Formula One car plays a critical role in
               determining the aerodynamic efficiency of the entire vehicle.
               Small modifications to the wing geometry can significantly impact
@@ -50,23 +50,23 @@ export const project7: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               Main objectives:
             </p>
             <ul className="flex flex-col gap-4">
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To simulate external airflow over a realistic multi-element
                 Formula One front wing.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To reduce aerodynamic drag while retaining favorable
                 lift/downforce profiles.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To visualize vortex shedding, flow acceleration, and wake
                 structure behind the wing.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To identify and eliminate regions of flow separation and
                 recirculation that lead to drag penalties.
               </li>
@@ -86,7 +86,7 @@ export const project7: IFullProject = {
       title: "Approach:",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The wing model was recreated with complex curvature, flaps, and
             endplates to accurately represent the real W11 geometry. CFD
             simulations were conducted under steady-state conditions using Ansys
@@ -103,10 +103,10 @@ export const project7: IFullProject = {
       title: "Results and Observations",
       description: (
         <div className="flex flex-col gap-4">
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Velocity and Wake Formation
           </h3>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             As shown in the velocity contour plots, the airflow accelerates
             significantly over the upper surfaces of the wing elements while
             remaining attached along the lower surface. Flow visualization
@@ -118,10 +118,10 @@ export const project7: IFullProject = {
             generation, while simultaneously minimizing the strength of trailing
             vortices.
           </p>
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Streamline Analysis
           </h3>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The streamline plots highlight critical aspects of the wing's
             aerodynamic performance. The streamlines bend smoothly over the
             upper surfaces with very limited trailing turbulence, confirming
@@ -132,10 +132,10 @@ export const project7: IFullProject = {
             thereby maintaining aerodynamic stability and reducing cross-flow
             interference.
           </p>
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Drag Optimization Impact
           </h3>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Design refinements led to a noticeable reduction in pressure drag
             across the frontal section of the wing. This optimization also
             resulted in reduced wake turbulence downstream, causing less
@@ -151,7 +151,7 @@ export const project7: IFullProject = {
       title: "Conclusion",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             This CFD-based drag optimization of the Mercedes W11 Formula One
             front wing demonstrates how precise aerodynamic design and
             simulation can dramatically improve performance. By leveraging Ansys
@@ -159,7 +159,7 @@ export const project7: IFullProject = {
             while maintaining critical downforce levels and minimizing wake
             turbulence.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Such simulation-based workflows are essential in high-performance
             motorsport engineering, where every millisecond counts. The results
             underscore the power of Computational Fluid Dynamics in optimizing

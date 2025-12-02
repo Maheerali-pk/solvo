@@ -26,7 +26,7 @@ export default function OurBestClients() {
         {/* Content */}
         <div className="flex flex-col items-center gap-[1.875rem] w-full">
           {/* Description */}
-          <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+          <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins text-center">
             Trusted by{" "}
             <span className="text-primary-blue">
               3,000+ globally companies.

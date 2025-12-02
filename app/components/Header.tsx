@@ -92,13 +92,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         <nav className="flex sm:hidden items-center justify-end gap-3 flex-1 h-6">
           <Link
             href="/home"
-            className={classNames(
-              "text-base leading-6 font-normal font-poppins",
-              {
-                "text-primary-blue": activeRoute === "home",
-                "text-text-gray": activeRoute !== "home",
-              }
-            )}
+            className={classNames("text-base font-normal font-poppins", {
+              "text-primary-blue": activeRoute === "home",
+              "text-text-gray": activeRoute !== "home",
+            })}
           >
             Home
           </Link>
@@ -106,13 +103,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <Link
               href="/about"
-              className={classNames(
-                "text-base leading-6 font-normal font-poppins",
-                {
-                  "text-primary-blue": activeRoute === "about",
-                  "text-text-gray": activeRoute !== "about",
-                }
-              )}
+              className={classNames("text-base font-normal font-poppins", {
+                "text-primary-blue": activeRoute === "about",
+                "text-text-gray": activeRoute !== "about",
+              })}
             >
               About Us
             </Link>
@@ -125,7 +119,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             <button
               onClick={toggleServices}
               className={classNames(
-                "flex items-center gap-0.5 text-base leading-6 font-normal font-poppins cursor-pointer",
+                "flex items-center gap-0.5 text-base font-normal font-poppins cursor-pointer",
                 {
                   "text-primary-blue": activeRoute === "services",
                   "text-text-gray": activeRoute !== "services",
@@ -142,13 +136,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <Link
               href="/projects"
-              className={classNames(
-                "text-base leading-6 font-normal font-poppins",
-                {
-                  "text-primary-blue": activeRoute === "projects",
-                  "text-text-gray": activeRoute !== "projects",
-                }
-              )}
+              className={classNames("text-base font-normal font-poppins", {
+                "text-primary-blue": activeRoute === "projects",
+                "text-text-gray": activeRoute !== "projects",
+              })}
             >
               Projects
             </Link>
@@ -157,13 +148,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <a
               href="/careers"
-              className={classNames(
-                "text-base leading-6 font-normal font-poppins",
-                {
-                  "text-primary-blue": activeRoute === "career",
-                  "text-text-gray": activeRoute !== "career",
-                }
-              )}
+              className={classNames("text-base font-normal font-poppins", {
+                "text-primary-blue": activeRoute === "career",
+                "text-text-gray": activeRoute !== "career",
+              })}
             >
               Career
             </a>
@@ -172,13 +160,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <Link
               href="/blogs"
-              className={classNames(
-                "text-base leading-6 font-normal font-poppins",
-                {
-                  "text-primary-blue": activeRoute === "blogs",
-                  "text-text-gray": activeRoute !== "blogs",
-                }
-              )}
+              className={classNames("text-base font-normal font-poppins", {
+                "text-primary-blue": activeRoute === "blogs",
+                "text-text-gray": activeRoute !== "blogs",
+              })}
             >
               Blogs
             </Link>
@@ -187,9 +172,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
 
         {/* Contact Button */}
         <button className="btn btn-primary sm:!hidden">
-          <span className="text-sm leading-6 font-normal font-poppins">
-            Contact us
-          </span>
+          <span className="text-sm font-normal font-poppins">Contact us</span>
           <div className="w-5 h-5 text-white">
             {allIcons.chevronRight(20, 20)}
           </div>

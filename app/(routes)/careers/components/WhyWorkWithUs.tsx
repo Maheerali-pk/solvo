@@ -25,12 +25,12 @@ function BenefitCard({ icon, title, description }: BenefitCardProps) {
       {/* Content */}
       <div className="flex flex-col gap-[0.625rem] w-full">
         {/* Title */}
-        <h3 className="text-xl leading-[1.8em] text-footer-heading font-semibold font-poppins text-center">
+        <h3 className="text-xl  text-footer-heading font-semibold font-poppins text-center">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins text-center">
+        <p className="text-base  text-footer-text font-normal font-poppins text-center">
           {description}
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function WhyWorkWithUs() {
           className="absolute top-5 left-0 -translate-y-1/2 sm:hidden"
         ></img>
         <div className="flex flex-col gap-4">
-          <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins text-center">
+          <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins text-center">
             Why Work With Us?
           </h2>
         </div>

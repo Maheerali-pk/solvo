@@ -86,7 +86,7 @@ export default function ServicesContent({
               )}
 
               {/* Tab Text */}
-              <span className="text-sm !sm:text-[0.5rem]  font-semibold font-poppins text-center w-full sm:font-normal">
+              <span className="text-base font-semibold font-poppins text-center w-full sm:font-normal">
                 {subItem.tabText}
               </span>
             </button>
@@ -99,12 +99,12 @@ export default function ServicesContent({
           <div className="flex-1 flex h-full flex-col justify-between gap-4">
             {/* Title */}
             <div className="flex flex-col gap-4">
-              <h3 className="text-[1.25rem] leading-[1.3846153846153846em] text-footer-heading font-semibold font-poppins">
+              <h3 className="text-[1.25rem]  text-footer-heading font-semibold font-poppins">
                 {currentSubItem?.contentTitle || currentService.title}
               </h3>
 
               {/* Description */}
-              <p className="text-base leading-6 text-footer-text font-normal font-poppins">
+              <p className="text-base text-footer-text font-normal font-poppins">
                 {currentSubItem?.contentDescription ||
                   currentService.description}
               </p>

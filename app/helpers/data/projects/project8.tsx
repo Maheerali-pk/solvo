@@ -13,7 +13,7 @@ export const project8: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project involved a comprehensive Finite Element Analysis
               (FEA) of a custom-designed industrial fixture assembly to evaluate
               its structural performance under static loading conditions. The
@@ -23,7 +23,7 @@ export const project8: IFullProject = {
               stiffness, minimal deformation, and structural integrity under
               operational loads.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The simulation was performed using SolidWorks Simulation,
               employing bonded contact conditions and global meshing across a
               multi-part assembly. The results provided critical insights into
@@ -48,27 +48,27 @@ export const project8: IFullProject = {
       title: "Objectives and Approach",
       description: (
         <div className="flex flex-col gap-4">
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Key objectives of this study included:
           </h3>
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Performing static structural analysis on a complex fixture
               assembly using FEA tools.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Verifying the structural capacity under real-world load conditions
               (7,664.79 N applied in the Y-direction).
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Identifying maximum stress zones and displacements to evaluate
               potential points of failure.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Assessing the Factor of Safety (FOS) across all components to
               validate the design.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Supporting fixture weight/stiffness optimization based on
               simulation insights.
             </li>
@@ -80,12 +80,12 @@ export const project8: IFullProject = {
       title: "Simulation Results",
       description: (
         <div className="flex flex-col gap-4">
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Stress Distribution (von Mises Stress)
           </h3>
           <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
             <div className="flex-1 flex flex-col gap-4">
-              <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <p className="text-base  text-footer-text font-normal font-poppins">
                 The simulation revealed a maximum stress of 146.8 MPa at Node
                 13,616 and a minimum stress of 2.25 kPa. The highest stress
                 concentrations were observed around localized connection points
@@ -111,7 +111,7 @@ export const project8: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The analysis showed a maximum displacement of 0.00708 mm at Node
               18,700 and a minimum displacement of 0.00423 mm. The displacement
               contour confirmed minimal deflection, demonstrating sufficient
@@ -133,7 +133,7 @@ export const project8: IFullProject = {
       title: "Strain",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The maximum equivalent strain recorded was 4.072e-4, with strain
             distribution remaining uniform throughout the structure. All values
             stayed within the elastic region, validating both the material
@@ -146,7 +146,7 @@ export const project8: IFullProject = {
       title: "Factor of Safety (FOS)",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The minimum factor of safety was 4.43 at the location of maximum
             stress, while the maximum FOS reached 100 in low-stress regions. A
             minimum safety factor above 4 indicates a highly conservative and
@@ -160,7 +160,7 @@ export const project8: IFullProject = {
       title: "Conclusion and Optimization Insight",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The FEA results confirmed that the industrial fixture design is
             structurally sound, exhibiting low deformation, acceptable stress
             levels, and a high safety margin. The minimal displacement observed

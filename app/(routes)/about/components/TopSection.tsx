@@ -34,7 +34,7 @@ const TopSection = () => {
         ></PageHeading>
       </div>
       <button className="btn btn-primary">
-        <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+        <span className="text-sm  text-white font-normal font-poppins">
           Lets Connect
         </span>
         <div className="w-6 h-6 text-white">
@@ -83,21 +83,21 @@ const TopSection = () => {
                 {/* Badge */}
 
                 {/* Title */}
-                <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins">
+                <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins">
                   Building Practical Innovation
                 </h2>
               </div>
 
               {/* Description */}
               <div className="flex flex-col gap-4">
-                <p className="text-lg leading-[1.667em] text-footer-text font-normal font-poppins">
+                <p className="text-lg  text-footer-text font-normal font-poppins">
                   We are a small team of builders who enjoy turning ideas into
                   useful results. What began as a few curious engineers has
                   grown into a group that helps companies design launch and
                   improve products. We listen first plan clearly and focus on
                   work that is practical reliable and easy to maintain.
                 </p>
-                <p className="text-lg leading-[1.667em] text-footer-text font-normal font-poppins">
+                <p className="text-lg  text-footer-text font-normal font-poppins">
                   Our culture values clear communication ownership and steady
                   improvement. We treat every project as a partnership and keep
                   feedback simple and honest. This is placeholder copy sized for

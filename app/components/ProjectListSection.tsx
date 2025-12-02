@@ -41,7 +41,7 @@ export default function ProjectListSection({ withoutHeading = false }) {
 
         {/* Title */}
         {!withoutHeading && (
-          <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+          <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins text-center">
             Our <span className="text-primary-blue">Projects</span>
           </h2>
         )}
@@ -101,9 +101,7 @@ export default function ProjectListSection({ withoutHeading = false }) {
             onClick={() => router.push("/projects")}
             className="btn btn-primary items-center "
           >
-            <span className="text-sm leading-6 font-normal font-poppins">
-              View all
-            </span>
+            <span className="text-sm font-normal font-poppins">View all</span>
             <div className="w-5 h-5 text-white">
               {allIcons.chevronRight(20, 20)}
             </div>

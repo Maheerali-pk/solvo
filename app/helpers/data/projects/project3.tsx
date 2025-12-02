@@ -13,7 +13,7 @@ export const project3: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project presents a detailed Computational Fluid Dynamics
               (CFD) analysis of compressible airflow through a two-dimensional
               converging-diverging (CD) nozzle using Ansys Fluent. The primary
@@ -22,7 +22,7 @@ export const project3: IFullProject = {
               the nozzle, and evaluate the flow regime under choked and expanded
               conditions.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               CD nozzles are crucial components in propulsion systems,
               especially in aerospace and defense industries, where the
               conversion of thermal energy into directed kinetic energy is
@@ -49,28 +49,28 @@ export const project3: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The key objectives of this project were:
             </p>
             <ul className="flex flex-col gap-4">
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To perform a steady-state CFD simulation of compressible flow in
                 a CD nozzle using a 2D axisymmetric model.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To analyze the Mach number distribution through the nozzle,
                 focusing on the transition from subsonic to supersonic flow.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To study the static pressure drop and pressure wave propagation
                 along the nozzle geometry.
               </li>
-              <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <li className="text-base  text-footer-text font-normal font-poppins">
                 To assess nozzle performance under typical pressure ratios
                 observed in aerospace applications.
               </li>
             </ul>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The approach involved creating a high-quality 2D structured mesh
               of the nozzle geometry with mesh refinement near the throat and
               outlet regions to accurately capture pressure gradients and shock
@@ -94,32 +94,32 @@ export const project3: IFullProject = {
       description: (
         <div className="flex flex-col gap-4">
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Solver: Density-based solver for compressible, steady-state flow
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Working Fluid: Air, modeled as an ideal gas
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Inlet Boundary: Total pressure inlet with elevated pressure to
               simulate choking and expansion
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Outlet Boundary: Static pressure set to atmospheric conditions
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Turbulence Model: SST k-omega, selected for its balance of
               accuracy in boundary layer and shock resolution
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Wall Conditions: Adiabatic and no-slip
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               Geometry: 2D axisymmetric CD nozzle with converging throat and
               smooth diverging outlet
             </li>
           </ul>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The pressure ratio across the nozzle was chosen such that choked
             flow was achieved at the throat, followed by supersonic expansion in
             the divergent section.
@@ -131,7 +131,7 @@ export const project3: IFullProject = {
       title: "Results and Findings",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Two main result variables were examined — Mach number distribution
             and static pressure distribution.
           </p>
@@ -142,7 +142,7 @@ export const project3: IFullProject = {
       title: "Mach Number Distribution:",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The Mach number contour clearly shows the acceleration of flow from
             subsonic (blue) in the converging section to Mach 1 at the throat,
             and further increase to Mach 1.55 (red) in the divergent section.
@@ -159,7 +159,7 @@ export const project3: IFullProject = {
       title: "Static Pressure Distribution:",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The static pressure contour reveals a strong pressure drop along the
             nozzle. The pressure is highest at the inlet (red) and reduces
             progressively towards the outlet (cyan), which corresponds to the
@@ -175,7 +175,7 @@ export const project3: IFullProject = {
       title: "Conclusion",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             This CFD study successfully demonstrated the application of Ansys
             Fluent for simulating compressible flow through a
             converging-diverging nozzle. The simulation results provided
@@ -183,7 +183,7 @@ export const project3: IFullProject = {
             nozzle, helping identify conditions for optimal expansion and thrust
             generation.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The project confirms that Computational Fluid Dynamics is an
             essential tool for analyzing high-speed internal flows in propulsion
             systems. Engineers can rely on such simulations to validate nozzle

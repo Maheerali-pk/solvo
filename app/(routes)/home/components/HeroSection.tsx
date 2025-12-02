@@ -52,7 +52,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
               {/* Place Your Order Button */}
               <a href={currentItem.placeOrderLink} className="btn btn-primary">
-                <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                <span className="text-sm  text-white font-normal font-poppins">
                   Place Your Order
                 </span>
                 <div className="w-6 h-6 text-white">
@@ -65,7 +65,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
                 href={currentItem.ourServicesLink}
                 className="btn btn-secondary"
               >
-                <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+                <span className="text-sm  text-primary-blue font-normal font-poppins">
                   Our Services
                 </span>
                 <div className="w-6 h-6 text-primary-blue">

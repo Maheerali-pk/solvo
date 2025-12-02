@@ -16,20 +16,20 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
     >
       <div className="w-full max-w-desktop mx-auto sm:px-0 grid grid-cols-2 gap-14 sm:grid-cols-1 sm:gap-6">
         <div className="flex h-full flex-col justify-between sm:gap-8">
-          <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins">
+          <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins">
             Frequently Asked <br></br>
             <span className="text-primary-blue">Questions (FAQs)</span>
           </h2>
           <div className="flex flex-col gap-6 bg-white rounded-[1.25rem] p-6 sm:hidden">
             {/* Title */}
 
-            <h3 className="text-[1.5rem] leading-[1.5em] text-footer-text font-semibold font-poppins">
+            <h3 className="text-[1.5rem]  text-footer-text font-semibold font-poppins">
               Still have a questions?
             </h3>
 
             {/* Description */}
             <div className="flex flex-col gap-[1.375rem]">
-              <p className="text-[1.125rem] leading-[1.667em] text-footer-text font-normal font-poppins">
+              <p className="text-[1.125rem]  text-footer-text font-normal font-poppins">
                 At SOLVO Engineers, We Commit To Delivering Innovative, Focused
                 And Personalized
               </p>
@@ -37,7 +37,7 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
 
             {/* Button */}
             <button className="btn btn-primary w-fit">
-              <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+              <span className="text-sm  text-white font-normal font-poppins">
                 Send email
               </span>
               <div className="w-5 h-5 text-white">
@@ -55,13 +55,13 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
         <div className="flex flex-col gap-6 bg-white rounded-[1.25rem] p-6 sm:flex hidden">
           {/* Title */}
 
-          <h3 className="text-[1.5rem] leading-[1.5em] text-footer-text font-semibold font-poppins">
+          <h3 className="text-[1.5rem]  text-footer-text font-semibold font-poppins">
             Still have a questions?
           </h3>
 
           {/* Description */}
           <div className="flex flex-col gap-[1.375rem]">
-            <p className="text-[1.125rem] leading-[1.667em] text-footer-text font-normal font-poppins">
+            <p className="text-[1.125rem]  text-footer-text font-normal font-poppins">
               At SOLVO Engineers, We Commit To Delivering Innovative, Focused
               And Personalized
             </p>
@@ -69,7 +69,7 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
 
           {/* Button */}
           <button className="btn btn-primary w-fit">
-            <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+            <span className="text-sm  text-white font-normal font-poppins">
               Send email
             </span>
             <div className="w-5 h-5 text-white">

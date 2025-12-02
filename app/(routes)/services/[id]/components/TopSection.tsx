@@ -28,7 +28,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
           description={<>{serviceItem.subtitle}</>}
         ></PageHeading>
         <button className="btn btn-primary">
-          <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+          <span className="text-sm  text-white font-normal font-poppins">
             Lets Connect
           </span>
           <div className="w-6 h-6 text-white">
@@ -48,7 +48,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
       <div className="relative z-10 w-full  ">
         <div className="w-full max-w-desktop mx-auto flex flex-col gap-4 sm:px-side-space">
           {/* Content Title */}
-          <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins text-center">
+          <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins text-center">
             {serviceItem.content.title}
           </h2>
 
@@ -56,7 +56,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
           <div className="flex flex-row items-start gap-[3.125rem] mt-4 sm:flex-col sm:gap-6">
             {/* Left: Description */}
             <div className="flex-1">
-              <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <p className="text-base  text-footer-text font-normal font-poppins">
                 {serviceItem.content.description}
                 <br></br>
                 <br></br>
@@ -82,7 +82,7 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
 
               {/* More Services Card */}
               <div className="bg-[rgba(136,216,232,0.2)] rounded-[0.625rem] p-[1.125rem] flex flex-col gap-6">
-                <h3 className="text-[1.625rem] leading-[1.385em] text-footer-heading font-semibold font-poppins">
+                <h3 className="text-[1.625rem]  text-footer-heading font-semibold font-poppins">
                   Our more Engineering Services
                 </h3>
                 <div className="flex flex-col gap-6">
@@ -99,12 +99,12 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
                           </div>
                           <Link
                             href={service.link}
-                            className="text-[1.125rem] leading-[2em] text-primary-blue font-semibold font-poppins hover:underline"
+                            className="text-[1.125rem]  text-primary-blue font-semibold font-poppins hover:underline"
                           >
                             {service.title}
                           </Link>
                         </div>
-                        <p className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins ">
+                        <p className="text-sm  text-footer-text font-normal font-poppins ">
                           {service.description}
                         </p>
                       </div>

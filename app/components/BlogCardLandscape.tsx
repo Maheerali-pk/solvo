@@ -38,7 +38,7 @@ export default function BlogCardLandscape({
         {/* Category Badge */}
         <div className="w-fit">
           <div className="px-4 border border-footer-border rounded-2xl">
-            <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+            <span className="text-sm  text-primary-blue font-normal font-poppins">
               {categoryLabel}
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function BlogCardLandscape({
         {/* Description and Read More */}
         <div className="flex flex-col justify-end flex-1 gap-3">
           <div className="flex flex-col items-start ap-2">
-            <p className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins flex-1">
+            <p className="text-sm  text-footer-text font-normal font-poppins flex-1">
               {blog.description.slice(0, 80)}...
             </p>
             <span className="text-sm  text-primary-blue font-normal font-poppins whitespace-nowrap">
@@ -75,7 +75,7 @@ export default function BlogCardLandscape({
 
             {/* Author Name and Date */}
             <div className="flex flex-col">
-              <span className="text-sm leading-[1.286em] text-footer-border font-normal font-poppins whitespace-pre-line">
+              <span className="text-sm  text-footer-border font-normal font-poppins whitespace-pre-line">
                 {blog.author.name}
                 {"\n"}
                 {blog.date}

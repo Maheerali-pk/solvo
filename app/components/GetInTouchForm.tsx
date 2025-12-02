@@ -47,7 +47,7 @@ export default function GetInTouchForm() {
     >
       {/* Title */}
       <div className="relative z-10  sm:block hidden">
-        <h3 className="text-2xl leading-[1.5em] text-text-gray font-semibold font-poppins">
+        <h3 className="text-2xl  text-text-gray font-semibold font-poppins">
           <span className="text-primary-blue">Get in touch</span> with us
         </h3>
 
@@ -58,7 +58,7 @@ export default function GetInTouchForm() {
             <div className="text-primary-blue flex-shrink-0">
               {allIcons.checkCircle(12, 12)}
             </div>
-            <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+            <span className="text-sm  text-footer-text font-medium font-poppins">
               We will respond to you within 24 hours
             </span>
           </div>
@@ -68,7 +68,7 @@ export default function GetInTouchForm() {
             <div className="text-primary-blue flex-shrink-0">
               {allIcons.checkCircle(12, 12)}
             </div>
-            <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+            <span className="text-sm  text-footer-text font-medium font-poppins">
               You'll be talking to CAE Engineers account mangers
             </span>
           </div>
@@ -114,7 +114,7 @@ export default function GetInTouchForm() {
               onChange={handleChange}
               placeholder="Full Name"
               required
-              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
             />
             <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none">
               *
@@ -145,7 +145,7 @@ export default function GetInTouchForm() {
               onChange={handleChange}
               placeholder="Email"
               required
-              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+              className="w-full px-3 py-1 border border-footer-border rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
             />
             <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none">
               *
@@ -188,7 +188,7 @@ export default function GetInTouchForm() {
         <div className="flex flex-col gap-2.5">
           <label
             htmlFor="message"
-            className="text-lg leading-[1.333em] text-text-gray font-medium font-poppins"
+            className="text-lg  text-text-gray font-medium font-poppins"
           >
             Your Massage <span className="text-red-500">*</span>
           </label>
@@ -200,7 +200,7 @@ export default function GetInTouchForm() {
             placeholder="Type here...."
             required
             rows={8}
-            className="px-3 py-3 border border-footer-border rounded-lg w-full min-h-[12.5rem] text-base leading-[1.714em] text-footer-text font-normal font-poppins outline-none resize-none focus:border-primary-blue"
+            className="px-3 py-3 border border-footer-border rounded-lg w-full min-h-[12.5rem] text-base  text-footer-text font-normal font-poppins outline-none resize-none focus:border-primary-blue"
           />
         </div>
 
@@ -214,7 +214,7 @@ export default function GetInTouchForm() {
               onChange={handleChange}
               className="w-4 h-4 border border-primary-blue rounded cursor-pointer"
             />
-            <span className="text-base leading-6 text-primary-blue font-normal font-poppins">
+            <span className="text-base text-primary-blue font-normal font-poppins">
               This project required an NDA
             </span>
           </label>
@@ -222,16 +222,16 @@ export default function GetInTouchForm() {
           <div className="flex flex-col gap-6">
             <label
               htmlFor="file"
-              className="text-xs leading-[2em] text-text-gray font-normal font-poppins"
+              className="text-xs  text-text-gray font-normal font-poppins"
             >
               Upload Document (Optional)
             </label>
             <div className="flex flex-row items-center gap-5 px-3 py-1 border border-footer-border rounded-lg">
-              <span className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins flex-1">
+              <span className="text-sm  text-footer-text font-normal font-poppins flex-1">
                 {formData.file ? formData.file.name : "Choose file to upload"}
               </span>
               <label className="px-3 py-1 border border-orange rounded-lg bg-orange cursor-pointer">
-                <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                <span className="text-sm  text-white font-normal font-poppins">
                   Browse File
                 </span>
                 <input

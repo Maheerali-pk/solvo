@@ -15,21 +15,21 @@ const ClientFocusSolutions = () => {
         {/* Left Content */}
         <div className="flex flex-col gap-[1.875rem] flex-1">
           {/* Title */}
-          <h2 className="leading-[1.2em] font-semibold font-poppins text-footer-text">
+          <h2 className=" font-semibold font-poppins text-footer-text">
             Client-Focused Solutions
           </h2>
 
           {/* Content Section */}
           <div className="flex flex-col gap-6">
             {/* Subtitle */}
-            <h3 className="text-[1.5rem] leading-[1.5em] font-semibold font-poppins text-[#363636]">
+            <h3 className="text-[1.5rem]  font-semibold font-poppins text-[#363636]">
               Your Vision, Our Expertise
             </h3>
 
             {/* Description and Bullet Points */}
             <div className="flex flex-col gap-3">
               <span
-                className="text-base leading-[1.5em] text-[#4A4A4A] font-normal font-poppins"
+                className="text-base  text-[#4A4A4A] font-normal font-poppins"
                 style={{ fontSize: "1rem" }}
               >
                 At Solvo Engineers, We prioritize your unique needs, delivering
@@ -51,7 +51,7 @@ const ClientFocusSolutions = () => {
                   {bulletPoints.map((point, index) => (
                     <span
                       key={index}
-                      className="text-base leading-[1.5em] text-[#4A4A4A] font-normal font-poppins whitespace-pre-line"
+                      className="text-base  text-[#4A4A4A] font-normal font-poppins whitespace-pre-line"
                       style={{ fontSize: "1rem" }}
                     >
                       {point}
@@ -63,7 +63,7 @@ const ClientFocusSolutions = () => {
 
             {/* Question Text */}
             <span
-              className="text-base leading-[1.5em] text-primary-blue font-normal font-poppins"
+              className="text-base  text-primary-blue font-normal font-poppins"
               style={{ fontSize: "1rem" }}
             >
               Ready To Take Your Projects To The Next Level?
@@ -75,7 +75,7 @@ const ClientFocusSolutions = () => {
                 href="#"
                 className="w-[10.75rem] h-12 bg-primary-blue rounded-xl flex flex-row items-center justify-center gap-2 px-4 py-4 sm:w-full"
               >
-                <span className="text-base leading-[1.714em] text-white font-normal font-poppins text-center">
+                <span className="text-base  text-white font-normal font-poppins text-center">
                   Learn More
                 </span>
                 <div className="w-5 h-5 text-white">
@@ -86,7 +86,7 @@ const ClientFocusSolutions = () => {
                 href="#"
                 className="w-[10.75rem] h-12 bg-white border border-primary-blue rounded-xl flex flex-row items-center justify-center gap-2 px-4 py-4 sm:w-full"
               >
-                <span className="text-base leading-[1.714em] text-primary-blue font-normal font-poppins text-center">
+                <span className="text-base  text-primary-blue font-normal font-poppins text-center">
                   Our Services
                 </span>
                 <div className="w-6 h-6 text-primary-blue">

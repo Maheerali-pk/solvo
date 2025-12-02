@@ -13,7 +13,7 @@ export const project11: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project focused on performing a comprehensive HVAC (Heating,
               Ventilation, and Air Conditioning) simulation of a warehouse using
               Computational Fluid Dynamics (CFD) in Ansys. The primary objective
@@ -22,7 +22,7 @@ export const project11: IFullProject = {
               air quality, and reduce dependence on forced mechanical
               ventilation systems.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               Warehouses are typically large enclosed spaces with limited
               airflow control, making natural ventilation critical for
               maintaining a safe and comfortable environment. By evaluating air
@@ -48,56 +48,56 @@ export const project11: IFullProject = {
       title: "Objectives and Approach",
       description: (
         <div className="flex flex-col gap-4">
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Primary goals:
           </h3>
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             The key objectives of this project were:
           </h3>
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To simulate the air velocity distribution throughout the duct
               network and main warehouse volume.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To identify zones of low airflow or high turbulence intensity.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To evaluate pressure drop across diffusers and ducts.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To reduce turbulence in connector ducts through geometric
               improvements.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To provide data-driven design recommendations that increase
               natural airflow with minimal energy input.
             </li>
           </ul>
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Simulation tools and methodology:
           </h3>
           <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
             <div className="flex-1 flex flex-col gap-4">
               <ul className="flex flex-col gap-4">
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Software Used: Ansys Fluent (2024 R2)
                 </li>
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Simulation Type: Steady-state turbulent flow (RANS modeling)
                 </li>
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Turbulence Model: k-ε standard model
                 </li>
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Geometry: Multi-duct system with diffusers and small
                   connecting ducts
                 </li>
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Boundary Conditions: Air inlet through natural vents; outlet
                   at ceiling ducts
                 </li>
-                <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+                <li className="text-base  text-footer-text font-normal font-poppins">
                   Mesh: Hex-dominant mesh with refinement near connectors and
                   diffusers
                 </li>
@@ -118,12 +118,12 @@ export const project11: IFullProject = {
       title: "Results and Interpretation",
       description: (
         <div className="flex flex-col gap-4">
-          <h3 className="text-[1.375rem] leading-[1.636em] text-footer-heading font-semibold font-poppins">
+          <h3 className="text-[1.375rem]  text-footer-heading font-semibold font-poppins">
             Velocity Profile
           </h3>
           <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
             <div className="flex-1 flex flex-col gap-4">
-              <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+              <p className="text-base  text-footer-text font-normal font-poppins">
                 The airflow analysis revealed a maximum velocity of 6.8 m/s,
                 observed near the diffuser outlets, while the minimum velocity
                 occurred near the duct junctions and far-field regions within
@@ -151,7 +151,7 @@ export const project11: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The pressure contour plots indicated a moderate pressure drop from
               the inlet to the diffuser outlets. This result confirms that the
               duct system design effectively pulls air through the network with
@@ -175,7 +175,7 @@ export const project11: IFullProject = {
       title: "Turbulence Analysis",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             Localized turbulence zones were detected within small connector
             ducts positioned between the main duct and the diffusers. These
             regions, highlighted by red and yellow contours in the simulation,
@@ -191,7 +191,7 @@ export const project11: IFullProject = {
       title: "Improvement Recommendations",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             To enhance the overall airflow efficiency, several improvements are
             recommended. The small rigid connector ducts should be replaced with
             flexible ducting featuring larger hydraulic diameters to minimize
@@ -209,7 +209,7 @@ export const project11: IFullProject = {
       title: "Conclusion",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The CFD simulation clearly demonstrated that natural ventilation in
             warehouse environments can be significantly enhanced by modifying
             the duct geometry, diffuser placement, and airflow paths. Through
@@ -217,7 +217,7 @@ export const project11: IFullProject = {
             turbulence, maximizing natural flow, and enhancing indoor air
             distribution without relying entirely on powered HVAC components.
           </p>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The analysis highlights how CFD modeling using Ansys can be a
             powerful tool for validating and optimizing ventilation strategies
             in industrial settings. These improvements are crucial for

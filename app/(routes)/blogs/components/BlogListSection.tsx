@@ -69,7 +69,7 @@ const BlogListSection: React.FC<BlogListSectionProps> = () => {
               }`}
             >
               <span
-                className={`text-sm leading-[1.714em] font-normal font-poppins ${
+                className={`text-sm  font-normal font-poppins ${
                   selectedCategoryId === null
                     ? "text-primary-blue"
                     : "text-footer-border"
@@ -104,7 +104,7 @@ const BlogListSection: React.FC<BlogListSectionProps> = () => {
                       />
                     </div>
                     <span
-                      className={`text-sm leading-[1.714em] font-normal font-poppins ${
+                      className={`text-sm  font-normal font-poppins ${
                         isSelected ? "text-primary-blue" : "text-footer-border"
                       }`}
                     >

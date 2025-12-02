@@ -50,7 +50,7 @@ const CustomerSimulationItemMobile: React.FC<
 
             <GreenBadge icon={badgeIcon} text={badgeText}></GreenBadge>
             {/* Title */}
-            <h2 className="leading-[1.2em] text-text-gray font-semibold font-poppins">
+            <h2 className=" text-text-gray font-semibold font-poppins">
               {title.split(" ").slice(0, 2).join(" ")}{" "}
               <span className="text-primary-blue">
                 {title.split(" ").slice(2).join(" ")}
@@ -62,7 +62,7 @@ const CustomerSimulationItemMobile: React.FC<
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
               {/* Phase Title */}
-              <h3 className="leading-[1.8em] text-footer-heading font-semibold font-poppins">
+              <h3 className=" text-footer-heading font-semibold font-poppins">
                 {phase.phaseTitle}
               </h3>
 
@@ -76,7 +76,7 @@ const CustomerSimulationItemMobile: React.FC<
                     <div className="w-6 h-6 flex items-center justify-center shrink-0">
                       {allIcons.checkCircle(16, 16)}
                     </div>
-                    <span className="text-base leading-[1.5em] text-text-gray font-normal font-poppins">
+                    <span className="text-base  text-text-gray font-normal font-poppins">
                       {item}
                     </span>
                   </div>

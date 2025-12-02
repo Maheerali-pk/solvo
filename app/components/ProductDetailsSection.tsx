@@ -37,7 +37,7 @@ export default function ProductDetailsSection() {
         <GreenBadge icon="/images/zap-icon.svg" text="Case Studies" />
 
         {/* Title */}
-        <h2 className="text-[1.875rem] leading-[1.2em] text-text-gray font-semibold font-poppins text-center">
+        <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins text-center">
           Detailing of <span className="text-primary-blue">our products</span>
         </h2>
 

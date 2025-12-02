@@ -46,19 +46,19 @@ export default function BlogCard({
       <div className="flex flex-col gap-3 w-full">
         <div className="w-fit">
           <div className="px-4 border border-footer-border rounded-2xl">
-            <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+            <span className="text-sm  text-primary-blue font-normal font-poppins">
               {categoryLabel}
             </span>
           </div>
         </div>
         {/* Title */}
-        <div className="!text-[1rem] leading-[1.5em] text-footer-text font-medium font-poppins">
+        <div className="!text-[1rem]  text-footer-text font-medium font-poppins">
           {blog.title}
         </div>
 
         {/* Description */}
         <div className="flex flex-col gap-2">
-          <p className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins">
+          <p className="text-sm  text-footer-text font-normal font-poppins">
             {blog.description}
           </p>
           <span className="text-sm  text-primary-blue font-normal font-poppins whitespace-nowrap">
@@ -81,7 +81,7 @@ export default function BlogCard({
 
           {/* Author Name and Date */}
           <div className="flex flex-col">
-            <span className="text-sm leading-[1.286em] text-footer-border font-normal font-poppins whitespace-pre-line">
+            <span className="text-sm  text-footer-border font-normal font-poppins whitespace-pre-line">
               {blog.author.name}
               {"\n"}
               {blog.date}

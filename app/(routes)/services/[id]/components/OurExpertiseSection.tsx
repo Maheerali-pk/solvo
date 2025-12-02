@@ -43,10 +43,10 @@ export default function OurExpertiseSection({
       <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
         {/* Title and Description */}
         <div className="flex flex-col items-center gap-4 ">
-          <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins text-center w-full">
+          <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins text-center w-full">
             {getExpertiseTitle()}
           </h2>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins text-center w-full">
+          <p className="text-base  text-footer-text font-normal font-poppins text-center w-full">
             {getExpertiseDescription()}
           </p>
         </div>

@@ -30,16 +30,16 @@ export default function ProjectCard({
       {/* Content */}
       <div className="flex flex-col gap-3 w-full">
         {/* Title */}
-        <h3 className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+        <h3 className="text-base  text-footer-heading font-medium font-poppins">
           {project.title}
         </h3>
 
         {/* Description and Read More */}
         <div className="flex flex-row items-end w-full">
-          <p className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins flex-1">
+          <p className="text-sm  text-footer-text font-normal font-poppins flex-1">
             {project.description.slice(0, 80)}...
           </p>
-          <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins ml-2 whitespace-nowrap">
+          <span className="text-sm  text-primary-blue font-normal font-poppins ml-2 whitespace-nowrap">
             Read more
           </span>
         </div>

@@ -12,7 +12,7 @@ export const project10: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This project focused on the structural performance evaluation of a
               nylon-based injection-moulded bracket using Finite Element
               Analysis (FEA). The component was designed for use in an
@@ -23,7 +23,7 @@ export const project10: IFullProject = {
               accounting for the material properties of nylon, a commonly used
               engineering thermoplastic.
             </p>
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               This simulation was performed using ANSYS 2024 R2 and incorporated
               accurate material modeling and load application to replicate
               real-world performance. The client required confidence in the
@@ -47,26 +47,26 @@ export const project10: IFullProject = {
       title: "Objectives and Approach",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The primary objectives of this FEA project were:
           </p>
           <ul className="flex flex-col gap-4">
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To assess total deformation under static structural loading.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To identify critical stress regions based on von Mises criteria.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To evaluate shear strain and understand material behavior at
               connection points.
             </li>
-            <li className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <li className="text-base  text-footer-text font-normal font-poppins">
               To optimize geometry for durability while ensuring
               manufacturability.
             </li>
           </ul>
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             A 3D CAD model of the bracket was imported and prepared for meshing.
             Due to the complex geometry and filleted features, mesh refinement
             was applied to high-stress regions, especially around the
@@ -83,7 +83,7 @@ export const project10: IFullProject = {
       description: (
         <div className="flex flex-row gap-11 sm:flex-col sm:gap-6">
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+            <p className="text-base  text-footer-text font-normal font-poppins">
               The simulation was performed using Nylon 66 (glass-filled) as the
               material, with its corresponding Young's modulus, Poisson's ratio,
               and yield strength accurately defined to reflect realistic
@@ -112,7 +112,7 @@ export const project10: IFullProject = {
       title: "Results and Findings",
       description: (
         <div className="flex flex-col gap-4">
-          <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins">
+          <p className="text-base  text-footer-text font-normal font-poppins">
             The simulation results showed a maximum total deformation of 0.3474
             mm, occurring near the central hole region. This deformation was
             well within acceptable limits, aligning with the inherent

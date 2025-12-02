@@ -76,7 +76,7 @@ const TopSection = () => {
                     {service.title}
                   </h2>
                   <span
-                    className="text-base leading-[1.5em] text-[#4A4A4A] font-normal font-poppins max-w-[26.75rem] sm:max-w-full"
+                    className="text-base  sm:max-w-full"
                     style={{ fontSize: "1rem" }}
                   >
                     {service.description}

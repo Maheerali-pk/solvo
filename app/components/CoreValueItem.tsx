@@ -27,7 +27,7 @@ const CoreValueItem: React.FC<CoreValueItemProps> = ({ data }) => {
         </h3>
 
         {/* Description */}
-        <p className="text-base leading-[1.5em] text-footer-text font-normal font-poppins text-center">
+        <p className="text-base  text-footer-text font-normal font-poppins text-center">
           {data.description}
         </p>
       </div>

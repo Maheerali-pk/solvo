@@ -98,7 +98,7 @@ export default function CustomSelect({
         type="button"
         onClick={() => !disabled && setIsOpen(!isOpen)}
         disabled={disabled}
-        className="w-full px-3 py-1 pr-8 border border-footer-border rounded-lg text-base leading-[2em] text-footer-text font-normal font-poppins bg-white outline-none cursor-pointer focus:border-primary-blue disabled:opacity-50 disabled:cursor-not-allowed text-left flex items-center justify-between"
+        className="w-full px-3 py-1 pr-8 border border-footer-border rounded-lg text-base  text-footer-text font-normal font-poppins bg-white outline-none cursor-pointer focus:border-primary-blue disabled:opacity-50 disabled:cursor-not-allowed text-left flex items-center justify-between"
       >
         <span className={value ? "" : "text-footer-text"}>
           {displayText.includes(" *") ? (
@@ -129,7 +129,7 @@ export default function CustomSelect({
                 <button
                   type="button"
                   onClick={() => handleOptionClick(option.value)}
-                  className={`w-full px-3 py-2 text-left text-base leading-[2em] font-poppins transition-colors cursor-pointer ${
+                  className={`w-full px-3 py-2 text-left text-base  font-poppins transition-colors cursor-pointer ${
                     isSelected
                       ? "text-primary-blue font-semibold"
                       : "text-disable font-normal"

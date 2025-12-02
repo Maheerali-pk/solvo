@@ -8,7 +8,7 @@ export default function GetInTouchBanner() {
       <div className="relative w-80 h-full border border-primary-blue rounded-[1.8125rem] flex flex-col gap-[0.625rem] overflow-hidden">
         {/* Title */}
         <div className="relative z-10 p-10.5">
-          <h3 className="text-2xl leading-[1.5em] text-text-gray font-semibold font-poppins">
+          <h3 className="text-2xl  text-text-gray font-semibold font-poppins">
             <span className="text-primary-blue">Get in touch</span> with us
           </h3>
 
@@ -19,7 +19,7 @@ export default function GetInTouchBanner() {
               <div className="text-primary-blue flex-shrink-0">
                 {allIcons.checkCircle(24, 24)}
               </div>
-              <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+              <span className="text-sm  text-footer-text font-medium font-poppins">
                 We will respond to you within 24 hours
               </span>
             </div>
@@ -29,7 +29,7 @@ export default function GetInTouchBanner() {
               <div className="text-primary-blue flex-shrink-0">
                 {allIcons.checkCircle(24, 24)}
               </div>
-              <span className="text-sm leading-[1.286em] text-footer-text font-medium font-poppins">
+              <span className="text-sm  text-footer-text font-medium font-poppins">
                 You'll be talking to CAE Engineers account mangers
               </span>
             </div>

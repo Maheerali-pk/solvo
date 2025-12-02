@@ -44,7 +44,7 @@ export default function JobApplyForm() {
       <div className="w-full max-w-desktop mx-auto sm:px-0">
         <div className="flex flex-col gap-[1.375rem]">
           {/* Form Title */}
-          <h2 className="text-[1.875rem] leading-[1.2em] text-footer-heading font-semibold font-poppins">
+          <h2 className="text-[1.875rem]  text-footer-heading font-semibold font-poppins">
             Apply for this job
           </h2>
 
@@ -57,7 +57,7 @@ export default function JobApplyForm() {
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
               {/* Name */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Name <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -67,13 +67,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="John"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-[#8A8A8A] font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-[#8A8A8A] font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Phone */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Phone <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -83,13 +83,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="03XXXX"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Education */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Education <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -99,13 +99,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="BSCS, MS in aerospace engineering ... etc"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Current Salary */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   What's your current salary?{" "}
                   <span className="text-red-500">*</span>
                 </label>
@@ -116,13 +116,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="e.g. 50,000 PKR"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Experience */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   How many years of your experience?{" "}
                   <span className="text-red-500">*</span>
                 </label>
@@ -133,13 +133,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="e.g. 5 - 6 years"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* LinkedIn */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Please share your LinkedIn Profile's Link:{" "}
                   <span className="text-red-500">*</span>
                 </label>
@@ -150,13 +150,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="www.linkedin.com/profile"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Email */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Email <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -166,21 +166,21 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="John@gmail.com"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* CV/Resume */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   CV / Resume <span className="text-red-500">*</span>
                 </label>
                 <div className="flex flex-row items-center gap-5 px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg">
-                  <span className="text-base leading-[1.5em] text-footer-text font-normal font-poppins flex-1">
+                  <span className="text-base  text-footer-text font-normal font-poppins flex-1">
                     {formData.cv ? formData.cv.name : "Upload"}
                   </span>
                   <label className="px-3 py-0 bg-[#F98502] rounded-2xl cursor-pointer">
-                    <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                    <span className="text-sm  text-white font-normal font-poppins">
                       Browse File
                     </span>
                     <input
@@ -197,7 +197,7 @@ export default function JobApplyForm() {
 
               {/* City & Country */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   City & Country <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -207,13 +207,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="e.g. Lahore, Pakistan"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Software */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Grip on softwares <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -223,13 +223,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="e.g. Ansys, Solidworks ... etc"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Current Company */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Current company name? <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -239,13 +239,13 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="e.g. ibex"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
 
               {/* Switch Reason */}
               <div className="flex flex-col gap-[0.125rem]">
-                <label className="text-base leading-[1.5em] text-footer-heading font-medium font-poppins">
+                <label className="text-base  text-footer-heading font-medium font-poppins">
                   Why do you want to switch from your current company?{" "}
                   <span className="text-red-500">*</span>
                 </label>
@@ -256,7 +256,7 @@ export default function JobApplyForm() {
                   onChange={handleChange}
                   placeholder="Reason"
                   required
-                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base leading-[1.5em] text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
+                  className="w-full px-3 py-[0.625rem] border border-[#8A8A8A] rounded-lg text-base  text-footer-text font-normal font-poppins outline-none focus:border-primary-blue"
                 />
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function JobApplyForm() {
             {/* Submit Button */}
             <div className="flex flex-col items-center gap-3 pt-[0.75rem]">
               <button type="submit" className="btn btn-primary">
-                <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                <span className="text-sm  text-white font-normal font-poppins">
                   Submit your application
                 </span>
                 <div className="w-5 h-5 text-white">

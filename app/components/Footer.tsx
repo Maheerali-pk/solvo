@@ -17,7 +17,7 @@ function LeftSection() {
             className="object-contain"
           />
         </div>
-        <p className="text-base leading-6 text-footer-text font-normal font-poppins w-[30rem] sm:w-full">
+        <p className="text-base text-footer-text font-normal font-poppins w-[30rem] sm:w-full">
           Solvo Engineers is an expert engineering consultation firm
           specializing in Finite Element Analysis (FEA), Computational Fluid
           Dynamics (CFD) and Computer-Aided Design (CAD) medelling services.
@@ -40,43 +40,43 @@ function RightSection() {
       <div className="flex flex-row gap-11 sm:gap-4 sm:w-full sm:justify-between ">
         {/* Quick Links */}
         <div className="flex flex-col gap-5 ">
-          <h3 className="text-base leading-6 text-footer-heading font-semibold font-poppins">
+          <h3 className="text-base text-footer-heading font-semibold font-poppins">
             About Us
           </h3>
           <div className="flex flex-col gap-3">
             <Link
               href="/services"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Services
             </Link>
             <Link
               href="/projects"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Projects
             </Link>
             <Link
               href="/blogs"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Blogs
             </Link>
             <Link
               href="/careers"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Careers
             </Link>
             <Link
               href="/contact"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Contact Us
             </Link>
             <Link
               href="/faqs"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               FAQs
             </Link>
@@ -85,31 +85,31 @@ function RightSection() {
 
         {/* Company */}
         <div className="flex flex-col gap-5 ">
-          <h3 className="text-base leading-6 text-footer-heading font-semibold font-poppins">
+          <h3 className="text-base text-footer-heading font-semibold font-poppins">
             Company
           </h3>
           <div className="flex flex-col gap-3">
             <Link
               href="/about"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               About Us
             </Link>
             <Link
               href="/careers"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Careers
             </Link>
             <Link
               href="/partners"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Partners
             </Link>
             <Link
               href="/contact"
-              className="text-base leading-6 text-footer-text font-normal font-poppins"
+              className="text-base text-footer-text font-normal font-poppins"
             >
               Contact
             </Link>
@@ -118,7 +118,7 @@ function RightSection() {
 
         {/* Contact Us */}
         <div className="flex flex-col gap-5">
-          <h3 className="text-base leading-6 text-footer-heading font-semibold font-poppins">
+          <h3 className="text-base text-footer-heading font-semibold font-poppins">
             Contact Us
           </h3>
           <div className="flex flex-col gap-3">
@@ -132,7 +132,7 @@ function RightSection() {
               </div>
               <a
                 href="tel:+923126099600"
-                className="text-base leading-6 text-footer-text font-normal font-poppins"
+                className="text-base text-footer-text font-normal font-poppins"
               >
                 +92 312 6099600
               </a>
@@ -147,7 +147,7 @@ function RightSection() {
               </div>
               <a
                 href="mailto:contact@solvoengineers.com"
-                className="text-base leading-6 text-footer-text font-normal font-poppins"
+                className="text-base text-footer-text font-normal font-poppins"
               >
                 contact@solvoengineers.com
               </a>
@@ -164,7 +164,7 @@ function RightSection() {
                 href="https://maps.google.com/?q=Block+C2+Johar+Town,+Lahore"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base leading-6 text-footer-text font-normal font-poppins"
+                className="text-base text-footer-text font-normal font-poppins"
               >
                 Block C2 Johar Town, Lahore
               </a>
@@ -186,12 +186,12 @@ function BottomSection() {
     <div className="flex flex-row justify-between items-stretch gap-6 pt-6 border-t border-footer-border">
       <Link
         href="/privacy"
-        className="text-base leading-6 text-footer-dark font-normal font-poppins"
+        className="text-base text-footer-dark font-normal font-poppins"
       >
         Privacy Policy
       </Link>
       <div className="flex flex-row items-center gap-1 justify-center sm:flex-wrap">
-        <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
+        <span className="text-base text-footer-dark font-normal font-poppins">
           All right reserved
         </span>
         <img
@@ -199,14 +199,14 @@ function BottomSection() {
           alt="Copyright"
           className="w-5 h-5 object-contain"
         ></img>
-        <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
+        <span className="text-base text-footer-dark font-normal font-poppins">
           Solvo Engineering 2025
         </span>
       </div>
       <div className="flex flex-row items-center gap-1">
         <Link
           href="/terms"
-          className="text-base leading-6 text-footer-dark font-normal font-poppins"
+          className="text-base text-footer-dark font-normal font-poppins"
         >
           Terms of service
         </Link>

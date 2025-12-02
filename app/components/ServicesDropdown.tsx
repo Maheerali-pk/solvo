@@ -60,7 +60,7 @@ const ServicesDropdown: React.FC<ServicesDropdownProps> = ({ isVisible }) => {
               className="w-5 h-5 object-contain"
             ></img>
           </div>
-          <span className="text-base leading-6 text-primary-blue font-normal font-poppins">
+          <span className="text-base text-primary-blue font-normal font-poppins">
             {service.name}
           </span>
         </Link>

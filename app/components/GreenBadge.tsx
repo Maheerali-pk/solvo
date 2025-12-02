@@ -13,7 +13,7 @@ const GreenBadge: React.FC<GreenBadgeProps> = ({ icon, text }) => {
         src={icon}
         alt={text}
       />
-      <span className="text-sm leading-[1.714em] text-badge-text font-normal font-poppins text-center">
+      <span className="text-sm  text-badge-text font-normal font-poppins text-center">
         {text}
       </span>
     </div>
