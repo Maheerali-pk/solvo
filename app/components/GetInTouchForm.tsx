@@ -4,6 +4,46 @@ import { allIcons } from "../helpers/icons";
 import { useState } from "react";
 import CustomSelect from "./CustomSelect";
 
+// Select options from Figma
+const lookingForOptions = [
+  { value: "start-new-project", label: "Start a new project" },
+  { value: "consultations", label: "Consultations" },
+  { value: "dedicated-team", label: "Dedicated team" },
+  { value: "revamp-existing-job", label: "Revamp an existing job" },
+];
+
+const preferableSoftwareOptions = [
+  { value: "ansys", label: "Ansys" },
+  { value: "solidworks", label: "Solidworks" },
+  { value: "ls-dyna", label: "LS-DYNA" },
+  { value: "abaqus", label: "Abaqus" },
+  { value: "autocad", label: "AutoCAD" },
+  { value: "openfoam", label: "OpenFOAM" },
+  { value: "comsol", label: "Comsol" },
+  { value: "others", label: "Others" },
+];
+
+const estimatedBudgetOptions = [
+  { value: "5000-usd", label: "5000 USD" },
+  { value: "5000-10000-usd", label: "5000 - 10000 USD" },
+  { value: "10000-30000-usd", label: "10000 - 30000 USD" },
+  { value: "50000-usd", label: "50000 USD" },
+];
+
+const servicesOptions = [
+  { value: "fea-analysis", label: "FEA analysis" },
+  { value: "cfd-analysis", label: "CFD analysis" },
+  { value: "cad-design", label: "CAD design" },
+  { value: "crashworthiness", label: "Crashworthiness" },
+  { value: "seismic-analysis", label: "Seismic analysis" },
+  { value: "hvac", label: "HVAC" },
+  { value: "thermal-management", label: "Thermal management" },
+  { value: "product-design", label: "Product design" },
+  { value: "design-optimization", label: "Design optimization" },
+  { value: "fsi", label: "FSI" },
+  { value: "airflow-simulations", label: "Airflow simulations" },
+];
+
 export default function GetInTouchForm() {
   const [formData, setFormData] = useState({
     lookingFor: "",
@@ -98,11 +138,7 @@ export default function GetInTouchForm() {
             placeholder="I am looking to *"
             required
             className="w-[12.5rem] sm:w-full"
-            options={[
-              { value: "consultation", label: "Consultation" },
-              { value: "service", label: "Service" },
-              { value: "quote", label: "Quote" },
-            ]}
+            options={lookingForOptions}
           />
 
           {/* Full Name * */}
@@ -129,11 +165,7 @@ export default function GetInTouchForm() {
             placeholder="Services I need *"
             required
             className="w-[12.5rem] sm:w-full"
-            options={[
-              { value: "fea", label: "FEA" },
-              { value: "cfd", label: "CFD" },
-              { value: "cad", label: "CAD" },
-            ]}
+            options={servicesOptions}
           />
 
           {/* Email * */}
@@ -160,11 +192,7 @@ export default function GetInTouchForm() {
             placeholder="Preferable Software *"
             required
             className="w-[12.5rem] sm:w-full"
-            options={[
-              { value: "ansys", label: "ANSYS" },
-              { value: "solidworks", label: "SolidWorks" },
-              { value: "autocad", label: "AutoCAD" },
-            ]}
+            options={preferableSoftwareOptions}
           />
 
           {/* Estimated Budget * */}
@@ -175,12 +203,7 @@ export default function GetInTouchForm() {
             placeholder="Estimated Budget *"
             required
             className="w-[12.5rem] sm:w-full"
-            options={[
-              { value: "under-5k", label: "Under $5,000" },
-              { value: "5k-10k", label: "$5,000 - $10,000" },
-              { value: "10k-25k", label: "$10,000 - $25,000" },
-              { value: "25k-plus", label: "$25,000+" },
-            ]}
+            options={estimatedBudgetOptions}
           />
         </div>
 
