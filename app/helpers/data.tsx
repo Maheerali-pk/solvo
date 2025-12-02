@@ -880,35 +880,35 @@ export interface IIndustryItem {
 export const allIndustries: IIndustryItem[] = [
   {
     name: "Aerospace & Defense",
-    icon: "/images/about/industries/aerospace-defense.webp",
+    icon: "/images/about/industries/aerospace-defense.png",
   },
   {
     name: "Automotive & Transportation",
-    icon: "/images/about/industries/automotive-transportation.webp",
+    icon: "/images/about/industries/automotive-transportation.png",
   },
   {
     name: "Energy",
-    icon: "/images/about/industries/energy.webp",
+    icon: "/images/about/industries/energy.png",
   },
   {
     name: "Consumer Products",
-    icon: "/images/about/industries/consumer-products.webp",
+    icon: "/images/about/industries/consumer-products.png",
   },
   {
     name: "Machinery & Robotics",
-    icon: "/images/about/industries/machinery-robotics.webp",
+    icon: "/images/about/industries/machinery-robotics.png",
   },
   {
     name: "Manufacturing",
-    icon: "/images/about/industries/manufacturing.webp",
+    icon: "/images/about/industries/manufacturing.png",
   },
   {
     name: "Marine",
-    icon: "/images/about/industries/marine.webp",
+    icon: "/images/about/industries/marine.png",
   },
   {
     name: "Medical",
-    icon: "/images/about/industries/medical.webp",
+    icon: "/images/about/industries/medical.png",
   },
 ];
 

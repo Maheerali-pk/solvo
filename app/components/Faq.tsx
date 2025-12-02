@@ -36,7 +36,7 @@ export default function Faq({ faqs, className = "" }: FaqProps) {
               onClick={() => toggleFaq(index)}
               className="w-full flex  flex-row items-center justify-between gap-4 px-7 py-7 bg-white transition-colors cursor-pointer"
             >
-              <h3 className="text-[1.25rem] text-footer-text font-semibold font-poppins text-left flex-1">
+              <h3 className="!text-[1.0625rem] text-footer-text font-semibold font-poppins text-left flex-1">
                 {faq.question}
               </h3>
               <div

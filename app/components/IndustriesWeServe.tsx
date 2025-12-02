@@ -19,7 +19,7 @@ const IndustriesWeServe = () => {
               className="grid grid-rows-2 w-full justify-center items-center gap-[1.125rem] sm:h-auto aspect-square h-64  bg-white rounded-[1.25rem] shadow-[0px_0px_31.1px_0px_rgba(0,0,0,0.14)] flex-1"
             >
               <div className="flex h-full w-full items-end justify-center">
-                <div className="w-[2.25rem] h-[2.25rem] relative flex items-end justify-center ">
+                <div className="w-[2.5rem] h-[2.5rem] relative flex items-end justify-center ">
                   <Image
                     src={industry.icon}
                     alt={industry.name}
