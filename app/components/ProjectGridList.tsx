@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { allFullProjects } from "../helpers/projects.data";
 import ProjectCard from "./ProjectCard";
 import NumberedPagination from "./NumberedPagination";
@@ -18,6 +18,7 @@ export default function ProjectGridList({
   className = "",
 }: ProjectGridListProps) {
   const [currentPage, setCurrentPage] = useState(1);
+  const topCardRef = useRef<HTMLDivElement>(null);
 
   // Calculate total pages
   const totalPages = Math.ceil(projects.length / itemsPerPage);
@@ -32,7 +33,7 @@ export default function ProjectGridList({
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     // Scroll to top of grid when page changes
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    topCardRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
@@ -43,6 +44,11 @@ export default function ProjectGridList({
       <div className="w-full grid  grid-cols-3 gap-6 sm:grid-cols-1 place-items-center">
         {paginatedProjects.map((project, index) => (
           <ProjectCard
+            ref={
+              index === 0
+                ? (topCardRef as React.RefObject<HTMLDivElement>)
+                : null
+            }
             key={`${project.link}-${index}`}
             project={project}
             className="w-full"

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { allIcons } from "../helpers/icons";
 import ServicesDropdown from "./ServicesDropdown";
+import AboutDropdown from "./AboutDropdown";
 import Sidebar from "./Sidebar";
 import classNames from "classnames";
 import Link from "next/link";
@@ -13,11 +14,13 @@ interface HeaderProps {
 }
 export default function Header({ activeRoute = "home" }: HeaderProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
   const sidebarRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown when clicking outside
+  // Close services dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -36,6 +39,26 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isServicesOpen]);
+
+  // Close about dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        aboutRef.current &&
+        !aboutRef.current.contains(event.target as Node)
+      ) {
+        setIsAboutOpen(false);
+      }
+    };
+
+    if (isAboutOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isAboutOpen]);
 
   // Close sidebar when clicking outside
   useEffect(() => {
@@ -64,6 +87,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
 
   const toggleServices = () => {
     setIsServicesOpen(!isServicesOpen);
+  };
+
+  const toggleAbout = () => {
+    setIsAboutOpen(!isAboutOpen);
   };
 
   const toggleSidebar = () => {
@@ -100,16 +127,26 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             Home
           </Link>
 
-          <div className="flex items-center justify-center gap-2.5 px-2 py-2">
-            <Link
-              href="/about"
-              className={classNames("text-base font-normal font-poppins", {
-                "text-primary-blue": activeRoute === "about",
-                "text-text-gray": activeRoute !== "about",
-              })}
+          <div
+            ref={aboutRef}
+            className="relative flex items-center gap-0.5 px-2 py-2"
+          >
+            <button
+              onClick={toggleAbout}
+              className={classNames(
+                "flex items-center gap-0.5 text-base font-normal font-poppins cursor-pointer",
+                {
+                  "text-primary-blue": activeRoute === "about",
+                  "text-text-gray": activeRoute !== "about",
+                }
+              )}
             >
               About Us
-            </Link>
+            </button>
+            <div className="w-5 h-5 text-text-gray">
+              {allIcons.chevronDown(20, 20)}
+            </div>
+            <AboutDropdown isVisible={isAboutOpen} />
           </div>
 
           <div

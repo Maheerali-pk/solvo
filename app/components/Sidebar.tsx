@@ -41,10 +41,22 @@ export default function Sidebar({
   onClose,
 }: SidebarProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
+
+  const aboutItems = [
+    {
+      name: "About Us",
+      link: "/about",
+    },
+    {
+      name: "Our Methodology",
+      link: "/methodology",
+    },
+  ];
 
   const menuItems = [
     { id: "home", label: "Home", href: "/home" },
-    { id: "about", label: "About Us", href: "/about" },
+    { id: "about", label: "About Us", href: "#", hasDropdown: true },
     { id: "services", label: "Services", href: "#", hasDropdown: true },
     { id: "projects", label: "Projects", href: "/projects" },
     { id: "career", label: "Career", href: "#" },
@@ -96,7 +108,8 @@ export default function Sidebar({
         {menuItems.map((item, index) => {
           const isActive = activeRoute === item.id;
           const isServices = item.id === "services";
-          const hasBottomBorder = !isLastItem(index) && !isServices;
+          const isAbout = item.id === "about";
+          const hasBottomBorder = !isLastItem(index) && !isServices && !isAbout;
 
           return (
             <div key={item.id}>
@@ -153,6 +166,62 @@ export default function Sidebar({
                     </div>
                   )}
                   {!isServicesOpen && hasBottomBorder && (
+                    <div className="border-b border-border-select-item" />
+                  )}
+                </>
+              ) : isAbout ? (
+                <>
+                  <button
+                    onClick={() => setIsAboutOpen(!isAboutOpen)}
+                    className={classNames(
+                      "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors h-[3.25rem]",
+                      {
+                        "border-b border-border-select-item":
+                          !isAboutOpen && hasBottomBorder,
+                      }
+                    )}
+                  >
+                    <span
+                      className={classNames(
+                        "flex-1  font-medium font-poppins text-left",
+                        {
+                          "text-primary-blue": isActive,
+                          "text-footer-border": !isActive,
+                        }
+                      )}
+                      style={{ fontSize: "1rem" }}
+                    >
+                      {item.label}
+                    </span>
+                    <div
+                      className={classNames(
+                        "w-[1.125rem] h-[1.125rem] text-footer-border transition-transform",
+                        {
+                          "rotate-90": isAboutOpen,
+                        }
+                      )}
+                    >
+                      {allIcons.chevronRight(18, 18)}
+                    </div>
+                  </button>
+                  {/* Nested About Items */}
+                  {isAboutOpen && (
+                    <div className="bg-white">
+                      {aboutItems.map((aboutItem, aboutIndex) => (
+                        <Link
+                          key={aboutIndex}
+                          href={aboutItem.link}
+                          onClick={onClose}
+                          className="flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[4.125rem]"
+                        >
+                          <span className="best-base  text-footer-border font-medium font-poppins">
+                            {aboutItem.name}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                  {!isAboutOpen && hasBottomBorder && (
                     <div className="border-b border-border-select-item" />
                   )}
                 </>
