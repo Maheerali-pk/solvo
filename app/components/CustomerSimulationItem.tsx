@@ -19,9 +19,24 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
           {/* Badge and Title */}
 
           {/* Phases */}
-          <div className="flex flex-row items-stretch gap-[14.875rem]">
+          <div className="relative flex flex-row items-stretch gap-[14.875rem]">
+            {/* Dashed Curved Path */}
+            <svg
+              className="absolute top-1/2 left-0 right-0 w-full h-[300px] -translate-y-1/2 pointer-events-none z-0"
+              viewBox="0 0 1000 300"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 0 150 C 83.33 80, 166.67 75, 250 150 C 333.33 225, 416.67 230, 500 150 C 583.33 70, 666.67 85, 750 150 C 833.33 215, 916.67 220, 1000 150"
+                stroke="#000000"
+                strokeWidth="2"
+                fill="none"
+                strokeDasharray="16 16"
+                strokeLinecap="round"
+              />
+            </svg>
             {/* Left Phase */}
-            <div className="flex flex-col gap-9 flex-1">
+            <div className="flex flex-col gap-9 flex-1 relative z-10">
               <div className="flex flex-col gap-3 justify-start">
                 {/* Phase Title */}
                 <h3 className="text-xl  text-footer-heading font-semibold font-poppins ">
@@ -58,7 +73,7 @@ const CustomerSimulationItem: React.FC<CustomerSimulationItemProps> = ({
             </div>
 
             {/* Right Phase */}
-            <div className="flex flex-col gap-9 flex-1">
+            <div className="flex flex-col gap-9 flex-1 relative z-10">
               <div className="flex flex-col gap-3">
                 {/* Phase Title */}
                 <h3 className="text-xl  text-footer-heading font-semibold font-poppins ">

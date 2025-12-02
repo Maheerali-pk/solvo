@@ -89,12 +89,12 @@ const CustomerSimulationSection: React.FC<
 
         <div className="block sm:hidden w-full">
           <div className="w-full relative">
-            <img
+            {/* <img
               src="/images/customer-simulation/line.webp"
               alt="Background"
               className="absolute sm:hidden bottom-0 h-44 min-w-[67rem] pointer-events-none select-none"
               loading="lazy"
-            />
+            /> */}
             <img
               src={"/images/customer-simulation/cloud.webp"}
               alt="Step 1"
@@ -154,12 +154,12 @@ const CustomerSimulationSection: React.FC<
               className="absolute top-0 w-40 h-48 right-0 -translate-y-0"
               loading="lazy"
             />
-            <img
+            {/* <img
               src="/images/customer-simulation/line-mobile.webp"
               alt="Background"
               className="absolute bottom-6 w-full px-side-space  right-  right-0 "
               loading="lazy"
-            />
+            /> */}
             <img
               src={"/images/customer-simulation/dots.webp"}
               alt="Step 1"
