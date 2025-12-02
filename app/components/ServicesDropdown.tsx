@@ -17,17 +17,17 @@ const ServicesDropdown: React.FC<ServicesDropdownProps> = ({ isVisible }) => {
     {
       name: "Computational Fluid Dynamics (CFD)",
       link: "/services/cfd-analysis",
-      icon: "/images/shared/services-dropdown/img1.png",
+      icon: "/images/shared/services-dropdown/img1.webp",
     },
     {
       name: "2D/3D Modeling & Rendering (CAD)",
       link: "/services/cad-analysis",
-      icon: "/images/shared/services-dropdown/img2.png",
+      icon: "/images/shared/services-dropdown/img2.webp",
     },
     {
       name: "Finite Element Analysis (FEA)",
       link: "/services/fea-analysis",
-      icon: "/images/shared/services-dropdown/img3.png",
+      icon: "/images/shared/services-dropdown/img3.webp",
     },
   ];
 

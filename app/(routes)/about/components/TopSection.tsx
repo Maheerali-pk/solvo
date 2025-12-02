@@ -10,7 +10,7 @@ const TopSection = () => {
 
       <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6 sm:px-side-space relative">
         <img
-          src="/images/about/hero-dots2.png"
+          src="/images/about/hero-dots2.webp"
           className="absolute top-0 left-0 -translate-y-[3rem] sm:h-[10rem] h-[15rem] "
           alt="Background Pattern"
         ></img>
@@ -46,19 +46,19 @@ const TopSection = () => {
         <div className="w-full max-w-desktop mx-auto max-w-desktop">
           <div className="relative   sm:w-full w-[80%] mx-auto h-auto  ">
             <img
-              src="/images/about/hero-cloud.png"
+              src="/images/about/hero-cloud.webp"
               className="absolute top-0 left-0 -translate-y-[0rem] h-[60%]"
               alt="Background Pattern"
             ></img>
 
             <img
-              src="/images/about/hero-dots.png"
+              src="/images/about/hero-dots.webp"
               className="absolute top-0 right-0 -translate-x-[0rem] h-[60%]"
               alt="Background Pattern"
             ></img>
             <div className="relative z-10">
               <img
-                src="/images/about/bottom-section.png"
+                src="/images/about/bottom-section.webp"
                 alt="About Section"
                 className="object-contain w-full h-full z-10 sm:object-cover"
                 loading="lazy"
@@ -110,7 +110,7 @@ const TopSection = () => {
             {/* Right Image */}
             <div className="relative h-full w-full">
               <img
-                src="/images/about/building-innovation.png"
+                src="/images/about/building-innovation.webp"
                 alt="Building Practical Innovation"
                 className="object-contain border border-primary-blue rounded-2xl p-4 w-full h-auto sm:h-[20rem] "
                 loading="lazy"

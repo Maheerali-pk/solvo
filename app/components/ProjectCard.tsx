@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IProject } from "../helpers/data";
+import { IFullProject } from "../helpers/projects.data";
 
 interface ProjectCardProps {
-  project: IProject;
+  project: IFullProject;
   className?: string;
 }
 
@@ -37,7 +37,7 @@ export default function ProjectCard({
         {/* Description and Read More */}
         <div className="flex flex-row items-end w-full">
           <p className="text-sm leading-[1.714em] text-footer-text font-normal font-poppins flex-1">
-            {project.description}
+            {project.description.slice(0, 80)}...
           </p>
           <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins ml-2 whitespace-nowrap">
             Read more

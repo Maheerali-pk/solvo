@@ -56,7 +56,7 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
       <section className="w-full hidden sm:flex overflow-hidden flex-col items-center gap-6 py-[3.125rem] relative bg-primary-light-blue">
         <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 relative">
           {/* <img
-            src="/images/client-reviews/bg-item.png"
+            src="/images/client-reviews/bg-item.webp"
             alt="Client Reviews Background"
             className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
           /> */}
@@ -103,7 +103,7 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
       <section className="w-full sm:hidden overflow-hidden flex flex-col items-center gap-6 py-[3.125rem] relative bg-primary-light-blue">
         <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 relative">
           <img
-            src="/images/client-reviews/bg-item.png"
+            src="/images/client-reviews/bg-item.webp"
             alt="Client Reviews Background"
             className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
           />

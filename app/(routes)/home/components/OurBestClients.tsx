@@ -5,11 +5,11 @@ import Image from "next/image";
 import classNames from "classnames";
 
 const clientLogos = [
-  "/images/our-best-clients/logo1.png",
-  "/images/our-best-clients/logo2.png",
-  "/images/our-best-clients/logo3.png",
-  "/images/our-best-clients/logo4.png",
-  "/images/our-best-clients/logo5.png",
+  "/images/our-best-clients/logo1.webp",
+  "/images/our-best-clients/logo2.webp",
+  "/images/our-best-clients/logo3.webp",
+  "/images/our-best-clients/logo4.webp",
+  "/images/our-best-clients/logo5.webp",
 ];
 
 export default function OurBestClients() {

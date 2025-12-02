@@ -7,6 +7,8 @@ import "swiper/css";
 import { allHeroSectionItems } from "@/app/helpers/data";
 import HeroSectionItem from "./HeroSectionItem";
 import Slider from "@/app/components/Slider";
+import GreenBadge from "@/app/components/GreenBadge";
+import { allIcons } from "@/app/helpers/icons";
 
 interface HeroSectionProps {}
 
@@ -30,11 +32,49 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
     setCurrentIndex(swiper.activeIndex);
   };
 
+  const currentItem = allHeroSectionItems[currentIndex];
+
   return (
     <section className="w-full flex flex-col items-center gap-6 relative sm:px-side-space">
-      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6">
+      <div className="w-full max-w-desktop mx-auto flex flex-col gap-6 relative">
         {/* Swiper Container */}
-        <div className="w-full">
+        <div className="w-full relative">
+          {/* Green Badge - Outside Swiper but positioned absolutely to match original location */}
+          <div className="absolute top-0 left-0 z-10 transition-all duration-500 ease-in-out">
+            <GreenBadge
+              icon={currentItem.badgeIcon || "/images/zap-icon.svg"}
+              text={currentItem.badgeText}
+            />
+          </div>
+
+          {/* Buttons - Outside Swiper but positioned absolutely to match original location */}
+          <div className="absolute bottom-0 left-0 z-10 transition-all duration-500 ease-in-out sm:relative sm:bottom-auto sm:left-auto sm:mt-6">
+            <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
+              {/* Place Your Order Button */}
+              <a href={currentItem.placeOrderLink} className="btn btn-primary">
+                <span className="text-sm leading-[1.714em] text-white font-normal font-poppins">
+                  Place Your Order
+                </span>
+                <div className="w-6 h-6 text-white">
+                  {allIcons.chevronRight(24, 24)}
+                </div>
+              </a>
+
+              {/* Our Services Button */}
+              <a
+                href={currentItem.ourServicesLink}
+                className="btn btn-secondary"
+              >
+                <span className="text-sm leading-[1.714em] text-primary-blue font-normal font-poppins">
+                  Our Services
+                </span>
+                <div className="w-6 h-6 text-primary-blue">
+                  {allIcons.chevronRight(24, 24)}
+                </div>
+              </a>
+            </div>
+          </div>
+
           <Swiper
             spaceBetween={30}
             slidesPerView={1}

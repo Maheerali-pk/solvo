@@ -28,10 +28,10 @@ export const allBlogs: IBlog[] = [
       "Choosing the Best CFD Software for Engineering: A Practical Guide to Ansys, COMSOL, SolidWorks and STAR-CCM+",
     description:
       "Discover how FEA and CFD transform product development and innovation...",
-    image: "/images/blogs/item1/main-image.png",
+    image: "/images/blogs/item1/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/author-avatar.png", // Placeholder - you may need to add actual avatar image
+      avatar: "/images/blogs/author-avatar.webp", // Placeholder - you may need to add actual avatar image
     },
     date: "July 12, 2025",
     link: "/blogs/choosing-best-cfd-software",
@@ -163,10 +163,10 @@ export const allBlogs: IBlog[] = [
       "What is FEA and CFD? Why Every Industry Needs Simulation in Product Development",
     description:
       "Discover how FEA and CFD transform product development and innovation...",
-    image: "/images/blogs/item2/main-image.png",
+    image: "/images/blogs/item2/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/item2/user-image.png",
+      avatar: "/images/blogs/item2/user-image.webp",
     },
     date: "July 12, 2025",
     link: "/blogs/what-is-fea-and-cfd",
@@ -331,10 +331,10 @@ export const allBlogs: IBlog[] = [
       "How CFD and FEA Are Powering the Future of Electric Vehicles and Aerospace Innovation",
     description:
       "Discover how FEA and CFD transform product development and innovation...",
-    image: "/images/blogs/item3/main-image.png",
+    image: "/images/blogs/item3/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/item3/user-image.png",
+      avatar: "/images/blogs/item3/user-image.webp",
     },
     date: "July 12, 2025",
     link: "/blogs/cfd-fea-electric-vehicles-aerospace",
@@ -497,10 +497,10 @@ export const allBlogs: IBlog[] = [
       "Simulation in Aerospace and Defense: How CFD and FEA are Shaping Safer, Smarter Flight Systems",
     description:
       "Discover how FEA and CFD transform product development and innovation...",
-    image: "/images/blogs/item4/main-image.png",
+    image: "/images/blogs/item4/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/item4/user-image.png",
+      avatar: "/images/blogs/item4/user-image.webp",
     },
     date: "July 12, 2025",
     link: "/blogs/simulation-aerospace-defense",
@@ -665,10 +665,10 @@ export const allBlogs: IBlog[] = [
     title: "How CFD and FEA Are Redefining Jet Engine Design and Performance",
     description:
       "Explore how simulation tools like CFD and FEA enhance jet engine efficiency, durability, and innovation in aerospace.",
-    image: "/images/blogs/item5/main-image.png",
+    image: "/images/blogs/item5/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/item5/user-image.png",
+      avatar: "/images/blogs/item5/user-image.webp",
     },
     date: "July 12, 2025",
     link: "/blogs/cfd-fea-jet-engine-design",
@@ -812,10 +812,10 @@ export const allBlogs: IBlog[] = [
       "Accelerating Aerospace and Defence Product Development with CFD and FEA Analysis",
     description:
       "Discover how FEA and CFD transform product development and innovation...",
-    image: "/images/blogs/item6/main-image.png",
+    image: "/images/blogs/item6/main-image.webp",
     author: {
       name: "Mohsin Ali",
-      avatar: "/images/blogs/item6/user-image.png",
+      avatar: "/images/blogs/item6/user-image.webp",
     },
     date: "July 12, 2025",
     link: "/blogs/accelerating-aerospace-defence-development",
@@ -876,7 +876,7 @@ export const allBlogs: IBlog[] = [
               </p>
             </div>
             <img
-              src="/images/blogs/item6/content-image.png"
+              src="/images/blogs/item6/content-image.webp"
               alt="Section 1 Image"
               className="object-cover w-80 h-80 rounded-2xl"
             ></img>
@@ -966,41 +966,41 @@ export const blogCategories: IBlogCategory[] = [
   {
     id: "1",
     name: "Aerospace & Defense",
-    icon: "/images/about/industries/aerospace-defense.png",
+    icon: "/images/about/industries/aerospace-defense.webp",
   },
   {
     id: "2",
     name: "Automotive & Transportation",
-    icon: "/images/about/industries/automotive-transportation.png",
+    icon: "/images/about/industries/automotive-transportation.webp",
   },
   {
     id: "3",
     name: "Energy",
-    icon: "/images/about/industries/energy.png",
+    icon: "/images/about/industries/energy.webp",
   },
   {
     id: "4",
     name: "Consumer Products",
-    icon: "/images/about/industries/consumer-products.png",
+    icon: "/images/about/industries/consumer-products.webp",
   },
   {
     id: "5",
     name: "Machinery & Robotics",
-    icon: "/images/about/industries/machinery-robotics.png",
+    icon: "/images/about/industries/machinery-robotics.webp",
   },
   {
     id: "6",
     name: "Manufacturing",
-    icon: "/images/about/industries/manufacturing.png",
+    icon: "/images/about/industries/manufacturing.webp",
   },
   {
     id: "7",
     name: "Marine",
-    icon: "/images/about/industries/marine.png",
+    icon: "/images/about/industries/marine.webp",
   },
   {
     id: "8",
     name: "Medical",
-    icon: "/images/about/industries/medical.png",
+    icon: "/images/about/industries/medical.webp",
   },
 ];

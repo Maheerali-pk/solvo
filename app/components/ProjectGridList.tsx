@@ -1,19 +1,19 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { allProjects } from "../helpers/data";
+import { allFullProjects } from "../helpers/projects.data";
 import ProjectCard from "./ProjectCard";
 import NumberedPagination from "./NumberedPagination";
 import ProjectListSection from "./ProjectListSection";
 
 interface ProjectGridListProps {
-  projects?: typeof allProjects;
+  projects?: typeof allFullProjects;
   itemsPerPage?: number;
   className?: string;
 }
 
 export default function ProjectGridList({
-  projects = allProjects,
+  projects = allFullProjects,
   itemsPerPage = 9, // 3x3 grid
   className = "",
 }: ProjectGridListProps) {

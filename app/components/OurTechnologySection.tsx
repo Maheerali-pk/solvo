@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const OurTechnologySection = () => {
   const technologyLogos = [
-    "/images/technology-images/tech1.png",
-    "/images/technology-images/tech2.png",
-    "/images/technology-images/tech3.png",
-    "/images/technology-images/tech4.png",
-    "/images/technology-images/tech5.png",
-    "/images/technology-images/tech6.png",
+    "/images/technology-images/tech1.webp",
+    "/images/technology-images/tech2.webp",
+    "/images/technology-images/tech3.webp",
+    "/images/technology-images/tech4.webp",
+    "/images/technology-images/tech5.webp",
+    "/images/technology-images/tech6.webp",
   ];
 
   // Logo widths for each index

@@ -19,17 +19,17 @@ const services: Service[] = [
   {
     title: "Computational Fluid Dynamics (CFD)",
     description: "Agentic AI assistant guide you through model setup",
-    image: "/images/services/turbo-machinery.png",
+    image: "/images/services/turbo-machinery.webp",
   },
   {
     title: "2D/3D Modeling & Rendering (CAD)",
     description: "Run physics simulation & AI prediction in the cloud",
-    image: "/images/services/3d-modeling.png",
+    image: "/images/services/3d-modeling.webp",
   },
   {
     title: "Finite Element Analysis (FEA)",
     description: "Combine Engineering and Physics AI for instant design.",
-    image: "/images/services/structural-analysis.png",
+    image: "/images/services/structural-analysis.webp",
   },
 ];
 

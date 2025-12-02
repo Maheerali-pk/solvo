@@ -36,7 +36,7 @@ export default function GetInTouchBanner() {
           </div>
         </div>
         <Image
-          src="/images/get-in-touch-banner-image-828c0c.png"
+          src="/images/get-in-touch-banner-image-828c0c.webp"
           alt="Get in touch banner"
           width={320}
           height={300}

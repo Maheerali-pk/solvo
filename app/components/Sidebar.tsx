@@ -7,7 +7,14 @@ import { allIcons } from "../helpers/icons";
 import classNames from "classnames";
 
 interface SidebarProps {
-  activeRoute?: "home" | "about" | "services" | "career" | "blogs" | "contact";
+  activeRoute?:
+    | "home"
+    | "about"
+    | "services"
+    | "projects"
+    | "career"
+    | "blogs"
+    | "contact";
   onClose?: () => void;
 }
 
@@ -15,17 +22,17 @@ const servicesItems = [
   {
     name: "Computational Fluid Dynamics (CFD)",
     link: "/services/cfd-analysis",
-    icon: "/images/shared/services-dropdown/img1.png",
+    icon: "/images/shared/services-dropdown/img1.webp",
   },
   {
     name: "2D/3D Modeling & Rendering (CAD)",
     link: "/services/cad-analysis",
-    icon: "/images/shared/services-dropdown/img2.png",
+    icon: "/images/shared/services-dropdown/img2.webp",
   },
   {
     name: "Finite Element Analysis (FEA)",
     link: "/services/fea-analysis",
-    icon: "/images/shared/services-dropdown/img3.png",
+    icon: "/images/shared/services-dropdown/img3.webp",
   },
 ];
 
@@ -39,6 +46,7 @@ export default function Sidebar({
     { id: "home", label: "Home", href: "/home" },
     { id: "about", label: "About Us", href: "/about" },
     { id: "services", label: "Services", href: "#", hasDropdown: true },
+    { id: "projects", label: "Projects", href: "/projects" },
     { id: "career", label: "Career", href: "#" },
     { id: "blogs", label: "Blogs", href: "/blogs" },
     { id: "contact", label: "Contact Us", href: "#" },
@@ -54,7 +62,7 @@ export default function Sidebar({
         {/* Logo */}
         <div className="w-[8rem] relative flex justify-start object-left">
           <img
-            src="/images/logo-176606.png"
+            src="/images/logo-176606.webp"
             alt="Logo"
             className="object-contain"
           />

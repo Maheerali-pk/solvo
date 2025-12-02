@@ -6,13 +6,13 @@ const OurMission: React.FC<OurMissionProps> = () => {
   return (
     <section className="relative overflow-hidden flex w-full bg-primary-blue text-white sm:h-72 h-96 items-center justify-center sm:px-side-space">
       <img
-        src="/images/about/spiral-lines-right.png"
+        src="/images/about/spiral-lines-right.webp"
         alt="Client Reviews Background"
         className="absolute right-0  -top-[31.25rem] h-[69rem] sm:hidden"
       />
 
       <img
-        src="/images/about/spiral-lines-left.png"
+        src="/images/about/spiral-lines-left.webp"
         alt="Client Reviews Background"
         className="absolute left-0 -top-[31.25rem] h-[69rem] sm:hidden"
       />

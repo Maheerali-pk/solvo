@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { allIcons } from "../helpers/icons";
 import { FooterWrapper } from "./Footer/FooterWrapper";
 import SocialMediaIcons from "./SocialMediaIcons";
@@ -10,7 +11,7 @@ function LeftSection() {
       <div className="flex flex-col gap-5 w-full">
         <div className="w-[9.6875rem] h-[3.5625rem] sm:w-[6.5rem] sm:h-[2.5rem] relative">
           <Image
-            src="/images/logo-176606.png"
+            src="/images/logo-176606.webp"
             alt="Logo"
             fill
             className="object-contain"
@@ -43,42 +44,42 @@ function RightSection() {
             About Us
           </h3>
           <div className="flex flex-col gap-3">
-            <a
-              href="#"
+            <Link
+              href="/services"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/projects"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Projects
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/blogs"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Blogs
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/careers"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Careers
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/contact"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Contact Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/faqs"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               FAQs
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -88,30 +89,30 @@ function RightSection() {
             Company
           </h3>
           <div className="flex flex-col gap-3">
-            <a
-              href="#"
+            <Link
+              href="/about"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               About Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/careers"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Careers
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/partners"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Partners
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/contact"
               className="text-base leading-6 text-footer-text font-normal font-poppins"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -125,11 +126,12 @@ function RightSection() {
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
                 <img
                   className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon1.png"
+                  src="/images/shared/footer/icon1.webp"
+                  alt="Phone Icon"
                 ></img>
               </div>
               <a
-                href="#"
+                href="tel:+923126099600"
                 className="text-base leading-6 text-footer-text font-normal font-poppins"
               >
                 +92 312 6099600
@@ -139,11 +141,12 @@ function RightSection() {
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
                 <img
                   className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon2.png"
+                  src="/images/shared/footer/icon2.webp"
+                  alt="Mail Icon"
                 ></img>
               </div>
               <a
-                href="#"
+                href="mailto:contact@solvoengineers.com"
                 className="text-base leading-6 text-footer-text font-normal font-poppins"
               >
                 contact@solvoengineers.com
@@ -153,11 +156,14 @@ function RightSection() {
               <div className="w-5 h-5 text-primary-blue flex-shrink-0">
                 <img
                   className="w-5 h-5 object-contain"
-                  src="/images/shared/footer/icon3.png"
+                  src="/images/shared/footer/icon3.webp"
+                  alt="Location Icon"
                 ></img>
               </div>
               <a
-                href="#"
+                href="https://maps.google.com/?q=Block+C2+Johar+Town,+Lahore"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-base leading-6 text-footer-text font-normal font-poppins"
               >
                 Block C2 Johar Town, Lahore
@@ -178,18 +184,18 @@ function RightSection() {
 function BottomSection() {
   return (
     <div className="flex flex-row justify-between items-stretch gap-6 pt-6 border-t border-footer-border">
-      <a
-        href="#"
+      <Link
+        href="/privacy"
         className="text-base leading-6 text-footer-dark font-normal font-poppins"
       >
         Privacy Policy
-      </a>
+      </Link>
       <div className="flex flex-row items-center gap-1 justify-center sm:flex-wrap">
         <span className="text-base leading-6 text-footer-dark font-normal font-poppins">
           All right reserved
         </span>
         <img
-          src="/images/copyright.png"
+          src="/images/copyright.webp"
           alt="Copyright"
           className="w-5 h-5 object-contain"
         ></img>
@@ -198,12 +204,12 @@ function BottomSection() {
         </span>
       </div>
       <div className="flex flex-row items-center gap-1">
-        <a
-          href="#"
+        <Link
+          href="/terms"
           className="text-base leading-6 text-footer-dark font-normal font-poppins"
         >
           Terms of service
-        </a>
+        </Link>
       </div>
     </div>
   );

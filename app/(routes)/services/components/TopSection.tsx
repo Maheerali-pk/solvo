@@ -9,7 +9,7 @@ const services = [
     title: "Finite Element Analysis\n(FEA)",
     description:
       "Optimize designs and ensure structural integrity with precise and efficient simulation techniques.",
-    image: "/images/services/top-section/fea-image.png",
+    image: "/images/services/top-section/fea-image.webp",
     imagePosition: "left" as const,
     link: "/services/fea-analysis",
   },
@@ -18,7 +18,7 @@ const services = [
     title: "Computational Fluid \nDynamics (CFD)",
     description:
       "Analyze fluid dynamics and thermal processes to enhance performance and energy efficiency.",
-    image: "/images/services/top-section/cfd-image.png",
+    image: "/images/services/top-section/cfd-image.webp",
     imagePosition: "right" as const,
     link: "/services/cfd-analysis",
   },
@@ -27,7 +27,7 @@ const services = [
     title: "2D/3D Computer Aided \nDesign (CAD)",
     description:
       "Transform concepts into accurate CAD model with seamless integration and practical solutions.",
-    image: "/images/services/top-section/cad-image.png",
+    image: "/images/services/top-section/cad-image.webp",
     imagePosition: "left" as const,
     link: "/services/cad-analysis",
   },

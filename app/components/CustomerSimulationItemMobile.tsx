@@ -17,25 +17,25 @@ const CustomerSimulationItemMobile: React.FC<
   return (
     <div className="relative flex flex-col gap-[0.625rem] w-full overflow-hidden">
       <img
-        src="/images/customer-simulation/circle.png"
+        src="/images/customer-simulation/circle.webp"
         alt="Background"
         className="absolute top-0 w-40 h-48 right-0 -translate-y-0"
         loading="lazy"
       />
       <img
-        src="/images/customer-simulation/line-mobile.png"
+        src="/images/customer-simulation/line-mobile.webp"
         alt="Background"
         className="absolute bottom-6 w-full left-side-space right-  right-0 z-10"
         loading="lazy"
       />
       <img
-        src={"/images/customer-simulation/dots.png"}
+        src={"/images/customer-simulation/dots.webp"}
         alt="Step 1"
         className="object-contain h-[50%] left-1/2 -translate-x-1/2 bottom-0 absolute"
         loading="lazy"
       />
       <img
-        src={"/images/customer-simulation/cloud.png"}
+        src={"/images/customer-simulation/cloud.webp"}
         alt="Step 1"
         className="object-contain  w-80 bottom-28 left-1/2 -translate-x-1/2 absolute"
         loading="lazy"

@@ -9,7 +9,7 @@ import classNames from "classnames";
 import Link from "next/link";
 
 interface HeaderProps {
-  activeRoute?: "home" | "about" | "services" | "career" | "blogs";
+  activeRoute?: "home" | "about" | "services" | "projects" | "career" | "blogs";
 }
 export default function Header({ activeRoute = "home" }: HeaderProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -80,7 +80,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         {/* Logo */}
         <div className="w-[8.625rem] h-[3.1875rem] relative flex-shrink-0">
           <Image
-            src="/images/logo-176606.png"
+            src="/images/logo-176606.webp"
             alt="Logo"
             fill
             className="object-contain"
@@ -139,10 +139,24 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             </div>
             <ServicesDropdown isVisible={isServicesOpen} />
           </div>
+          <div className="flex items-center justify-center gap-2.5 px-2 py-2">
+            <Link
+              href="/projects"
+              className={classNames(
+                "text-base leading-6 font-normal font-poppins",
+                {
+                  "text-primary-blue": activeRoute === "projects",
+                  "text-text-gray": activeRoute !== "projects",
+                }
+              )}
+            >
+              Projects
+            </Link>
+          </div>
 
           <div className="flex items-center justify-center gap-2.5 px-2 py-2">
             <a
-              href="#"
+              href="/careers"
               className={classNames(
                 "text-base leading-6 font-normal font-poppins",
                 {
@@ -186,7 +200,7 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
           aria-label="Toggle menu"
         >
           <img
-            src="/images/shared/header/menu.png"
+            src="/images/shared/header/menu.webp"
             className="w-full h-full"
             alt="Menu"
           />

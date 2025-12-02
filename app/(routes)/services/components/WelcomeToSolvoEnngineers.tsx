@@ -29,7 +29,7 @@ const WelcomeToSolvoEnngineers = () => {
             </span>
             <div className="relative w-[29rem] sm:flex hidden h-full shrink-0 sm:w-full sm:h-auto  border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
               <img
-                src="/images/services/welcome-to-solvo-engineers-image.png"
+                src="/images/services/welcome-to-solvo-engineers-image.webp"
                 alt="Welcome To SOLVO Engineers"
                 className="w-full h-full object-contain "
               />
@@ -53,7 +53,7 @@ const WelcomeToSolvoEnngineers = () => {
         {/* Right Image */}
         <div className="relative sm:hidden block w-[29rem] h-full shrink-0 sm:w-full sm:h-auto  border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
           <img
-            src="/images/services/welcome-to-solvo-engineers-image.png"
+            src="/images/services/welcome-to-solvo-engineers-image.webp"
             alt="Welcome To SOLVO Engineers"
             className="w-full h-full object-contain "
           />

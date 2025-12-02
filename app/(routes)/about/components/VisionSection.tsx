@@ -6,13 +6,13 @@ const VisionSection: React.FC<VisionSectionProps> = () => {
   return (
     <section className="flex relative overflow-visible  w-full bg-primary-blue text-white sm:h-72 h-96 items-center justify-center sm:px-side-space">
       <img
-        src="/images/about/spiral-lines-right.png"
+        src="/images/about/spiral-lines-right.webp"
         alt="Client Reviews Background"
         className="absolute right-0   -top-[47rem] h-[69rem] sm:hidden z-10"
       />
 
       <img
-        src="/images/about/spiral-lines-left.png"
+        src="/images/about/spiral-lines-left.webp"
         alt="Client Reviews Background"
         className="absolute left-0 -top-[47rem] h-[69rem] sm:hidden"
       />

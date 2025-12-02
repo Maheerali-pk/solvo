@@ -10,7 +10,7 @@ const TopSection = () => {
 
       <div className="w-full max-w-desktop mx-auto flex flex-col items-center gap-6 sm:px-side-space relative">
         <img
-          src="/images/about/hero-dots2.png"
+          src="/images/about/hero-dots2.webp"
           className="absolute top-0 left-0 -translate-y-[3rem] sm:h-[10rem] h-[15rem] "
           alt="Background Pattern"
         ></img>

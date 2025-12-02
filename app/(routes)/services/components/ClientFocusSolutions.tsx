@@ -100,7 +100,7 @@ const ClientFocusSolutions = () => {
         {/* Right Image */}
         <div className="relative  shrink-0 sm:w-full sm:h-auto sm:aspect-[526/390] sm:hidden">
           <img
-            src="/images/services/client-focus-solutions-image.png"
+            src="/images/services/client-focus-solutions-image.webp"
             alt="Client-Focused Solutions"
             className=" w-[32.875rem] h-[24.375rem]rounded-[1.25rem] "
           />

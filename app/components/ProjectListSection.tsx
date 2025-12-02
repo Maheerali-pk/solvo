@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import Link from "next/link";
-import { allProjects } from "../helpers/data";
+import { allFullProjects } from "../helpers/projects.data";
 import ProjectCard from "./ProjectCard";
 import Slider from "./Slider";
 import GreenBadge from "./GreenBadge";
@@ -76,7 +76,7 @@ export default function ProjectListSection({ withoutHeading = false }) {
             resistanceRatio={0.85}
             autoHeight={false}
           >
-            {allProjects.map((project, index) => (
+            {allFullProjects.map((project, index) => (
               <SwiperSlide key={index} className="!h-auto">
                 <ProjectCard project={project} className="w-full h-full" />
               </SwiperSlide>
@@ -91,7 +91,7 @@ export default function ProjectListSection({ withoutHeading = false }) {
           <div className="sm:block hidden">
             <Slider
               currentIndex={currentIndex}
-              totalItems={allProjects.length}
+              totalItems={allFullProjects.length}
               onPrevious={handlePrevious}
               onNext={handleNext}
               mode="mobile"
@@ -114,7 +114,7 @@ export default function ProjectListSection({ withoutHeading = false }) {
           <div className="sm:hidden block">
             <Slider
               currentIndex={currentIndex}
-              totalItems={allProjects.length}
+              totalItems={allFullProjects.length}
               onPrevious={handlePrevious}
               onNext={handleNext}
               mode="arrows-only"

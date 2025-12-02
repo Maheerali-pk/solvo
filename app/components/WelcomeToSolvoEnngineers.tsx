@@ -45,7 +45,7 @@ const WelcomeToSolvoEnngineers = () => {
         {/* Right Image */}
         <div className="relative w-full h-[19.375rem] shrink-0 sm:w-full sm:h-auto sm:aspect-[1536/1024] border border-primary-blue rounded-[1.25rem] bg-white p-[0.625rem]">
           <Image
-            src="/images/services/welcome-to-solvo-engineers-image.png"
+            src="/images/services/welcome-to-solvo-engineers-image.webp"
             alt="Welcome To SOLVO Engineers"
             fill
             className="object-cover rounded-[0.625rem]"
