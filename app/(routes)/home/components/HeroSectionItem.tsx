@@ -55,7 +55,6 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
                   alt={data.title}
                   fill
                   className="object-contain rounded-[1.25rem] "
-                  loading="lazy"
                 />
               </div>
             </div>
