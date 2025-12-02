@@ -17,7 +17,7 @@ export default function JobDetails({ job }: JobDetailsProps) {
         {/* Badges Section */}
         <div className="flex flex-col gap-3">
           {/* First Row of Badges */}
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between  ">
             <div className="flex flex-row gap-[0.625rem] items-center flex-wrap">
               {/* Full-Time Badge */}
               <div className="px-4 py-0 h-8  flex items-center justify-center bg-primary-blue rounded-[1000px]">
@@ -47,7 +47,9 @@ export default function JobDetails({ job }: JobDetailsProps) {
                 </span>
               </div>
             </div>
-            <SocialMediaIcons small></SocialMediaIcons>
+            <div className="sm:hidden block">
+              <SocialMediaIcons small></SocialMediaIcons>
+            </div>
           </div>
 
           {/* Team Badge */}

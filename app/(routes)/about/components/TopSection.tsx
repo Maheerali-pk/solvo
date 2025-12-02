@@ -2,6 +2,7 @@ import Image from "next/image";
 import { allIcons } from "@/app/helpers/icons";
 import GreenBadge from "@/app/components/GreenBadge";
 import PageHeading from "@/app/components/PageHeading";
+import Link from "next/link";
 
 const TopSection = () => {
   return (
@@ -33,14 +34,14 @@ const TopSection = () => {
           }
         ></PageHeading>
       </div>
-      <button className="btn btn-primary">
+      <Link href="/contact-us" className="btn btn-primary">
         <span className="text-sm  text-white font-normal font-poppins">
           Lets Connect
         </span>
         <div className="w-6 h-6 text-white">
           {allIcons.chevronRight(24, 24)}
         </div>
-      </button>
+      </Link>
 
       <section className="w-full sm:px-side-space overflow-hidden">
         <div className="w-full max-w-desktop mx-auto max-w-desktop">

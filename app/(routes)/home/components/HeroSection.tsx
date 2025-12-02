@@ -9,6 +9,7 @@ import HeroSectionItem from "./HeroSectionItem";
 import Slider from "@/app/components/Slider";
 import GreenBadge from "@/app/components/GreenBadge";
 import { allIcons } from "@/app/helpers/icons";
+import Link from "next/link";
 
 interface HeroSectionProps {}
 
@@ -51,17 +52,20 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
           <div className="absolute bottom-0 left-0 z-10 sm:hidden transition-all duration-500 ease-in-out sm:relative sm:bottom-auto sm:left-auto sm:mt-6">
             <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full ">
               {/* Place Your Order Button */}
-              <a href={currentItem.placeOrderLink} className="btn btn-primary">
+              <Link
+                href={currentItem.placeOrderLink}
+                className="btn btn-primary"
+              >
                 <span className="text-sm  text-white font-normal font-poppins">
                   Place Your Order
                 </span>
                 <div className="w-6 h-6 text-white">
                   {allIcons.chevronRight(24, 24)}
                 </div>
-              </a>
+              </Link>
 
               {/* Our Services Button */}
-              <a
+              <Link
                 href={currentItem.ourServicesLink}
                 className="btn btn-secondary"
               >
@@ -71,7 +75,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
                 <div className="w-6 h-6 text-primary-blue">
                   {allIcons.chevronRight(24, 24)}
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -107,7 +111,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         <div className="absolute bottom-0 left-0 z-10  hidden sm:block  transition-all duration-500 ease-in-out sm:relative sm:bottom-auto sm:left-auto sm:mt-6">
           <div className=" gap-[1.375rem] sm:gap-4 w-screen grid pr-[2.5rem]  grid-cols-2 ">
             {/* Place Your Order Button */}
-            <a
+            <Link
               href={currentItem.placeOrderLink}
               className="btn btn-primary w-full"
             >
@@ -117,10 +121,10 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
               <div className="w-6 h-6 text-white">
                 {allIcons.chevronRight(24, 24)}
               </div>
-            </a>
+            </Link>
 
             {/* Our Services Button */}
-            <a
+            <Link
               href={currentItem.ourServicesLink}
               className="btn btn-secondary w-full"
             >
@@ -130,7 +134,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
               <div className="w-6 h-6 text-primary-blue">
                 {allIcons.chevronRight(24, 24)}
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 

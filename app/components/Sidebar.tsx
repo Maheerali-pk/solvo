@@ -55,13 +55,13 @@ export default function Sidebar({
   ];
 
   const menuItems = [
-    { id: "home", label: "Home", href: "/home" },
+    { id: "home", label: "Home", href: "/" },
     { id: "about", label: "About Us", href: "#", hasDropdown: true },
     { id: "services", label: "Services", href: "#", hasDropdown: true },
     { id: "projects", label: "Projects", href: "/projects" },
-    { id: "career", label: "Career", href: "#" },
+    { id: "career", label: "Career", href: "/careers" },
     { id: "blogs", label: "Blogs", href: "/blogs" },
-    { id: "contact", label: "Contact Us", href: "#" },
+    { id: "contact", label: "Contact Us", href: "/contact-us" },
   ];
 
   const isFirstItem = (index: number) => index === 0;
@@ -109,7 +109,7 @@ export default function Sidebar({
           const isActive = activeRoute === item.id;
           const isServices = item.id === "services";
           const isAbout = item.id === "about";
-          const hasBottomBorder = !isLastItem(index) && !isServices && !isAbout;
+          const hasBottomBorder = !isLastItem(index);
 
           return (
             <div key={item.id}>
@@ -120,8 +120,7 @@ export default function Sidebar({
                     className={classNames(
                       "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors h-[3.25rem]",
                       {
-                        "border-b border-border-select-item":
-                          !isServicesOpen && hasBottomBorder,
+                        "border-b border-border-select-item": hasBottomBorder,
                       }
                     )}
                   >
@@ -156,17 +155,17 @@ export default function Sidebar({
                           key={serviceIndex}
                           href={service.link}
                           onClick={onClose}
-                          className="flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[4.125rem]"
+                          className="flex flex-row items-center gap-[0.625rem] px-6 py-2 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[3rem]"
                         >
                           <span className="best-base  text-footer-border font-medium font-poppins">
                             {service.name}
                           </span>
                         </Link>
                       ))}
+                      {hasBottomBorder && (
+                        <div className="border-b border-border-select-item" />
+                      )}
                     </div>
-                  )}
-                  {!isServicesOpen && hasBottomBorder && (
-                    <div className="border-b border-border-select-item" />
                   )}
                 </>
               ) : isAbout ? (
@@ -176,8 +175,7 @@ export default function Sidebar({
                     className={classNames(
                       "w-full flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors h-[3.25rem]",
                       {
-                        "border-b border-border-select-item":
-                          !isAboutOpen && hasBottomBorder,
+                        "border-b border-border-select-item": hasBottomBorder,
                       }
                     )}
                   >
@@ -212,17 +210,17 @@ export default function Sidebar({
                           key={aboutIndex}
                           href={aboutItem.link}
                           onClick={onClose}
-                          className="flex flex-row items-center gap-[0.625rem] px-6 py-3 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[4.125rem]"
+                          className="flex flex-row items-center gap-[0.625rem] px-6 py-2 bg-white transition-colors border-b border-border-select-item last:border-b-0 h-[3rem]"
                         >
                           <span className="best-base  text-footer-border font-medium font-poppins">
                             {aboutItem.name}
                           </span>
                         </Link>
                       ))}
+                      {hasBottomBorder && (
+                        <div className="border-b border-border-select-item" />
+                      )}
                     </div>
-                  )}
-                  {!isAboutOpen && hasBottomBorder && (
-                    <div className="border-b border-border-select-item" />
                   )}
                 </>
               ) : (

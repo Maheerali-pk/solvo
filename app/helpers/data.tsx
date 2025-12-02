@@ -26,6 +26,7 @@ export const allProducts: ProductDetail[] = [
     description:
       "SuDS Enviro Ltd engaged us to design and simulate a set of Radial Vortex Flow Control (VFC) devices that control stormwater flows using a purely hydraulic mechanism—without moving parts, power, or complex control systems. These devices needed to manage both low and high flow conditions, enabling unrestricted flow at low volumes and inducing vortex-driven throttling during peak flows.",
     caseStudyLink: "/case-study/fea",
+
     image: "/images/products/vfc-device-image.webp",
   },
   {
@@ -785,7 +786,7 @@ export const allHeroSectionItems: IHeroSectionItem[] = [
       "VOF-MultiPhase Analysis",
       "Thermal Managment",
     ],
-    placeOrderLink: "/place-order",
+    placeOrderLink: "/contact-us",
     ourServicesLink: "/services",
     image: "/images/hero-section/item1.webp",
   },
@@ -799,7 +800,7 @@ export const allHeroSectionItems: IHeroSectionItem[] = [
       "Structural Stress Analysis",
       "VOF-Multiphase Analysis",
     ],
-    placeOrderLink: "/place-order",
+    placeOrderLink: "/contact-us",
     ourServicesLink: "/services",
     image: "/images/hero-section/item2.webp",
   },
@@ -813,7 +814,7 @@ export const allHeroSectionItems: IHeroSectionItem[] = [
       "Mechanical Part Design",
       "Sheet Metal Design",
     ],
-    placeOrderLink: "/place-order",
+    placeOrderLink: "/contact-us",
     ourServicesLink: "/services",
     image: "/images/hero-section/item3.webp",
   },

@@ -68,12 +68,7 @@ function RightSection() {
             >
               Careers
             </Link>
-            <Link
-              href="/contact"
-              className="text-base text-footer-text font-normal font-poppins"
-            >
-              Contact Us
-            </Link>
+
             <Link
               href="/faqs"
               className="text-base text-footer-text font-normal font-poppins"
@@ -101,14 +96,9 @@ function RightSection() {
             >
               Careers
             </Link>
+
             <Link
-              href="/partners"
-              className="text-base text-footer-text font-normal font-poppins"
-            >
-              Partners
-            </Link>
-            <Link
-              href="/contact"
+              href="/contact-us"
               className="text-base text-footer-text font-normal font-poppins"
             >
               Contact

@@ -3,6 +3,7 @@
 import { IFAQ } from "@/app/helpers/data";
 import Faq from "./Faq";
 import { allIcons } from "@/app/helpers/icons";
+import Link from "next/link";
 
 interface FaqListProps {
   faqs: IFAQ[];
@@ -36,14 +37,14 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
             </div>
 
             {/* Button */}
-            <button className="btn btn-primary w-fit">
+            <Link href="/contact-us" className="btn btn-primary w-fit">
               <span className="text-sm  text-white font-normal font-poppins">
                 Send email
               </span>
               <div className="w-5 h-5 text-white">
                 {allIcons.chevronRight(20, 20)}
               </div>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -68,14 +69,14 @@ export default function FaqList({ faqs, className = "" }: FaqListProps) {
           </div>
 
           {/* Button */}
-          <button className="btn btn-primary w-fit">
+          <Link href="/contact-us" className="btn btn-primary w-fit">
             <span className="text-sm  text-white font-normal font-poppins">
               Send email
             </span>
             <div className="w-5 h-5 text-white">
               {allIcons.chevronRight(20, 20)}
             </div>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

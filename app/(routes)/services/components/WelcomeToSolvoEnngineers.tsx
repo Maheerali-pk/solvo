@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const WelcomeToSolvoEnngineers = () => {
   return (
-    <div className="w-full max-w-desktop mx-auto px-side-space">
+    <div className="w-full max-w-desktop mx-auto sm:px-side-space">
       <div className="w-full  items-center gap-[8rem] sm:flex-col   sm:gap-6 grid grid-cols-[auto_max-content]">
         {/* Left Content */}
 
@@ -37,10 +37,7 @@ const WelcomeToSolvoEnngineers = () => {
           </div>
 
           {/* Button */}
-          <Link
-            href="#"
-            className="w-[10.75rem] h-12 bg-primary-blue rounded-xl flex flex-row items-center justify-center gap-2 px-4 py-4 sm:w-full"
-          >
+          <Link href="/projects" className="btn btn-primary w-fit !px-10">
             <span className="text-base  text-white font-normal font-poppins text-center">
               View
             </span>

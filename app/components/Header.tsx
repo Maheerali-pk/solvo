@@ -12,7 +12,7 @@ import Link from "next/link";
 interface HeaderProps {
   activeRoute?: "home" | "about" | "services" | "projects" | "career" | "blogs";
 }
-export default function Header({ activeRoute = "home" }: HeaderProps) {
+export default function Header({ activeRoute = undefined }: HeaderProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -105,20 +105,23 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
     <header className="w-full z-20  sm:h-auto  h-[5.6875rem] bg-white py-5 shadow-[0px_6px_40px_0px_rgba(0,0,0,0.04)]">
       <div className="w-full sm:w-auto sm:px-side-space  max-w-desktop mx-auto flex items-center justify-between  gap-5">
         {/* Logo */}
-        <div className="w-[8.625rem] h-[3.1875rem] relative flex-shrink-0">
+        <Link
+          href="/"
+          className="w-[8.625rem] h-[2.65rem] relative flex-shrink-0"
+        >
           <Image
             src="/images/logo-176606.webp"
             alt="Logo"
             fill
             className="object-contain"
           />
-        </div>
+        </Link>
 
         {/* Navigation */}
 
         <nav className="flex sm:hidden items-center justify-end gap-3 flex-1 h-6">
           <Link
-            href="/home"
+            href="/"
             className={classNames("text-base font-normal font-poppins", {
               "text-primary-blue": activeRoute === "home",
               "text-text-gray": activeRoute !== "home",
@@ -129,12 +132,12 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
 
           <div
             ref={aboutRef}
-            className="relative flex items-center gap-0.5 px-2 py-2"
+            className="relative flex items-center gap-1 px-2 py-2"
           >
             <button
               onClick={toggleAbout}
               className={classNames(
-                "flex items-center gap-0.5 text-base font-normal font-poppins cursor-pointer",
+                "flex items-center gap-2 text-base font-normal font-poppins cursor-pointer",
                 {
                   "text-primary-blue": activeRoute === "about",
                   "text-text-gray": activeRoute !== "about",
@@ -143,20 +146,20 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             >
               About Us
             </button>
-            <div className="w-5 h-5 text-text-gray">
-              {allIcons.chevronDown(20, 20)}
+            <div className="w-4 h-4 text-text-gray">
+              {allIcons.chevronDown(16, 16)}
             </div>
             <AboutDropdown isVisible={isAboutOpen} />
           </div>
 
           <div
             ref={servicesRef}
-            className="relative flex items-center gap-0.5 px-2 py-2"
+            className="relative flex items-center gap-1 px-2 py-2"
           >
             <button
               onClick={toggleServices}
               className={classNames(
-                "flex items-center gap-0.5 text-base font-normal font-poppins cursor-pointer",
+                "flex items-center gap-2 text-base font-normal font-poppins cursor-pointer",
                 {
                   "text-primary-blue": activeRoute === "services",
                   "text-text-gray": activeRoute !== "services",
@@ -165,8 +168,8 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
             >
               Services
             </button>
-            <div className="w-5 h-5 text-text-gray">
-              {allIcons.chevronDown(20, 20)}
+            <div className="w-4 h-4 text-text-gray">
+              {allIcons.chevronDown(16, 16)}
             </div>
             <ServicesDropdown isVisible={isServicesOpen} />
           </div>
@@ -208,12 +211,12 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         </nav>
 
         {/* Contact Button */}
-        <button className="btn btn-primary sm:!hidden">
+        <Link href="/contact-us" className="btn btn-primary sm:!hidden">
           <span className="text-sm font-normal font-poppins">Contact us</span>
           <div className="w-5 h-5 text-white">
             {allIcons.chevronRight(20, 20)}
           </div>
-        </button>
+        </Link>
         <button
           onClick={toggleSidebar}
           className="hidden sm:flex items-center justify-center bg-primary-blue h-10 w-10 cursor-pointer hover:scale-110 transition-all duration-300 rounded-full  p-0 border-0 "

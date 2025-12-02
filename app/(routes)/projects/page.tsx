@@ -10,7 +10,7 @@ interface AboutProps {}
 const About: React.FC<AboutProps> = () => {
   return (
     <div className="flex flex-col w-full h-full bg-white gap-section-spacing overflow-visible">
-      <Header activeRoute="home" />
+      <Header activeRoute="projects" />
       <TopSection></TopSection>
       <ProjectGridList></ProjectGridList>
       <OurTechnologySection></OurTechnologySection>

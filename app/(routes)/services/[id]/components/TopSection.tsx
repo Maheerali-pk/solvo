@@ -27,14 +27,14 @@ export default function TopSection({ serviceItem }: TopSectionProps) {
           title={serviceItem.title}
           description={<>{serviceItem.subtitle}</>}
         ></PageHeading>
-        <button className="btn btn-primary">
+        <Link href="/contact-us" className="btn btn-primary">
           <span className="text-sm  text-white font-normal font-poppins">
             Lets Connect
           </span>
           <div className="w-6 h-6 text-white">
             {allIcons.chevronRight(24, 24)}
           </div>
-        </button>
+        </Link>
         <div className="relative w-full h-[20rem] rounded-[1.25rem]  border border-primary-blue rounded-[1.25rem]">
           <img
             src={serviceItem.heroImage}

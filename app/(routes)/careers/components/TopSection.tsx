@@ -1,4 +1,5 @@
 import { allIcons } from "@/app/helpers/icons";
+import { allJobPositions } from "@/app/helpers/jobs.data";
 import Link from "next/link";
 
 export default function TopSection() {
@@ -10,12 +11,15 @@ export default function TopSection() {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-lg ">
+      <p className="text-lg text-footer-text">
         Unleash your genius and maximize your potential
       </p>
 
       {/* Apply Now Button */}
-      <Link href="#openings" className="btn btn-primary">
+      <Link
+        href={`/careers/${allJobPositions[0].link.split("/").pop()}`}
+        className="btn btn-primary"
+      >
         <span className="text-sm  text-white font-normal font-poppins">
           Apply Now
         </span>

@@ -39,25 +39,17 @@ const ClientFocusSolutions = () => {
 
               {/* Bullet Points List */}
               <div className="flex flex-row gap-[1.375rem]">
-                <div className="flex flex-col justify-center gap-[0.875rem] pt-[0.625rem] shrink-0">
-                  {bulletPoints.map((_, index) => (
-                    <div
-                      key={index}
-                      className="w-[0.625rem] h-[0.625rem] rounded-full bg-primary-blue"
-                    />
-                  ))}
-                </div>
-                <div className="flex flex-col gap-[0.875rem] pt-[0.625rem]">
+                <ul className="flex flex-col gap-[0.875rem] pt-[0.625rem]">
                   {bulletPoints.map((point, index) => (
-                    <span
+                    <li
                       key={index}
                       className="text-base  text-[#4A4A4A] font-normal font-poppins whitespace-pre-line"
                       style={{ fontSize: "1rem" }}
                     >
                       {point}
-                    </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
 
@@ -71,10 +63,7 @@ const ClientFocusSolutions = () => {
 
             {/* Buttons */}
             <div className="flex flex-row gap-4 sm:flex-col sm:w-full">
-              <Link
-                href="#"
-                className="w-[10.75rem] h-12 bg-primary-blue rounded-xl flex flex-row items-center justify-center gap-2 px-4 py-4 sm:w-full"
-              >
+              <Link href="/about" className="btn btn-primary">
                 <span className="text-base  text-white font-normal font-poppins text-center">
                   Learn More
                 </span>
@@ -82,12 +71,9 @@ const ClientFocusSolutions = () => {
                   {allIcons.chevronRight(20, 20)}
                 </div>
               </Link>
-              <Link
-                href="#"
-                className="w-[10.75rem] h-12 bg-white border border-primary-blue rounded-xl flex flex-row items-center justify-center gap-2 px-4 py-4 sm:w-full"
-              >
+              <Link href="/projects" className="btn btn-secondary">
                 <span className="text-base  text-primary-blue font-normal font-poppins text-center">
-                  Our Services
+                  Our Projects
                 </span>
                 <div className="w-6 h-6 text-primary-blue">
                   {allIcons.chevronRight(24, 24)}

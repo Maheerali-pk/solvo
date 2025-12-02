@@ -6,6 +6,7 @@ import { IHomePageServiceItem } from "../helpers/data";
 
 import { allIcons } from "../helpers/icons";
 import classNames from "classnames";
+import Link from "next/link";
 
 interface ServicesContentProps {
   services: IHomePageServiceItem[];
@@ -65,22 +66,18 @@ export default function ServicesContent({
             >
               {/* Icon */}
               {subItem.tabIcon && !isSelected && (
-                <Image
+                <img
                   src={subItem.tabIcon}
                   alt={subItem.tabText}
-                  width={24}
-                  height={24}
-                  className=" w-6 h-6 object-cotanin sm:hidden"
+                  className="object-cotanin sm:hidden"
                   loading="lazy"
                 />
               )}
               {subItem.tabIconSelected && isSelected && (
-                <Image
+                <img
                   src={subItem.tabIconSelected}
                   alt={subItem.tabText}
-                  width={24}
-                  height={24}
-                  className=" w-6 h-6 object-contain sm:hidden"
+                  className="object-contain sm:hidden"
                   loading="lazy"
                 />
               )}
@@ -112,17 +109,14 @@ export default function ServicesContent({
 
             {/* Button */}
             {currentSubItem?.contentLink && (
-              <a
-                href={currentSubItem.contentLink}
-                className="btn btn-primary w-fit"
-              >
+              <Link href="/services" className="btn btn-primary w-fit">
                 <span className="text-base  text-white font-normal font-poppins">
                   Our More Services
                 </span>
                 <div className="w-5 h-5 text-white">
                   {allIcons.chevronRight(20, 20)}
                 </div>
-              </a>
+              </Link>
             )}
           </div>
 
