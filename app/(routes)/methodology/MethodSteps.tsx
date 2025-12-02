@@ -82,13 +82,22 @@ interface ContainerMeasurements {
 const MethodSteps: FunctionComponent<MethodStepsProps> = () => {
   const containerRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [measurements, setMeasurements] = useState<ContainerMeasurements[]>([]);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    // Check if desktop on mount
+    if (typeof window !== "undefined") {
+      setIsDesktop(window.innerWidth > 768);
+    }
+
     const updateMeasurements = () => {
       // Only update on mobile
       if (typeof window !== "undefined" && window.innerWidth > 767) {
+        setIsDesktop(true);
         return;
       }
+
+      setIsDesktop(false);
 
       const newMeasurements: ContainerMeasurements[] =
         containerRefs.current.map((ref) => {
@@ -116,14 +125,18 @@ const MethodSteps: FunctionComponent<MethodStepsProps> = () => {
       if (ref) resizeObserver.observe(ref);
     });
 
-    window.addEventListener("resize", updateMeasurements);
-    window.addEventListener("scroll", updateMeasurements);
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", updateMeasurements);
+      window.addEventListener("scroll", updateMeasurements);
+    }
 
     return () => {
       clearTimeout(timeoutId);
       resizeObserver.disconnect();
-      window.removeEventListener("resize", updateMeasurements);
-      window.removeEventListener("scroll", updateMeasurements);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", updateMeasurements);
+        window.removeEventListener("scroll", updateMeasurements);
+      }
     };
   }, []);
 
@@ -246,7 +259,7 @@ const MethodSteps: FunctionComponent<MethodStepsProps> = () => {
                 }
               )}
               style={
-                window.innerWidth > 768
+                isDesktop
                   ? {
                       height: `${toRem(step.height)}`,
                     }
