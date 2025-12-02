@@ -90,7 +90,7 @@ export default function ServicesContent({
           );
         })}
       </div>
-      <div className="flex-1 flex flex-col border border-[#BDBCC7] rounded-xl p-8 sm:p-4 gap-[1.125rem] h-full">
+      <div className="flex-1 flex flex-col border border-[#BDBCC7] rounded-xl p-8 sm:p-4 gap-[1.125rem] h-full sm:min-h-[20rem]">
         <div className="flex flex-row items-center gap-[1.125rem] h-full">
           {/* Text Content */}
           <div className="flex-1 flex h-full flex-col justify-between gap-4">
@@ -122,7 +122,15 @@ export default function ServicesContent({
 
           {/* Image */}
           {currentSubItem?.contentImage && (
-            <div className="relative max-w-[40%] sm:w-1/4">
+            <div
+              className={classNames("relative max-w-[40%] w-1/3", {
+                "w-2/3":
+                  (selectedServiceIndex === 1 &&
+                    internalSelectedSubItemIndex === 3) ||
+                  (selectedServiceIndex === 2 &&
+                    internalSelectedSubItemIndex === 3),
+              })}
+            >
               <img
                 src={currentSubItem.contentImage}
                 alt={currentSubItem.contentTitle}
