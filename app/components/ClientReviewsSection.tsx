@@ -8,6 +8,8 @@ import { allClientReviews } from "../helpers/data";
 import ClientReviewItem from "./ClientReviewItem";
 import Slider from "./Slider";
 import ReviewsSlider from "./ReviewsSlider";
+import GreenBadge from "./GreenBadge";
+import Link from "next/link";
 
 interface ClientReviewsSectionProps {}
 
@@ -61,6 +63,18 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
             className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
           /> */}
           {/* Swiper Container */}
+          <div className="flex flex-col gap-3 sm:px-side-space">
+            {/* Badge */}
+            <GreenBadge
+              icon={"/images/zap-icon.svg"}
+              text="Solvo's Premium"
+            ></GreenBadge>
+
+            {/* Title */}
+            <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins">
+              What Our Clients Says
+            </h2>
+          </div>
 
           <div className="w-full">
             <Swiper
@@ -107,10 +121,28 @@ const ClientReviewsSection: React.FC<ClientReviewsSectionProps> = () => {
             alt="Client Reviews Background"
             className="absolute  -translate-y-[309px] left-0 h-[950px] w-[675px] object-contain -translate-x-2/3"
           />
+          <div className="flex flex-col gap-3 ">
+            {/* Badge */}
+            <GreenBadge
+              icon={"/images/zap-icon.svg"}
+              text="Solvo's Premium"
+            ></GreenBadge>
+
+            {/* Title */}
+            <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins">
+              What Our Clients Says
+            </h2>
+          </div>
           {/* Swiper Container */}
-          <div className="w-full">
+          <div className="w-full relative">
+            <Link
+              href="/verify-reviews"
+              className="text-base absolute bottom-0 underline text-primary-blue font-normal font-poppins hover:underline sm:hidden"
+            >
+              Verify our reviews
+            </Link>
             <Swiper
-              spaceBetween={0}
+              spaceBetween={30}
               slidesPerView={1}
               onSwiper={setMobileSwiperInstance}
               onSlideChange={handleMobileSlideChange}

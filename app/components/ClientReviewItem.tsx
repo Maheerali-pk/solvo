@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { IClientReview } from "../helpers/data";
 import GreenBadge from "./GreenBadge";
+import Link from "next/link";
 
 interface ClientReviewItemProps {
   data: IClientReview;
@@ -8,23 +9,11 @@ interface ClientReviewItemProps {
 
 const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
   return (
-    <div className="flex flex-col gap-6 w-full sm:px-side-space">
+    <div className="flex flex-col gap-6 w-full sm:px-side-space h-[15rem] sm:h-auto">
       <div className="flex flex-row items-stretch gap-6 w-full">
         {/* Left Content */}
         <div className="flex flex-col gap-6 flex-1">
           {/* Badge and Title */}
-          <div className="flex flex-col gap-3">
-            {/* Badge */}
-            <GreenBadge
-              icon={data.badgeIcon}
-              text={data.badgeText}
-            ></GreenBadge>
-
-            {/* Title */}
-            <h2 className="text-[1.875rem]  text-text-gray font-semibold font-poppins">
-              {data.title}
-            </h2>
-          </div>
 
           {/* Review Text */}
           <div className="flex flex-col items-end">
@@ -47,16 +36,10 @@ const ClientReviewItem: React.FC<ClientReviewItemProps> = ({ data }) => {
 
             {/* Verify Link */}
           </div>
-          <a
-            href={data.verifyLink}
-            className="text-base underline text-primary-blue font-normal font-poppins hover:underline sm:hidden"
-          >
-            {data.verifyLinkText}
-          </a>
         </div>
 
         {/* Right Image */}
-        <div className="relative sm:hidden flex-shrink-0 w-[20rem] h-auto">
+        <div className="relative sm:hidden flex-shrink-0 h-[15rem] w-[15rem]">
           <Image
             src={data.image}
             alt={data.clientName}
