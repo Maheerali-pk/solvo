@@ -23,20 +23,20 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-6 w-full">
-      <div className="grid grid-cols-[1fr_1fr] sm:grid-cols-1 items-stretch gap-11 w-full">
+      <div className="grid grid-cols-[1.1fr_1fr] sm:grid-cols-1 items-stretch gap-11 w-full">
         {/* Left Content */}
         <div className="flex flex-col gap-[3.375rem] sm:gap-6 flex-1">
           {/* Badge and Title */}
-          <div className="flex flex-col gap-4">
+          <div className="flex  flex-col gap-4">
             {/* Badge */}
-            <GreenBadge
+            {/* <GreenBadge
               icon="/images/zap-icon.svg"
               text={data.badgeText}
-            ></GreenBadge>
+            ></GreenBadge> */}
 
             {/* Title */}
             <h1
-              className="text-[3rem]  text-footer-heading font-semibold"
+              className="text-[3rem]  text-footer-heading font-semibold mt-12"
               style={{ fontFamily: "Obviously, sans-serif" }}
             >
               {data.title.split("-")[0]}
@@ -54,7 +54,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
                   src={data.image}
                   alt={data.title}
                   fill
-                  className="object-contain rounded-[1.25rem]"
+                  className="object-contain rounded-[1.25rem] "
                   loading="lazy"
                 />
               </div>
@@ -84,8 +84,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
-            {/* Place Your Order Button */}
+          {/* <div className="flex flex-row items-center gap-[1.375rem] sm:gap-4 sm:w-full">
             <a href={data.placeOrderLink} className="btn btn-primary">
               <span className="text-sm  text-white font-normal font-poppins">
                 Place Your Order
@@ -95,7 +94,6 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
               </div>
             </a>
 
-            {/* Our Services Button */}
             <a href={data.ourServicesLink} className="btn btn-secondary">
               <span className="text-sm  text-primary-blue font-normal font-poppins">
                 Our Services
@@ -104,7 +102,7 @@ const HeroSectionItem: React.FC<HeroSectionItemProps> = ({
                 {allIcons.chevronRight(24, 24)}
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Image */}
