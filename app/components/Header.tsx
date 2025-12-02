@@ -179,14 +179,10 @@ export default function Header({ activeRoute = "home" }: HeaderProps) {
         </button>
         <button
           onClick={toggleSidebar}
-          className="hidden sm:block cursor-pointer hover:scale-110 transition-all duration-300 w-10 h-10 p-0 border-0 bg-transparent"
+          className="hidden sm:flex items-center justify-center bg-primary-blue h-10 w-10 cursor-pointer hover:scale-110 transition-all duration-300 rounded-full  p-0 border-0 "
           aria-label="Toggle menu"
         >
-          <img
-            src="/images/shared/header/menu.webp"
-            className="w-full h-full"
-            alt="Menu"
-          />
+          {allIcons.menu}
         </button>
       </div>
 
