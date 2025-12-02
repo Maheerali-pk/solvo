@@ -16,47 +16,11 @@ const CustomerSimulationItemMobile: React.FC<
 > = ({ badgeText, badgeIcon, title, phase, index }) => {
   return (
     <div className="relative flex flex-col gap-[0.625rem] w-full overflow-hidden">
-      <img
-        src="/images/customer-simulation/circle.webp"
-        alt="Background"
-        className="absolute top-0 w-40 h-48 right-0 -translate-y-0"
-        loading="lazy"
-      />
-      <img
-        src="/images/customer-simulation/line-mobile.webp"
-        alt="Background"
-        className="absolute bottom-6 w-full left-side-space right-  right-0 z-10"
-        loading="lazy"
-      />
-      <img
-        src={"/images/customer-simulation/dots.webp"}
-        alt="Step 1"
-        className="object-contain h-[50%] left-1/2 -translate-x-1/2 bottom-0 absolute"
-        loading="lazy"
-      />
-      <img
-        src={"/images/customer-simulation/cloud.webp"}
-        alt="Step 1"
-        className="object-contain  w-80 bottom-28 left-1/2 -translate-x-1/2 absolute"
-        loading="lazy"
-      />
       {/* Main Card */}
-      <div className="w-full bg-white rounded-[0px_0px_1.875rem_1.875rem] overflow-hidden">
+      <div className="w-full bg-transparent rounded-[0px_0px_1.875rem_1.875rem] overflow-hidden">
         {/* Content */}
-        <div className="flex flex-col sm:gap-3 gap-6 px-4 py-6">
+        <div className="flex flex-col sm:gap-3 gap-6 sm:px-side-space px-4 py-6">
           {/* Badge and Title */}
-          <div className="flex flex-col gap-3 w-full">
-            {/* Badge */}
-
-            <GreenBadge icon={badgeIcon} text={badgeText}></GreenBadge>
-            {/* Title */}
-            <h2 className=" text-text-gray font-semibold font-poppins">
-              {title.split(" ").slice(0, 2).join(" ")}{" "}
-              <span className="text-primary-blue">
-                {title.split(" ").slice(2).join(" ")}
-              </span>
-            </h2>
-          </div>
 
           {/* Phase */}
           <div className="flex flex-col gap-6">
